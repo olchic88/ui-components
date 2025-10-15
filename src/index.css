@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #171717;
+  --secondary: #525252;
+}
+
+html,
+body {
+  min-height: 100%; /* for gradient background */
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+figure,
+blockquote {
+  margin: 0;
+}
+
+#header {
+  background-color: #d1d5db;
+  color: var(--secondary);
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+#header h1 {
+  font-size: 1.87rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+}
+
+#layout-page-overlay {
+  background-image: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: -16px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-block: 6px;
+}
