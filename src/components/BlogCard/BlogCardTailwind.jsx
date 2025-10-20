@@ -10,7 +10,7 @@ export default function BlogCardTailwind({
   text,
 }) {
   return (
-    <div className="bg-white w-full max-w-[340px] min-h-[400px] rounded-lg overflow-hidden my-2 md:my-4">
+    <div className="bg-white w-full max-w-[340px] shadow-md rounded-lg overflow-hidden my-2 md:my-4">
       <img
         className="object-cover block h-[288px] w-full"
         src={src}
@@ -24,10 +24,10 @@ export default function BlogCardTailwind({
         </span>
         <div className="flex flex-col items-start gap-6">
           <div className="flex flex-col gap-3">
-            <h3 className="text-lg font-semibold text-neutral-900 wrap-anywhere">
+            <h3 className="text-lg font-semibold text-neutral-900 wrap-anywhere line-clamp-1">
               {title}
             </h3>
-            <p className="text-base font-medium text-neutral-600 wrap-anywhere">
+            <p className="text-base font-medium text-neutral-600 wrap-anywhere line-clamp-2">
               {text}
             </p>
           </div>

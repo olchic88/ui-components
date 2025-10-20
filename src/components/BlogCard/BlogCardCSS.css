@@ -2,8 +2,8 @@
   background-color: #ffffff;
   width: 100%;
   max-width: 340px;
-  min-height: 400px;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
   overflow: hidden; /* ensures image follows rounded corners */
   margin-block: 8px;
 }
@@ -60,6 +60,11 @@
   font-weight: 600;
   line-height: 1.75rem;
   color: #171717;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* max 1 line */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .blog-card-title,
@@ -72,6 +77,11 @@
   line-height: 1.5rem;
   font-weight: 500;
   color: #525252;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .blog-card-btn {
