@@ -30,6 +30,13 @@ body {
   padding: 0 1rem;
 }
 
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
 figure,
 blockquote {
   margin: 0;
@@ -63,4 +70,10 @@ blockquote {
   font-weight: 600;
   letter-spacing: 0.3px;
   margin-block: 6px;
+}
+
+.ax-button {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
 }
