@@ -1,15 +1,15 @@
 import { BrowserRouter } from "react-router";
 
-import TestimonialCardHTML from "./components/TestimonialCard/TestimonialCardHTML.jsx";
-import TestimonialCardReact from "./components/TestimonialCard/TestimonialCardReact.jsx";
-import TestimonialCardTailwind from "./components/TestimonialCard/TestimonialCardTailwind.jsx";
-import profileThumbnail1 from "./components/TestimonialCard/profile-thumbnail-1.png";
-import profileThumbnail2 from "./components/TestimonialCard/profile-thumbnail-2.png";
+import TestimonialCardHTML from "./components/marketing/TestimonialCard/TestimonialCardHTML.jsx";
+import TestimonialCardReact from "./components/marketing/TestimonialCard/TestimonialCardReact.jsx";
+import TestimonialCardTailwind from "./components/marketing/TestimonialCard/TestimonialCardTailwind.jsx";
+import profileThumbnail1 from "./components/marketing/TestimonialCard/profile-thumbnail-1.png";
+import profileThumbnail2 from "./components/marketing/TestimonialCard/profile-thumbnail-2.png";
 
-import BlogCardHTML from "./components/BlogCard/BlogCardHTML.jsx";
-import BlogCardReact from "./components/BlogCard/BlogCardReact.jsx";
-import BlogCardTailwind from "./components/BlogCard/BlogCardTailwind.jsx";
-import blogCard1 from "./components/BlogCard/blog-card-1.jpg";
+import BlogCardHTML from "./components/marketing/BlogCard/BlogCardHTML.jsx";
+import BlogCardReact from "./components/marketing/BlogCard/BlogCardReact.jsx";
+import BlogCardTailwind from "./components/marketing/BlogCard/BlogCardTailwind.jsx";
+import blogCard1 from "./components/marketing/BlogCard/blog-card-1.jpg";
 
 
 function App() {
