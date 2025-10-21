@@ -33,7 +33,7 @@ export default function BlogCardTailwind({
           </div>
 
           <Link
-            className="flex items-center gap-2 text-indigo-700 text-base font-medium cursor-pointer no-underline hover:text-indigo-800  focus:text-indigo-800"
+            className="flex items-center gap-2 text-indigo-700 text-base font-medium no-underline hover:text-indigo-800  focus:text-indigo-800 focus:ring-4 focus:ring-indigo-200 focus:ring-offset-1 transition-[colors,shadow] duration-300"
             to="#"
           >
             Read more

@@ -92,13 +92,17 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-  cursor: pointer;
   text-decoration: none;
+  transition: color 300ms, box-shadow 300ms;
 }
 
 .blog-card-btn:hover,
 .blog-card-btn:focus {
   color: #3730a3;
+}
+
+.blog-card-btn:focus {
+  box-shadow: 0px 0px 0px 1px #444ce7, 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
 }
 
 @media (min-width: 768px) {
