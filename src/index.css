@@ -14,8 +14,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary: #171717;
-  --secondary: #525252;
+  --color-primary: #171717;
+  --color-secondary: #525252;
+  --color-success: #15803d;
+  --color-brand-primary: #4338ca;
+  --color-brand-primary-emphasize: #3730a3;
+
+  --bg-primary: #ffffff;
+  --bg-success: #f0fdf4;
+
+  --border-success: #bbf7d0;
 }
 
 html,

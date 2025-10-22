@@ -1,5 +1,5 @@
 .blog-card {
-  background-color: #ffffff;
+  background-color: var(--bg-primary);
   width: 100%;
   max-width: 340px;
   border-radius: 8px;
@@ -33,9 +33,9 @@
 }
 
 .badge-success {
-  color: #15803d;
-  background-color: #f0fdf4;
-  border: 1px solid #bbf7d0;
+  color: var(--color-success);
+  background-color: var(--bg-success);
+  border: 1px solid var(--border-success);
 }
 
 .blog-card-badge {
@@ -59,7 +59,7 @@
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.75rem;
-  color: #171717;
+  color: var(--color-primary);
 
   display: -webkit-box;
   -webkit-line-clamp: 1; /* max 1 line */
@@ -76,7 +76,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
-  color: #525252;
+  color: var(--color-secondary);
 
   display: -webkit-box;
   -webkit-line-clamp: 2; /* max 2 lines */
@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #4338ca;
+  color: var(--color-brand-primary);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
@@ -100,7 +100,7 @@
 
 .blog-card-btn:hover,
 .blog-card-btn:focus {
-  color: #3730a3;
+  color: var(--color-brand-primary-emphasize);
 }
 
 .blog-card-btn:focus {
