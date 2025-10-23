@@ -19,9 +19,13 @@
   --color-success: #15803d;
   --color-brand-primary: #4338ca;
   --color-brand-primary-emphasize: #3730a3;
+  --color-primary-invert: #ffffff;
 
   --bg-primary: #ffffff;
   --bg-success: #f0fdf4;
+  --bg-brand-primary:#4338ca;
+  --bg-brand-primary-emphasize: #3730a3;
+  --bg-primary-hover: #fafafa;
 
   --border-success: #bbf7d0;
 }
