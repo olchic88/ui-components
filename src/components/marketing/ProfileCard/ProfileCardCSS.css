@@ -1,0 +1,117 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 24px 16px;
+
+  width: 100%;
+  max-width: 340px;
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06) my-2;
+
+  margin-block: 8px;
+}
+
+.profile-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.profile-card-img {
+  border-radius: 50%;
+}
+
+.profile-card-metadata {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.profile-card-name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.profile-card-designation {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.profile-card-bio {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.profile-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.profile-card-btn {
+  background-color: var(--bg-brand-primary);
+  border-radius: 4px;
+  padding-block: 10px;
+  color: var(--color-primary-invert);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  transition: background-color 300ms, box-shadow 300ms;
+  outline: none;
+}
+
+.profile-card-btn:hover,
+.profile-card-btn:focus {
+  background-color: var(--bg-brand-primary-emphasize);
+}
+
+.profile-card-btn:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
+.profile-card-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  color: var(--color-brand-primary);
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: background-color 300ms, box-shadow 300ms;
+  outline: none;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: var(--bg-primary-hover);
+}
+
+.social-btn:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    margin-block: 16px;
+  }
+}

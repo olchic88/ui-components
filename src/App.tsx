@@ -11,6 +11,10 @@ import BlogCardReact from "./components/marketing/BlogCard/BlogCardReact.jsx";
 import BlogCardTailwind from "./components/marketing/BlogCard/BlogCardTailwind.jsx";
 import blogCard1 from "./components/marketing/BlogCard/blog-card-1.jpg";
 
+import ProfileCardHTML from "./components/marketing/ProfileCard/ProfileCardHTML.jsx";
+import ProfileCardReact from "./components/marketing/ProfileCard/ProfileCardReact.jsx";
+import ProfileCardTailwind from "./components/marketing/ProfileCard/ProfileCardTailwind.jsx";
+import profile from "./components/marketing/ProfileCard/profile.png";
 
 function App() {
   return (
@@ -89,6 +93,28 @@ function App() {
               title="Top 5 Living Room Inspirations"
               text="Curated vibrants colors for your living, make it pop & calm in the same time."
             />
+          </section>
+          <section>
+            <h2 className="section-title">Profile Card (HTML+CSS)</h2>
+            <ProfileCardHTML />
+            <h2 className="section-title">Profile Card (React)</h2>
+            <ProfileCardReact
+            src={profile}
+            width={64}
+            height={64}
+            name="Sarah Dole"
+            designation="Front End Engineer @ Microsoft"
+            bio="I turn coffee into bugs which are fixed by someone else. Certified
+          Stack Overflow and ChatGPT developer." />
+          <h2 className="section-title">Profile Card (React+Tailwind)</h2>
+          <ProfileCardTailwind
+            src={profile}
+            width={64}
+            height={64}
+            name="Sarah Dole"
+            designation="Front End Engineer @ Microsoft"
+            bio="I turn coffee into bugs which are fixed by someone else. Certified
+          Stack Overflow and ChatGPT developer." />
           </section>
         </div>
       </main>
