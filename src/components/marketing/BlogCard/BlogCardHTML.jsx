@@ -1,5 +1,5 @@
 import blogCard1 from "./blog-card-1.jpg";
-import "./BlogCardCSS.css";
+import "./blogCard.css";
 
 export default function BlogCardHTML() {
   return (

@@ -1,4 +1,4 @@
-import "./TestimonialCardCSS.css";
+import "./testimonialCard.css";
 
 export default function TestimonialCardReact({ img, name, username, text }) {
   return (

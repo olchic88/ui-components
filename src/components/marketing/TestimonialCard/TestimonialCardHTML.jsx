@@ -1,4 +1,4 @@
-import "./TestimonialCardCSS.css";
+import "./testimonialCard.css";
 import profileThumbnail1 from "./profile-thumbnail-1.png";
 import profileThumbnail2 from "./profile-thumbnail-2.png";
 

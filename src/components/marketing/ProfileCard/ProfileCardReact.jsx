@@ -1,4 +1,4 @@
-import "./ProfileCardCSS.css";
+import "./profileCard.css";
 import { Link } from "react-router";
 
 export default function ProfileCardReact({

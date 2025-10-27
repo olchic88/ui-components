@@ -1,4 +1,4 @@
-import "./BlogCardCSS.css";
+import "./blogCard.css";
 import { Link } from "react-router";
 
 export default function BlogCardReact({
