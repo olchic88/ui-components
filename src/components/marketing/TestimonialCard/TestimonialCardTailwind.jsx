@@ -1,6 +1,13 @@
 export default function TestimonialCardTailwind({ img, name, username, text }) {
   return (
-    <figure className="flex flex-col gap-4 p-6 !my-2 md:!my-4 bg-[var(--bg-primary)] rounded-lg shadow-md w-full">
+    <figure
+      className="
+    flex flex-col gap-4
+    w-full
+    p-6 !my-2 md:!my-4
+    rounded-lg shadow-md
+    bg-[var(--bg-primary)]"
+    >
       {" "}
       {/* !my because of figure {margin: 0;} in index.css */}
       <figcaption className="flex gap-4">

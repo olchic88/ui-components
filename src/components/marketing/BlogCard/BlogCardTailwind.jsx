@@ -10,16 +10,33 @@ export default function BlogCardTailwind({
   text,
 }) {
   return (
-    <div className="bg-[var(--bg-primary)] w-full max-w-[340px] shadow-md rounded-lg overflow-hidden my-2 md:my-4">
+    <div
+      className="
+      w-full max-w-[340px]
+      my-2 md:my-4
+      rounded-lg overflow-hidden shadow-md
+      bg-[var(--bg-primary)]"
+    >
       <img
-        className="object-cover block h-[288px] w-full"
+        className="block
+        w-full h-[288px]
+        object-cover"
         src={src}
         alt={alt}
         width={width}
         height={height}
       />
-      <div className="flex flex-col items-start gap-2 py-6 px-4">
-        <span className="bg-[var(--bg-success)] text-[var(--color-success)] py-[1px] px-[7.5px] rounded-full border border-[var(--border-success)] text-sm text-center">
+      <div
+        className="flex flex-col items-start gap-2
+      py-6 px-4"
+      >
+        <span
+          className="
+          py-[1px] px-[7.5px]
+          rounded-full border border-[var(--border-success)]
+          bg-[var(--bg-success)]
+          text-[var(--color-success)] text-sm text-center"
+        >
           {badge}
         </span>
         <div className="flex flex-col items-start gap-6">
@@ -33,7 +50,15 @@ export default function BlogCardTailwind({
           </div>
 
           <Link
-            className="flex items-center gap-2 text-[var(--color-brand-primary)] text-base font-medium no-underline hover:text-[var(--color-brand-primary-emphasize)] focus:outline-none rounded-sm focus:text-[var(--color-brand-primary-emphasize)] focus:shadow-[0_0_0_1px_#444ce7,0_0_0_4px_rgba(68,76,231,0.12)] transition-[colors,shadow] duration-300"
+            className="
+            flex items-center gap-2
+            rounded-sm
+            text-[var(--color-brand-primary)] text-base font-medium no-underline
+            hover:text-[var(--color-brand-primary-emphasize)]
+            focus:outline-none
+            focus:text-[var(--color-brand-primary-emphasize)]
+            focus:shadow-[0_0_0_1px_#444ce7,0_0_0_4px_rgba(68,76,231,0.12)]
+            transition-[colors,shadow] duration-300"
             to="/"
           >
             Read more

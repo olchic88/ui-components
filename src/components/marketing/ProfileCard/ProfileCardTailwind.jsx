@@ -1,8 +1,5 @@
 import { Link } from "react-router";
 
-const socialBtnClasses =
-  "w-9 h-9 flex justify-center items-center rounded-sm transition-[background-color,box-shadow] duration-300 focus:outline-none hover:bg-[var(--bg-primary-hover)] focus:bg-[var(--bg-primary-hover)] focus:shadow-[0_0_0_4px_rgba(68,76,231,0.12)]";
-
 export default function ProfileCardTailwind({
   src,
   width,
@@ -11,8 +8,26 @@ export default function ProfileCardTailwind({
   designation,
   bio,
 }) {
+  const socialBtnClasses = `
+  flex justify-center items-center
+  w-9 h-9
+  rounded-sm
+  hover:bg-[var(--bg-primary-hover)]
+  focus:outline-none
+  focus:bg-[var(--bg-primary-hover)]
+  focus:shadow-[0_0_0_4px_rgba(68,76,231,0.12)]"
+  transition-[background-color,box-shadow] duration-300`;
+
   return (
-    <div className="flex flex-col gap-10 py-6 px-4 my-2 md:my-4 bg-[var(--bg-primary)] w-full max-w-[340px] rounded-lg shadow-[0px_1px_3px_rgba(0,0,0,0.1),_0px_1px_2px_rgba(0,0,0,0.06)]">
+    <div
+      className="
+      flex flex-col gap-10
+      w-full max-w-[340px]
+      py-6 px-4 my-2 md:my-4
+      rounded-lg
+      shadow-[0px_1px_3px_rgba(0,0,0,0.1),_0px_1px_2px_rgba(0,0,0,0.06)]
+      bg-[var(--bg-primary)]"
+    >
       <div className="flex flex-col items-center gap-6 text-center">
         <img
           className="rounded-full"
@@ -36,8 +51,16 @@ export default function ProfileCardTailwind({
       <div className="flex flex-col gap-6 text-center">
         <Link
           to="/"
-          className="bg-[var(--bg-brand-primary)] rounded-sm py-[10px] text-[var(--color-primary-invert)] no-underline text-base font-medium shadow-md transition-[background-color,box-shadow] duration-300 focus:outline-none
-        hover:bg-[var(--bg-brand-primary-emphasize)] focus:bg-[var(--bg-brand-primary-emphasize)] focus:shadow-[0_0_0_4px_rgba(68,76,231,0.12)]"
+          className="
+          py-[10px]
+          rounded-sm shadow-md
+          text-base font-medium text-[var(--color-primary-invert)] no-underline
+          bg-[var(--bg-brand-primary)]
+          hover:bg-[var(--bg-brand-primary-emphasize)]
+          focus:outline-none
+          focus:bg-[var(--bg-brand-primary-emphasize)]
+          focus:shadow-[0_0_0_4px_rgba(68,76,231,0.12)]
+          transition-[background-color,box-shadow] duration-300"
         >
           Contact me
         </Link>
