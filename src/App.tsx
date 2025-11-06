@@ -1,123 +1,36 @@
-import { BrowserRouter } from "react-router";
-
-import TestimonialCardHTML from "./components/marketing/TestimonialCard/TestimonialCardHTML.jsx";
-import TestimonialCardReact from "./components/marketing/TestimonialCard/TestimonialCardReact.jsx";
-import TestimonialCardTailwind from "./components/marketing/TestimonialCard/TestimonialCardTailwind.jsx";
-import profileThumbnail1 from "./components/marketing/TestimonialCard/profile-thumbnail-1.png";
-import profileThumbnail2 from "./components/marketing/TestimonialCard/profile-thumbnail-2.png";
-
-import BlogCardHTML from "./components/marketing/BlogCard/BlogCardHTML.jsx";
-import BlogCardReact from "./components/marketing/BlogCard/BlogCardReact.jsx";
-import BlogCardTailwind from "./components/marketing/BlogCard/BlogCardTailwind.jsx";
-import blogCard1 from "./components/marketing/BlogCard/blog-card-1.jpg";
-
-import ProfileCardHTML from "./components/marketing/ProfileCard/ProfileCardHTML.jsx";
-import ProfileCardReact from "./components/marketing/ProfileCard/ProfileCardReact.jsx";
-import ProfileCardTailwind from "./components/marketing/ProfileCard/ProfileCardTailwind.jsx";
-import profile from "./components/marketing/ProfileCard/profile.png";
-
+import { BrowserRouter, Routes, Route } from "react-router";
+import ShowcasePage from "./pages/ShowcasePage.jsx";
+import HeroSectionSimpleHTMLPage from "./pages/HeroSectionSimpleHTMLPage.jsx";
+import HeroSectionSimpleReactPage from "./pages/HeroSectionSimpleReactPage.jsx";
+import HeroSectionSimpleTailwindPage from "./pages/HeroSectionSimpleTailwindPage.jsx";
 function App() {
   return (
     <BrowserRouter>
-      <header id="header">
-        <h1>UI Components</h1>
-      </header>
-      <main id="layout-page-overlay">
-        <div className="container">
-          <section>
-            <h2 className="section-title">Testimonial Cards (HTML+CSS)</h2>
-            <div className="testimonial-card-container">
-              <TestimonialCardHTML />
-            </div>
-            <h2 className="section-title">Testimonial Cards (React)</h2>
-            <div className="testimonial-card-container">
-              <TestimonialCardReact
-                img={profileThumbnail1}
-                name="Michael Carter"
-                username="mikec"
-                text="I’ve started using this app to track my workouts, and it’s been a
-                game changer. The progress charts keep me motivated every day."
-              />
-              <TestimonialCardReact
-                img={profileThumbnail2}
-                name="Elizabeth Alexandra Montgomery"
-                username="elizabeth_alexandra_montgomery_the_third"
-                text="I’ve been using this tool for a few weeks now, and I’m genuinely
-                impressed. It saves me hours of manual work every single day and
-                lets me focus on the creative part of my projects instead of routine
-                tasks. Highly recommend it to anyone who values efficiency! Also, check this supercalifragilisticexpialidociouswordthatkeepsgrowing!"
-              />
-            </div>
-            <h2 className="section-title">
-              Testimonial Cards (React+Tailwind)
-            </h2>
-            <div className="testimonial-card-container">
-              <TestimonialCardTailwind
-                img={profileThumbnail1}
-                name="Michael Carter"
-                username="mikec"
-                text="I’ve started using this app to track my workouts, and it’s been a
-                game changer. The progress charts keep me motivated every day."
-              />
-              <TestimonialCardTailwind
-                img={profileThumbnail2}
-                name="Elizabeth Alexandra Montgomery"
-                username="elizabeth_alexandra_montgomery_the_third"
-                text="I’ve been using this tool for a few weeks now, and I’m genuinely
-                impressed. It saves me hours of manual work every single day and
-                lets me focus on the creative part of my projects instead of routine
-                tasks. Highly recommend it to anyone who values efficiency! Also, check this supercalifragilisticexpialidociouswordthatkeepsgrowing!"
-              />
-            </div>
-          </section>
-          <section>
-            <h2 className="section-title">Blog Card (HTML+CSS)</h2>
-            <BlogCardHTML />
-            <h2 className="section-title">Blog Card (React)</h2>
-            <BlogCardReact
-              src={blogCard1}
-              alt="Beautifully designed living room with modern decor"
-              width={340}
-              height={288}
-              badge="Interior"
-              title="Top 5 Living Room Inspirations"
-              text="Curated vibrants colors for your living, make it pop & calm in the same time."
-            />
-            <h2 className="section-title">Blog Card (React+Tailwind)</h2>
-            <BlogCardTailwind
-              src={blogCard1}
-              alt="Beautifully designed living room with modern decor"
-              width={340}
-              height={288}
-              badge="Interior"
-              title="Top 5 Living Room Inspirations"
-              text="Curated vibrants colors for your living, make it pop & calm in the same time."
-            />
-          </section>
-          <section>
-            <h2 className="section-title">Profile Card (HTML+CSS)</h2>
-            <ProfileCardHTML />
-            <h2 className="section-title">Profile Card (React)</h2>
-            <ProfileCardReact
-            src={profile}
-            width={64}
-            height={64}
-            name="Sarah Dole"
-            designation="Front End Engineer @ Microsoft"
-            bio="I turn coffee into bugs which are fixed by someone else. Certified
-          Stack Overflow and ChatGPT developer." />
-          <h2 className="section-title">Profile Card (React+Tailwind)</h2>
-          <ProfileCardTailwind
-            src={profile}
-            width={64}
-            height={64}
-            name="Sarah Dole"
-            designation="Front End Engineer @ Microsoft"
-            bio="I turn coffee into bugs which are fixed by someone else. Certified
-          Stack Overflow and ChatGPT developer." />
-          </section>
-        </div>
-      </main>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <header id="header">
+                <h1>UI Components</h1>
+              </header>
+              <ShowcasePage />
+            </>
+          }
+        />
+        <Route
+          path="/hero-simple-html"
+          element={<HeroSectionSimpleHTMLPage />}
+        />
+        <Route
+          path="hero-simple-react"
+          element={<HeroSectionSimpleReactPage />}
+        />
+        <Route
+          path="hero-simple-tailwind"
+          element={<HeroSectionSimpleTailwindPage />}
+        />
+      </Routes>
     </BrowserRouter>
   );
 }
