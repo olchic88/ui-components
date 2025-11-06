@@ -23,7 +23,7 @@
 
   --bg-primary: #ffffff;
   --bg-success: #f0fdf4;
-  --bg-brand-primary:#4338ca;
+  --bg-brand-primary: #4338ca;
   --bg-brand-primary-emphasize: #3730a3;
   --bg-primary-hover: #fafafa;
 
@@ -34,6 +34,7 @@ html,
 body {
   min-height: 100%; /* for gradient background */
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -84,8 +85,37 @@ blockquote {
   margin-block: 6px;
 }
 
+.showcase .section-title {
+  margin-left: 16px;
+}
+
 .ax-button {
   all: unset;
   outline: revert;
   box-sizing: border-box;
+}
+
+.view-full-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: var(--color-brand-primary);
+  text-decoration: none;
+  border-radius: 4px; /* for focus */
+  margin-left: 16px;
+  outline: none;
+}
+
+.view-full-link:hover,
+.view-full-link:focus {
+  color: var(--color-brand-primary-emphasize);
+}
+
+.view-full-link:focus {
+  width: fit-content;
+  box-shadow: 0px 0px 0px 1px #444ce7, 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
 }
