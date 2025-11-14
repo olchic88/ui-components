@@ -8,6 +8,7 @@ export default function HeroSectionSimpleReactPage() {
         title="Well crafted abstract images"
         description="High quality abstract images for your projects, wallpaper and
                 presentations."
+        alt="Colorful abstract geometric shapes"
         src={prism}
         width={696}
         height={526}

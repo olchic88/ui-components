@@ -4,6 +4,7 @@ export default function HeroSectionSimpleTailwind({
   title,
   description,
   src,
+  alt,
   width,
   height,
   fullpage,
@@ -17,6 +18,7 @@ export default function HeroSectionSimpleTailwind({
   outline-none
   focus:outline-none
   focus:shadow-[0_0_0_4px_rgba(68,76,231,0.12)]
+  transition-[background-color,color,box-shadow,border-color] duration-300
   md:h-[60px]
   md:text-lg`;
 
@@ -26,18 +28,17 @@ export default function HeroSectionSimpleTailwind({
         ${fullpage ? "max-w-full p-0" : "max-w-[1440px] p-4"}`}
     >
       <div
-        className={`grid grid-cols-4 justify-items-center gap-8 gap-y-12
+        className={`grid grid-cols-4 gap-8 gap-y-12
           py-[104px] px-3
-          rounded-md overflow-hidden
+          rounded-md
           bg-[linear-gradient(176.17deg,_#f9fafb_0.94%,_#edf0f3_316.54%)]
           shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),_0_4px_6px_-2px_rgba(0,0,0,0.05)]
           
           md:grid-cols-6 md:landscape:grid-cols-12
           md:gap-y-8 md:py-[91px] md:p-4
-          md:landscape:py-16 md:landscape:p-12 md:landscape:items-center
+          md:landscape:py-16 md:landscape:p-12
 
           [@media(min-width:90rem)]:grid-cols-12
-          [@media(min-width:90rem)]:items-center
           [@media(min-width:90rem)]:gap-8
           [@media(min-width:90rem)]:p-[96px]
           [@media(min-width:90rem)]:py-[105px]
@@ -83,6 +84,11 @@ export default function HeroSectionSimpleTailwind({
                 text-[var(--color-primary)]
                 hover:bg-[var(--bg-primary-hover)]
                 focus:bg-[var(--bg-primary-hover)]
+                hover:border
+                focus:border
+                hover:text-[var(--color-primary-hover)]
+                focus:text-[var(--color-primary-hover)]
+                
                 md:py-[15px] md:p-[23px]`}
                 to="#"
               >
@@ -98,6 +104,7 @@ export default function HeroSectionSimpleTailwind({
                 text-[var(--color-primary-invert)]
                 hover:bg-[var(--bg-brand-primary-emphasize)]
                 focus:bg-[var(--bg-brand-primary-emphasize)]
+
                 md:py-4 md:p-6`}
                 to="#"
               >
@@ -109,10 +116,10 @@ export default function HeroSectionSimpleTailwind({
         <img
           src={src}
           className="col-span-4
-          w-full h-auto object-contain
+          max-w-full w-full h-auto object-cover
           md:col-span-6 md:landscape:col-span-6
           [@media(min-width:90rem)]:col-span-7"
-          alt=""
+          alt={alt}
           width={width}
           height={height}
         />

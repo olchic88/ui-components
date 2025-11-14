@@ -8,6 +8,7 @@ export default function HeroSectionSimpleTailwindPage() {
       description="High quality abstract images for your projects, wallpaper and
                 presentations."
       src={prism}
+      alt="Colorful abstract geometric shapes"
       width={696}
       height={526}
       fullpage={true}

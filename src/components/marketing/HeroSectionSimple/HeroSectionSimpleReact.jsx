@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import "./heroSectionSimple.css";
 
 
-export default function HeroSectionSimpleReact({title, description, src, width, height}) {
+export default function HeroSectionSimpleReact({title, description, src, alt, width, height}) {
   return (
     <div className="container-section">
         <div className="hero-section">
@@ -27,7 +27,7 @@ export default function HeroSectionSimpleReact({title, description, src, width, 
           <img
             src={src}
             className="hero-banner"
-            alt=""
+            alt={alt}
             width={width}
             height={height}
           />
