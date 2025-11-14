@@ -3,6 +3,10 @@ import ShowcasePage from "./pages/ShowcasePage.jsx";
 import HeroSectionSimpleHTMLPage from "./pages/HeroSectionSimpleHTMLPage.jsx";
 import HeroSectionSimpleReactPage from "./pages/HeroSectionSimpleReactPage.jsx";
 import HeroSectionSimpleTailwindPage from "./pages/HeroSectionSimpleTailwindPage.jsx";
+import HeroSectionFeatureBulletsHTMLPage from "./pages/HeroSectionFeatureBulletsHTMLPage.jsx";
+import HeroSectionFeatureBulletsReactPage from "./pages/HeroSectionFeatureBulletsReactPage.jsx";
+import HeroSectionFeatureBulletsTailwindPage from "./pages/HeroSectionFeatureBulletsTailwindPage.jsx"
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +33,18 @@ function App() {
         <Route
           path="hero-simple-tailwind"
           element={<HeroSectionSimpleTailwindPage />}
+        />
+        <Route
+          path="hero-feature-bullets-html"
+          element={<HeroSectionFeatureBulletsHTMLPage />}
+        />
+        <Route
+        path="hero-feature-bullets-react"
+        element={<HeroSectionFeatureBulletsReactPage/>}
+        />
+        <Route
+        path="hero-feature-bullets-tailwind"
+        element={<HeroSectionFeatureBulletsTailwindPage/>}
         />
       </Routes>
     </BrowserRouter>

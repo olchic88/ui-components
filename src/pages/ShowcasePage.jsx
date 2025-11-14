@@ -21,6 +21,11 @@ import HeroSectionSimpleReact from "../components/marketing/HeroSectionSimple/He
 import HeroSectionSimpleTailwind from "../components/marketing/HeroSectionSimple/HeroSectionSimpleTailwind.jsx";
 import prism from "../components/marketing/HeroSectionSimple/prism.png";
 
+import HeroSectionFeatureBulletsHTML from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsHTML.jsx";
+import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReact.jsx";
+import HeroSectionFeatureBulletsTailwind from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsTailwind.jsx";
+import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.png";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -120,7 +125,7 @@ export default function Showcase() {
       </div>
 
       <section className="showcase">
-        <h2 className="section-title">Hero Section Simple (HTML + CSS)</h2>
+        <h2 className="section-title">Hero Section Simple (HTML+CSS)</h2>
         <HeroSectionSimpleHTML />
         <Link to="/hero-simple-html" className="view-full-link">
           View full page
@@ -143,6 +148,7 @@ export default function Showcase() {
           description="High quality abstract images for your projects, wallpaper and
                 presentations."
           src={prism}
+          alt="Colorful abstract geometric shapes"
           width={696}
           height={526}
         />
@@ -167,11 +173,90 @@ export default function Showcase() {
           description="High quality abstract images for your projects, wallpaper and
                 presentations."
           src={prism}
+          alt="Colorful abstract geometric shapes"
           width={696}
           height={526}
           fullpage={false}
         />
         <Link to="/hero-simple-tailwind" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">
+          Hero Section Feature Bullets (HTML+CSS)
+        </h2>
+        <HeroSectionFeatureBulletsHTML />
+        <Link to="/hero-feature-bullets-html" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">Hero Section Feature Bullets (React)</h2>
+        <HeroSectionFeatureBulletsReact
+          title="Premium abstract images"
+          bullets={[
+            { id: 1, text: "Minimum 5K image resolution" },
+            { id: 2, text: "Various format variants available" },
+            { id: 3, text: "Retina display support" },
+          ]}
+          src={prismFeatureBullets}
+          alt="Colorful abstract geometric shapes"
+          width={696}
+          height={526}
+        />
+        <Link to="/hero-feature-bullets-react" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">Hero Section Feature Bullets (React+Tailwind)</h2>
+        <HeroSectionFeatureBulletsTailwind
+        title="Premium abstract images"
+          bullets={[
+            { id: 1, text: "Minimum 5K image resolution" },
+            { id: 2, text: "Various format variants available" },
+            { id: 3, text: "Retina display support" },
+          ]}
+          src={prismFeatureBullets}
+          alt="Colorful abstract geometric shapes"
+          width={696}
+          height={526}
+          fullpage={false}
+        />
+         <Link to="/hero-feature-bullets-tailwind" className="view-full-link">
           View full page
           <svg
             width="20"
