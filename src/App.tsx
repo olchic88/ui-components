@@ -5,7 +5,10 @@ import HeroSectionSimpleReactPage from "./pages/HeroSectionSimpleReactPage.jsx";
 import HeroSectionSimpleTailwindPage from "./pages/HeroSectionSimpleTailwindPage.jsx";
 import HeroSectionFeatureBulletsHTMLPage from "./pages/HeroSectionFeatureBulletsHTMLPage.jsx";
 import HeroSectionFeatureBulletsReactPage from "./pages/HeroSectionFeatureBulletsReactPage.jsx";
-import HeroSectionFeatureBulletsTailwindPage from "./pages/HeroSectionFeatureBulletsTailwindPage.jsx"
+import HeroSectionFeatureBulletsTailwindPage from "./pages/HeroSectionFeatureBulletsTailwindPage.jsx";
+import FeatureSectionImageHTMLPage from "./pages/FeatureSectionImageHTMLPage.jsx";
+import FeatureSectionImageReactPage from "./pages/FeatureSectionImageReactPage.jsx";
+import FeatureSectionImageTailwindPage from "./pages/FeatureSectionImageTailwindPage.jsx";
 
 function App() {
   return (
@@ -39,12 +42,36 @@ function App() {
           element={<HeroSectionFeatureBulletsHTMLPage />}
         />
         <Route
-        path="hero-feature-bullets-react"
-        element={<HeroSectionFeatureBulletsReactPage/>}
+          path="hero-feature-bullets-react"
+          element={<HeroSectionFeatureBulletsReactPage />}
         />
         <Route
-        path="hero-feature-bullets-tailwind"
-        element={<HeroSectionFeatureBulletsTailwindPage/>}
+          path="hero-feature-bullets-tailwind"
+          element={<HeroSectionFeatureBulletsTailwindPage />}
+        />
+        <Route
+          path="feature-section-image-right-html"
+          element={<FeatureSectionImageHTMLPage side="right" />}
+        />
+        <Route
+          path="feature-section-image-left-html"
+          element={<FeatureSectionImageHTMLPage side="left" />}
+        />
+        <Route
+          path="feature-section-image-right-react"
+          element={<FeatureSectionImageReactPage side="right" />}
+        />
+        <Route
+          path="feature-section-image-left-react"
+          element={<FeatureSectionImageReactPage side="left" />}
+        />
+        <Route
+          path="feature-section-image-right-tailwind"
+          element={<FeatureSectionImageTailwindPage side="right" />}
+        />
+        <Route
+          path="feature-section-image-left-tailwind"
+          element={<FeatureSectionImageTailwindPage side="left" />}
         />
       </Routes>
     </BrowserRouter>

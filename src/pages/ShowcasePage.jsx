@@ -26,6 +26,13 @@ import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionF
 import HeroSectionFeatureBulletsTailwind from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsTailwind.jsx";
 import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.png";
 
+import FeatureSectionImageHTML from "../components/marketing/FeatureSectionImage/FeatureSectionImageHTML.jsx";
+import FeatureSectionImageReact from "../components/marketing/FeatureSectionImage/FeatureSectionImageReact.jsx";
+import FeatureSectionImageTailwind from "../components/marketing/FeatureSectionImage/FeatureSectionImageTailwind.jsx";
+import { featureSectionImageData } from "../components/marketing/FeatureSectionImage/featureSectionImageData.jsx";
+import unsplashLeft from "../components/marketing/FeatureSectionImage/unsplashLeft.jpg";
+import unsplashRight from "../components/marketing/FeatureSectionImage/unsplashRight.jpg";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -242,9 +249,11 @@ export default function Showcase() {
             />
           </svg>
         </Link>
-        <h2 className="section-title">Hero Section Feature Bullets (React+Tailwind)</h2>
+        <h2 className="section-title">
+          Hero Section Feature Bullets (React+Tailwind)
+        </h2>
         <HeroSectionFeatureBulletsTailwind
-        title="Premium abstract images"
+          title="Premium abstract images"
           bullets={[
             { id: 1, text: "Minimum 5K image resolution" },
             { id: 2, text: "Various format variants available" },
@@ -256,7 +265,137 @@ export default function Showcase() {
           height={526}
           fullpage={false}
         />
-         <Link to="/hero-feature-bullets-tailwind" className="view-full-link">
+        <Link to="/hero-feature-bullets-tailwind" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Feature Section Side Image (HTML+CSS)</h2>
+        <FeatureSectionImageHTML side="right" heading={true} />
+        <Link to="/feature-section-image-right-html" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <FeatureSectionImageHTML side="left" heading={true} />
+        <Link to="/feature-section-image-left-html" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">Feature Section Side Image (React)</h2>
+        <FeatureSectionImageReact
+          side="right"
+          heading={true}
+          {...featureSectionImageData.right}
+        />
+        <Link
+          to="/feature-section-image-right-react"
+          className="view-full-link"
+        >
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <FeatureSectionImageReact
+          side="left"
+          heading={true}
+          {...featureSectionImageData.left}
+        />
+        <Link to="/feature-section-image-left-react" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">
+          Feature Section Side Image (React+Tailwind)
+        </h2>
+        <FeatureSectionImageTailwind
+          side="right"
+          heading={true}
+          fullpage={false}
+          {...featureSectionImageData.right}
+        />
+        <Link
+          to="/feature-section-image-right-tailwind"
+          className="view-full-link"
+        >
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <FeatureSectionImageTailwind
+          side="left"
+          heading={true}
+          fullpage={false}
+          {...featureSectionImageData.left}
+        />
+        <Link
+          to="/feature-section-image-left-tailwind"
+          className="view-full-link"
+        >
           View full page
           <svg
             width="20"

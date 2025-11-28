@@ -1,0 +1,226 @@
+.feature-section-subtitle {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-block: 6px;
+  margin-left: 16px;
+}
+
+.container-section {
+  padding: 16px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  padding: 48px 12px;
+
+  background-color: var(--bg-primary);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.fullpage .container-section {
+  max-width: 100%;
+  padding: 0;
+}
+
+.fullpage .feature-section  {
+  height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.feature-section-header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-section-header-supporting-text {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: var(--color-brand-primary);
+}
+
+.feature-section-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-section-header-title {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.feature-section-header-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.feature-section-content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  grid-row-gap: 48px;
+}
+
+.feature-section-features {
+  grid-column: span 4;
+  width: 100%;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feature-section-image-right .feature-section-features {
+  order: 1;
+}
+
+.feature-section-image-left .feature-section-features {
+  order: 2;
+}
+
+.feature-section-feature {
+  display: flex;
+  gap: 20px;
+}
+
+.feature-section-feature-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--bg-primary);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 9999px;
+  color: var(--color-brand-primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.feature-section-feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 10px 0;
+}
+
+.feature-section-feature-content-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.feature-section-feature-content-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.feature-section-image-wrapper {
+  grid-column: span 4;
+  width: 100%;
+}
+
+.feature-section-image-right .feature-section-image-wrapper {
+  order: 2;
+}
+
+.feature-section-image-left .feature-section-image-wrapper {
+  order: 1;
+}
+
+.feature-section-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .feature-section {
+    gap: 64px;
+    padding: 64px 16px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .feature-section-header-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .feature-section-header-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .feature-section-content {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .feature-section-features,
+  .feature-section-image-wrapper {
+    grid-column: span 6;
+  }
+
+  .feature-section-image-wrapper img {
+    height: 394px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .feature-section-content {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feature-section {
+    padding: 96px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+
+  .feature-section-content {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .feature-section-header-title {
+    padding: 0 250px;
+  }
+
+  .feature-section-header-subtitle {
+    padding: 0 360px;
+  }
+}
