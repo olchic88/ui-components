@@ -67,7 +67,7 @@ export const featureSectionImageData = {
     supportingText: "Best-in-class support",
     title: "Convenience and licensing that empowers",
     subtitle:
-      "In a world where storytelling constantly evolves,don't let licensing and poor support hold you down",
+      "In a world where storytelling constantly evolves, don't let licensing and poor support hold you down",
     image: unsplashLeft,
     features: [
       {

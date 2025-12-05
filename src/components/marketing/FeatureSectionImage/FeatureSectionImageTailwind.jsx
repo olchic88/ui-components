@@ -23,35 +23,44 @@ export default function FeatureSectionImageTailwind({
         ${fullpage ? "max-w-full p-0" : "max-w-[1440px] p-4"}`}
       >
         <div
-          className="
+          className={`
         flex flex-col gap-12
         px-3 py-12
-        rounded-sm
-        bg-[var(--bg-primary)]
-        shadow-[0px_1px_2px_rgba(0,0,0,0.05)]
         
+        bg-[var(--bg-primary)]
+       
         md:gap-16
-        md:py-16 px-4
-        md:shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),_0px_2px_4px_-1px_rgba(0,0,0,0.06)]
+        md:py-16 md:px-4
 
         [@media(min-width:90rem)]:p-[96px]
+        
+        ${
+          fullpage
+            ? "min-h-screen rounded-none shadow-none"
+            : `rounded-sm  shadow-[0px_1px_2px_rgba(0,0,0,0.05)] 
+        md:shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),_0px_2px_4px_-1px_rgba(0,0,0,0.06)]
         [@media(min-width:90rem)]:shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),_0px_4px_6px_-2px_rgba(0,0,0,0.05)]
-        [@media(min-width:90rem)]:rounded-md
-        "
+        [@media(min-width:90rem)]:rounded-md`
+        }
+        `}
         >
           <div className="flex flex-col gap-3 w-full">
             <p className="text-center text-base font-semibold text-[var(--color-brand-primary)]">
               {supportingText}
             </p>
             <div className="flex flex-col gap-5">
-              <h4 className="text-center text-3xl font-semibold text-[var(--color-primary)]
+              <h4
+                className="text-center text-3xl font-semibold text-[var(--color-primary)]
               md:text-4xl
-              [@media(min-width:90rem)]:px-[250px]">
+              [@media(min-width:90rem)]:px-[250px]"
+              >
                 {title}
               </h4>
-              <p className="text-center text-lg font-normal text-[var(--color-secondary)]
+              <p
+                className="text-center text-lg font-normal text-[var(--color-secondary)]
               md:text-xl
-              [@media(min-width:90rem)]:px-[360px]">
+              [@media(min-width:90rem)]:px-[360px]"
+              >
                 {subtitle}
               </p>
             </div>

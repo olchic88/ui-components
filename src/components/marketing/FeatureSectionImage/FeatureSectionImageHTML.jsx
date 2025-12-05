@@ -8,7 +8,11 @@ export default function FeatureSectionImage({ side, heading }) {
     <>
       {side === "right" && (
         <section className="feature-section-image-right">
-          {heading ? <h3 className="feature-section-subtitle">Image Right</h3> : ""}
+          {heading ? (
+            <h3 className="feature-section-subtitle">Image Right</h3>
+          ) : (
+            ""
+          )}
           <div className="container-section">
             <div className="feature-section">
               <div className="feature-section-header">
@@ -111,7 +115,11 @@ export default function FeatureSectionImage({ side, heading }) {
       )}
       {side === "left" && (
         <section className="feature-section-image-left">
-            {heading ? <h3 className="feature-section-subtitle">Image Left</h3> : ""}
+          {heading ? (
+            <h3 className="feature-section-subtitle">Image Left</h3>
+          ) : (
+            ""
+          )}
           <div className="container-section">
             <div className="feature-section">
               <div className="feature-section-header">
@@ -123,7 +131,7 @@ export default function FeatureSectionImage({ side, heading }) {
                     Convenience and licensing that empowers
                   </h4>
                   <p className="feature-section-header-subtitle">
-                    In a world where storytelling constantly evolves,don't let
+                    In a world where storytelling constantly evolves, don't let
                     licensing and poor support hold you down
                   </p>
                 </div>
