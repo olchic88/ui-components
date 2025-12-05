@@ -9,6 +9,9 @@ import HeroSectionFeatureBulletsTailwindPage from "./pages/HeroSectionFeatureBul
 import FeatureSectionImageHTMLPage from "./pages/FeatureSectionImageHTMLPage.jsx";
 import FeatureSectionImageReactPage from "./pages/FeatureSectionImageReactPage.jsx";
 import FeatureSectionImageTailwindPage from "./pages/FeatureSectionImageTailwindPage.jsx";
+import FeatureSectionGridHTMLPage from "./pages/FeatureSectionGridHTMLPage.jsx";
+import FeatureSectionGridReactPage from "./pages/FeatureSectionGridReactPage.jsx";
+import FeatureSectionGridTailwindPage from "./pages/FeatureSectionGridTailwindPage.jsx";
 
 function App() {
   return (
@@ -72,6 +75,18 @@ function App() {
         <Route
           path="feature-section-image-left-tailwind"
           element={<FeatureSectionImageTailwindPage side="left" />}
+        />
+        <Route
+        path="feature-section-grid-html"
+        element={<FeatureSectionGridHTMLPage/>}
+        />
+        <Route
+        path="feature-section-grid-react"
+        element={<FeatureSectionGridReactPage/>}
+        />
+        <Route
+        path="feature-section-grid-tailwind"
+        element={<FeatureSectionGridTailwindPage/>}
         />
       </Routes>
     </BrowserRouter>

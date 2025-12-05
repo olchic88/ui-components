@@ -33,6 +33,11 @@ import { featureSectionImageData } from "../components/marketing/FeatureSectionI
 import unsplashLeft from "../components/marketing/FeatureSectionImage/unsplashLeft.jpg";
 import unsplashRight from "../components/marketing/FeatureSectionImage/unsplashRight.jpg";
 
+import FeatureSectionGridHTML from "../components/marketing/FeatureSectionGrid/FeatureSectionGridHTML.jsx";
+import FeatureSectionGridReact from "../components/marketing/FeatureSectionGrid/FeatureSectionGridReact.jsx";
+import { featureSectionGridData } from "../components/marketing/FeatureSectionGrid/featureSectionGridData.jsx";
+import FeatureSectionGridTailwind from "../components/marketing/FeatureSectionGrid/FeatureSectionGridTailwind.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -396,6 +401,64 @@ export default function Showcase() {
           to="/feature-section-image-left-tailwind"
           className="view-full-link"
         >
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Feature Section Grid (HTML+CSS)</h2>
+        <FeatureSectionGridHTML />
+        <Link to="/feature-section-grid-html" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">Feature Section Grid (React)</h2>
+        <FeatureSectionGridReact
+          {...featureSectionGridData}
+        />
+        <Link to="/feature-section-grid-react" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+         <h2 className="section-title">Feature Section Grid (React+Tailwind)</h2>
+         <FeatureSectionGridTailwind
+         fullpage={false}
+         {...featureSectionGridData}
+         />
+         <Link to="/feature-section-grid-tailwind" className="view-full-link">
           View full page
           <svg
             width="20"
