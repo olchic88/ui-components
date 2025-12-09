@@ -14,7 +14,7 @@ export default function FeatureSectionGridReact({
             {supportingText}
           </p>
           <div className="feature-section-grid-header-content">
-            <h4 className="feature-section-grid-header-title">{title}</h4>
+            <h3 className="feature-section-grid-header-title">{title}</h3>
             <p className="feature-section-grid-header-subtitle">{subtitle}</p>
           </div>
         </div>
@@ -27,9 +27,9 @@ export default function FeatureSectionGridReact({
                   {feature.icon}
                 </div>
                 <div className="feature-section-grid-feature-content">
-                  <h5 className="feature-section-grid-feature-content-title">
+                  <h4 className="feature-section-grid-feature-content-title">
                     {feature.title}
-                  </h5>
+                  </h4>
                   <p className="feature-section-grid-feature-content-text">
                     {feature.text}
                   </p>

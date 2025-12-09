@@ -9,9 +9,9 @@ export default function FeatureSectionGridHTML() {
             Premium abstract images
           </p>
           <div className="feature-section-grid-header-content">
-            <h4 className="feature-section-grid-header-title">
+            <h3 className="feature-section-grid-header-title">
               Easy access to top quality images
-            </h4>
+            </h3>
             <p className="feature-section-grid-header-subtitle">
               In a world where storytelling constantly evolves, we lead with
               groundbreaking images designed for your presentation excellence.
@@ -33,9 +33,9 @@ export default function FeatureSectionGridHTML() {
               </svg>
             </div>
             <div className="feature-section-grid-feature-content">
-              <h5 className="feature-section-grid-feature-content-title">
+              <h4 className="feature-section-grid-feature-content-title">
                 Infinite Download
-              </h5>
+              </h4>
               <p className="feature-section-grid-feature-content-text">
                 Once you subscribe to our plans, they're all yours. Download as
                 many as you want and use them for work presentations,
@@ -56,9 +56,9 @@ export default function FeatureSectionGridHTML() {
               </svg>
             </div>
             <div className="feature-section-grid-feature-content">
-              <h5 className="feature-section-grid-feature-content-title">
+              <h4 className="feature-section-grid-feature-content-title">
                 Purely Handcrafted
-              </h5>
+              </h4>
               <p className="feature-section-grid-feature-content-text">
                 No AI, no generic images. Crafted from various chemicals,
                 fabrics, clouds, or even particles as small as dust.
@@ -78,9 +78,9 @@ export default function FeatureSectionGridHTML() {
               </svg>
             </div>
             <div className="feature-section-grid-feature-content">
-              <h5 className="feature-section-grid-feature-content-title">
+              <h4 className="feature-section-grid-feature-content-title">
                 All Are Under licensed
-              </h5>
+              </h4>
               <p className="feature-section-grid-feature-content-text">
                 The only limitation with these abstract images is that you are
                 not able to sell them in any form, whether digital or hard copy
@@ -104,9 +104,9 @@ export default function FeatureSectionGridHTML() {
               </svg>
             </div>
             <div className="feature-section-grid-feature-content">
-              <h5 className="feature-section-grid-feature-content-title">
+              <h4 className="feature-section-grid-feature-content-title">
                 Cancel Anytime
-              </h5>
+              </h4>
               <p className="feature-section-grid-feature-content-text">
                 Subscribe at your own pace, and cancel when you feel it's
                 enough.
@@ -126,9 +126,9 @@ export default function FeatureSectionGridHTML() {
               </svg>
             </div>
             <div className="feature-section-grid-feature-content">
-              <h5 className="feature-section-grid-feature-content-title">
+              <h4 className="feature-section-grid-feature-content-title">
                 Empowering For Team
-              </h5>
+              </h4>
               <p className="feature-section-grid-feature-content-text">
                 We support multiple seats at once, requiring only a single
                 payment.
@@ -151,9 +151,9 @@ export default function FeatureSectionGridHTML() {
               </svg>
             </div>
             <div className="feature-section-grid-feature-content">
-              <h5 className="feature-section-grid-feature-content-title">
+              <h4 className="feature-section-grid-feature-content-title">
                 No Limitations
-              </h5>
+              </h4>
               <p className="feature-section-grid-feature-content-text">
                 Use as many as you want, from Dribbble presentations to
                 PowerPoint presentations.

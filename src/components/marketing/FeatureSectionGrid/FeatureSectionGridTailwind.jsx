@@ -22,7 +22,8 @@ export default function FeatureSectionGridTailwind({
 
         [@media(min-width:90rem)]:p-[96px]
         
-        ${fullpage
+        ${
+          fullpage
             ? "min-h-screen rounded-none shadow-none"
             : `rounded-sm  shadow-[0px_1px_2px_rgba(0,0,0,0.05)] 
         md:shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),_0px_2px_4px_-1px_rgba(0,0,0,0.06)]
@@ -36,13 +37,13 @@ export default function FeatureSectionGridTailwind({
             {supportingText}
           </p>
           <div className="flex flex-col gap-5">
-            <h4
+            <h3
               className="text-center text-3xl font-semibold text-[var(--color-primary)]
               md:text-4xl
               [@media(min-width:90rem)]:px-[250px]"
             >
               {title}
-            </h4>
+            </h3>
             <p
               className="text-center text-lg font-normal text-[var(--color-secondary)]
               md:text-xl
@@ -84,9 +85,9 @@ export default function FeatureSectionGridTailwind({
                   {feature.icon}
                 </div>
                 <div className="flex flex-col gap-2 text-center">
-                  <h5 className="text-lg font-semibold text-[var(--color-primary)]">
+                  <h4 className="text-lg font-semibold text-[var(--color-primary)]">
                     {feature.title}
-                  </h5>
+                  </h4>
                   <p className="text-base font-normal text-[var(--color-secondary)]">
                     {feature.text}
                   </p>
