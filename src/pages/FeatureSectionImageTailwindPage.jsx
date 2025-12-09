@@ -3,11 +3,14 @@ import { featureSectionImageData } from "../components/marketing/FeatureSectionI
 
 export default function FeatureSectionImageTailwindPage({ side }) {
   return (
-    <FeatureSectionImageTailwind
-      side={side}
-      heading={false}
-      fullpage={true}
-      {...featureSectionImageData[side]}
-    />
+    <>
+      <title>Feature Section Side Image</title>
+      <FeatureSectionImageTailwind
+        side={side}
+        heading={false}
+        fullpage={true}
+        {...featureSectionImageData[side]}
+      />
+    </>
   );
 }

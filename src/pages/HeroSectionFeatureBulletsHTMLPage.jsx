@@ -3,6 +3,7 @@ import HeroSectionFeatureBulletsHTML from "../components/marketing/HeroSectionFe
 export default function HeroSectionFeatureBulletsHTMLPage() {
   return (
     <div className="fullpage">
+      <title>Hero Section Feature Bullets</title>
       <HeroSectionFeatureBulletsHTML />
     </div>
   );

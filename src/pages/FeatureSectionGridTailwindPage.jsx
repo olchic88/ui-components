@@ -3,9 +3,12 @@ import { featureSectionGridData } from "../components/marketing/FeatureSectionGr
 
 export default function FeatureSectionGridTailwindPage() {
     return (
+        <>
+        <title>Feature Section Grid</title>
         <FeatureSectionGridTailwind
         {...featureSectionGridData}
         fullpage={true}
         />
+        </>
     )
 }

@@ -4,6 +4,7 @@ import { featureSectionGridData } from "../components/marketing/FeatureSectionGr
 export default function FeatureSectionGridReactPage() {
     return (
             <div className="fullpage">
+                <title>Feature Section Grid</title>
                 <FeatureSectionGridReact {...featureSectionGridData}/>
             </div>
         )

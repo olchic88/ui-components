@@ -4,6 +4,7 @@ import { featureSectionImageData } from "../components/marketing/FeatureSectionI
 export default function FeatureSectionImageReactPage({ side }) {
   return (
     <div className="fullpage">
+      <title>Feature Section Side Image</title>
       <FeatureSectionImageReact side={side} heading={false} {...featureSectionImageData[side]} />
     </div>
   );

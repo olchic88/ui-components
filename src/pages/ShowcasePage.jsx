@@ -38,6 +38,8 @@ import FeatureSectionGridReact from "../components/marketing/FeatureSectionGrid/
 import { featureSectionGridData } from "../components/marketing/FeatureSectionGrid/featureSectionGridData.jsx";
 import FeatureSectionGridTailwind from "../components/marketing/FeatureSectionGrid/FeatureSectionGridTailwind.jsx";
 
+import PricingSectionSimpleHTML from "../components/marketing/PricingSectionSingle/PricingSectionSingleHTML.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -435,9 +437,7 @@ export default function Showcase() {
           </svg>
         </Link>
         <h2 className="section-title">Feature Section Grid (React)</h2>
-        <FeatureSectionGridReact
-          {...featureSectionGridData}
-        />
+        <FeatureSectionGridReact {...featureSectionGridData} />
         <Link to="/feature-section-grid-react" className="view-full-link">
           View full page
           <svg
@@ -453,12 +453,12 @@ export default function Showcase() {
             />
           </svg>
         </Link>
-         <h2 className="section-title">Feature Section Grid (React+Tailwind)</h2>
-         <FeatureSectionGridTailwind
-         fullpage={false}
-         {...featureSectionGridData}
-         />
-         <Link to="/feature-section-grid-tailwind" className="view-full-link">
+        <h2 className="section-title">Feature Section Grid (React+Tailwind)</h2>
+        <FeatureSectionGridTailwind
+          fullpage={false}
+          {...featureSectionGridData}
+        />
+        <Link to="/feature-section-grid-tailwind" className="view-full-link">
           View full page
           <svg
             width="20"
@@ -473,6 +473,10 @@ export default function Showcase() {
             />
           </svg>
         </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Pricing Section Single (HTML+CSS)</h2>
+        <PricingSectionSimpleHTML/>
       </section>
     </main>
   );

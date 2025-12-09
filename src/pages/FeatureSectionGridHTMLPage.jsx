@@ -3,6 +3,7 @@ import FeatureSectionGridHTML from "..//components/marketing/FeatureSectionGrid/
 export default function FeatureSectionGridHTMLPage() {
     return (
         <div className="fullpage">
+            <title>Feature Section Grid</title>
             <FeatureSectionGridHTML/>
         </div>
     )

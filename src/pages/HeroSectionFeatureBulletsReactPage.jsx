@@ -4,6 +4,7 @@ import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBulle
 export default function HeroSectionFeatureBulletsReactPage() {
   return (
     <div className="fullpage">
+      <title>Hero Section Feature Bullets</title>
       <HeroSectionFeatureBulletsReact
         title="Premium abstract images"
         bullets={[
