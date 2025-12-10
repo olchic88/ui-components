@@ -23,21 +23,6 @@
   padding: 24px 16px;
 }
 
-.badge {
-  padding: 3px 10px;
-  border-radius: 9999px;
-
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: center;
-}
-
-.badge-success {
-  color: var(--color-success);
-  background-color: var(--bg-success);
-  border: 1px solid var(--border-success);
-}
-
 .blog-card-badge {
   padding: 1px 7.5px;
 }
