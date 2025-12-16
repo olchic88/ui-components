@@ -38,7 +38,9 @@ import FeatureSectionGridReact from "../components/marketing/FeatureSectionGrid/
 import { featureSectionGridData } from "../components/marketing/FeatureSectionGrid/featureSectionGridData.jsx";
 import FeatureSectionGridTailwind from "../components/marketing/FeatureSectionGrid/FeatureSectionGridTailwind.jsx";
 
-import PricingSectionSimpleHTML from "../components/marketing/PricingSectionSingle/PricingSectionSingleHTML.jsx";
+import PricingSectionSingleHTML from "../components/marketing/PricingSectionSingle/PricingSectionSingleHTML.jsx";
+import PricingSectionSingleReact from "../components/marketing/PricingSectionSingle/PricingSectionSingleReact.jsx";
+import PricingSectionSingleTailwind from "../components/marketing/PricingSectionSingle/PricingSectionSingleTailwind.jsx";
 
 export default function Showcase() {
   return (
@@ -476,7 +478,91 @@ export default function Showcase() {
       </section>
       <section className="showcase">
         <h2 className="section-title">Pricing Section Single (HTML+CSS)</h2>
-        <PricingSectionSimpleHTML/>
+        <PricingSectionSingleHTML />
+        <Link to="/pricing-section-single-html" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">Pricing Section Single (React)</h2>
+        <PricingSectionSingleReact
+          supportingText="One time purchase"
+          title="Pay as you need"
+          subtitle="We offer one-time purchases with credits, for you to use as needed. Always active."
+          featuresTitle="Unlock creativity once, enjoy forever"
+          features={[
+            { id: 1, text: "128 available credits for all images" },
+            { id: 2, text: "Up to 3 users" },
+            { id: 3, text: "24 hour response time" },
+            { id: 4, text: "Advanced analytics" },
+          ]}
+          price={699}
+          badge="Popular"
+          currency="USD"
+          buttonText="Buy now"
+          desc="Pay once, use it forever. No strings attached."
+        />
+        <Link to="/pricing-section-single-react" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">
+          Pricing Section Single (React+Tailwind)
+        </h2>
+        <PricingSectionSingleTailwind
+          supportingText="One time purchase"
+          title="Pay as you need"
+          subtitle="We offer one-time purchases with credits, for you to use as needed. Always active."
+          featuresTitle="Unlock creativity once, enjoy forever"
+          features={[
+            { id: 1, text: "128 available credits for all images" },
+            { id: 2, text: "Up to 3 users" },
+            { id: 3, text: "24 hour response time" },
+            { id: 4, text: "Advanced analytics" },
+          ]}
+          price={699}
+          badge="Popular"
+          currency="USD"
+          buttonText="Buy now"
+          desc="Pay once, use it forever. No strings attached."
+          fullpage={false}
+        />
+        <Link to="/pricing-section-single-tailwind" className="view-full-link">
+          View full page
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
       </section>
     </main>
   );

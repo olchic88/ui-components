@@ -1,0 +1,238 @@
+.container-section {
+  padding: 16px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.pricing-section-single {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  padding: 48px 12px;
+
+  background-color: var(--bg-primary);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.fullpage .container-section {
+  max-width: 100%;
+  padding: 0;
+}
+
+.fullpage .pricing-section-single {
+  min-height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.pricing-section-single-header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pricing-section-single-header-supporting-text {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: var(--color-brand-primary);
+}
+
+.pricing-section-single-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pricing-section-single-header-title {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.pricing-section-single-header-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.pricing-section-single-content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.pricing-section-single-features {
+  grid-column: span 4;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pricing-section-single-features-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.pricing-section-single-features-list {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.pricing-section-single-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pricing-section-single-pricing-card {
+  grid-column: span 4;
+
+  padding: 32px;
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.pricing-section-single-pricing-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+/* badge in index.css */
+
+.pricing-section-single-pricing-card-price {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.pricing-section-single-pricing-card-desc {
+  padding-inline: 32px;
+  text-align: center;
+
+  width: 80%;
+
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+/* button in index.css */
+
+@media (min-width: 768px) {
+  .pricing-section-single {
+    padding: 64px 16px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .pricing-section-single-header {
+    padding: 0 32px;
+  }
+
+  .pricing-section-single-header-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .pricing-section-single-header-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .pricing-section-single-content {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 48px;
+  }
+
+  .pricing-section-single-features,
+  .pricing-section-single-pricing-card {
+    grid-column: span 6;
+  }
+
+  .pricing-section-single-features {
+    gap: 64px;
+  }
+
+  .pricing-section-single-features-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .pricing-section-single-pricing-card-price {
+    font-size: 3.75rem;
+  }
+
+  .pricing-section-single-pricing-card-desc {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .pricing-section-single-content {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .pricing-section-single-pricing-card-desc {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pricing-section-single {
+    padding: 96px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+
+  .pricing-section-single-features {
+    grid-column: span 7;
+  }
+
+  .pricing-section-single-pricing-card {
+    grid-column: span 5;
+  }
+
+  .pricing-section-single-features-list {
+    padding: 0 16px;
+  }
+}

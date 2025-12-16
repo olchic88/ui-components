@@ -12,6 +12,9 @@ import FeatureSectionImageTailwindPage from "./pages/FeatureSectionImageTailwind
 import FeatureSectionGridHTMLPage from "./pages/FeatureSectionGridHTMLPage.jsx";
 import FeatureSectionGridReactPage from "./pages/FeatureSectionGridReactPage.jsx";
 import FeatureSectionGridTailwindPage from "./pages/FeatureSectionGridTailwindPage.jsx";
+import PricingSectionSingleHTMLPage from "./pages/PricingSectionSingleHTMLPage.jsx";
+import PricingSectionSingleReactPage from "./pages/PricingSectionSingleReactPage.jsx";
+import PricingSectionSingleTailwindPage from "./pages/PricingSectionSingleTailwindPage.jsx";
 
 function App() {
   return (
@@ -87,6 +90,18 @@ function App() {
         <Route
         path="feature-section-grid-tailwind"
         element={<FeatureSectionGridTailwindPage/>}
+        />
+        <Route
+        path="pricing-section-single-html"
+        element={<PricingSectionSingleHTMLPage/>}
+        />
+        <Route
+        path="pricing-section-single-react"
+        element={<PricingSectionSingleReactPage/>}
+        />
+        <Route
+        path="pricing-section-single-tailwind"
+        element={<PricingSectionSingleTailwindPage/>}
         />
       </Routes>
     </BrowserRouter>
