@@ -1,0 +1,265 @@
+.container-section {
+  padding: 16px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.pricing-section-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  padding: 48px 12px;
+
+  background-color: var(--bg-primary);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.fullpage .container-section {
+  max-width: 100%;
+  padding: 0;
+}
+
+.fullpage .pricing-section-tiers {
+  min-height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.pricing-section-tiers-header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pricing-section-tiers-header-supporting-text {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: var(--color-brand-primary);
+}
+
+.pricing-section-tiers-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pricing-section-tiers-header-title {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.pricing-section-tiers-header-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.pricing-section-tiers-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.pricing-section-tiers-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+/* button styles in index.css */
+
+.pricing-section-tiers-plans {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.pricing-section-tiers-plan {
+  grid-column: span 4;
+  padding: 15px; /* 15px padding + 1px border = 16px in Figma */
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: var(--bg-primary);
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pricing-section-tiers-plan.active {
+  border: 1px solid var(--border-brand-solid);
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.pricing-section-tiers-badge {
+  height: 60px;
+  padding-block: 16px;
+  /* -15px to match plan padding */
+  margin: -15px -15px 0 -15px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: var(--color-brand-primary);
+  background-color: var(--bg-brand-subtle);
+}
+
+.pricing-section-tiers-plan-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  color: var(--color-primary);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.pricing-section-tiers-plan-header h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.pricing-section-tiers-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.pricing-section-tiers-price-amount span {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.pricing-section-tiers-plan.active .pricing-section-tiers-price-amount {
+  color: var(--color-brand-primary);
+}
+
+.pricing-section-tiers-price-label {
+  color: var(--color-secondary);
+}
+
+.pricing-section-tiers-features {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* fills remaining vertical space to push the CTA button to the bottom */
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.pricing-section-tiers-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pricing-section-tiers-features svg {
+  flex-shrink: 0;
+}
+
+/* button styles in index.css */
+
+@media (min-width: 768px) {
+  .pricing-section-tiers {
+    padding: 64px 16px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .pricing-section-tiers-header {
+    padding: 0 32px;
+  }
+
+  .pricing-section-tiers-header-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .pricing-section-tiers-header-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .pricing-section-tiers-content {
+    gap: 64px;
+  }
+
+  .pricing-section-tiers-toggle {
+    gap: 32px;
+  }
+
+  /* button style in index.css */
+
+  .pricing-section-tiers-plans {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .pricing-section-tiers-plan {
+    grid-column: span 6;
+    min-height: 532px;
+    padding: 31px; /* 31px padding + 1px border = 32px in Figma */
+  }
+
+  .pricing-section-tiers-badge {
+    height: 60px;
+    /* -32px to match plan padding */
+    margin: -31px -31px 0 -31px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+   .pricing-section-tiers-plans {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+   .pricing-section-tiers-plan {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pricing-section-tiers {
+    padding: 96px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+
+
+  .pricing-section-tiers-header {
+    padding: 0 150px;
+  }
+
+  .pricing-section-tiers-plan {
+    min-height: 676px;
+  }
+}

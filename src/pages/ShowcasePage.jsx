@@ -42,6 +42,14 @@ import PricingSectionSingleHTML from "../components/marketing/PricingSectionSing
 import PricingSectionSingleReact from "../components/marketing/PricingSectionSingle/PricingSectionSingleReact.jsx";
 import PricingSectionSingleTailwind from "../components/marketing/PricingSectionSingle/PricingSectionSingleTailwind.jsx";
 
+import PricingSectionTiersHTML from "../components/marketing/PricingSectionTiers/PricingSectionTiersHTML.jsx";
+import PricingSectionTiersReact from "../components/marketing/PricingSectionTiers/PricingSectionTiersReact.jsx";
+import {
+  pricingSectionTiersData,
+  plan,
+} from "../components/marketing/PricingSectionTiers/pricingSectionTiersData.jsx";
+import PricingSectionTiersTailwind from "../components/marketing/PricingSectionTiers/PricingSectionTiersTailwind.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -563,6 +571,32 @@ export default function Showcase() {
             />
           </svg>
         </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">
+          Pricing Section Tiers - Static (HTML+CSS)
+        </h2>
+        <PricingSectionTiersHTML />
+        <h2 className="section-title">
+          Pricing Section Tiers - Interactive (React)
+        </h2>
+        <PricingSectionTiersReact
+          pricingSectionTiersData={pricingSectionTiersData}
+          plan={plan}
+          supportingText="Pricing Tiers"
+          title="Fit for all your needs"
+          subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
+        />
+        <h2 className="section-title">
+          Pricing Section Tiers - Interactive (React+Tailwind)
+        </h2>
+        <PricingSectionTiersTailwind
+          pricingSectionTiersData={pricingSectionTiersData}
+          plan={plan}
+          supportingText="Pricing Tiers"
+          title="Fit for all your needs"
+          subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
+        />
       </section>
     </main>
   );
