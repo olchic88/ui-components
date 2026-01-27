@@ -50,6 +50,11 @@ import {
 } from "../components/marketing/PricingSectionTiers/pricingSectionTiersData.jsx";
 import PricingSectionTiersTailwind from "../components/marketing/PricingSectionTiers/PricingSectionTiersTailwind.jsx";
 
+import StatisticsSectionHTML from "../components/marketing/StatisticsSection/StatisticsSectionHTML.jsx";
+import StatisticsSectionReact from "../components/marketing/StatisticsSection/StatisticsSectionReact.jsx";
+import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.png";
+import StatisticsSectionTailwind from "../components/marketing/StatisticsSection/StatisticsSectionTailwind.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -597,6 +602,99 @@ export default function Showcase() {
           title="Fit for all your needs"
           subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
         />
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">
+        Statistics Section (HTML+CSS)
+        </h2>
+        <StatisticsSectionHTML/>
+         <h2 className="section-title">
+        Statistics Section (React)
+        </h2>
+        <StatisticsSectionReact
+         supportingText="Statistics"
+         title="More than premium abstract imagery"
+         subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
+         src={whiteBlocks}
+         alt="White blocks"
+         width={592}
+         height={544}
+         statsTitle="Our mission, in numbers"
+         statistics={[
+          {id: 1,
+            value: "25,664,890",
+            metric: "Downloads"
+          },
+          {id: 2,
+            value: "17,219",
+            metric: "Paid users"
+          },
+          {
+            id: 3,
+            value: "190,654,321",
+            metric: "Images in library"
+          }
+         ]}
+        />
+        <Link to="/statistics-section-api" className="view-full-link">
+          View live data version (API)
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">
+        Statistics Section (React+Tailwind)
+        </h2>
+        <StatisticsSectionTailwind
+        supportingText="Statistics"
+         title="More than premium abstract imagery"
+         subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
+         src={whiteBlocks}
+         alt="White blocks"
+         width={592}
+         height={544}
+         statsTitle="Our mission, in numbers"
+         statistics={[
+          {id: 1,
+            value: "25,664,890",
+            metric: "Downloads"
+          },
+          {id: 2,
+            value: "17,219",
+            metric: "Paid users"
+          },
+          {
+            id: 3,
+            value: "190,654,321",
+            metric: "Images in library"
+          }
+         ]}
+         fullpage={false}
+         />
+         <Link to="/statistics-section-api-tailwind" className="view-full-link">
+          View live data version (API)
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
       </section>
     </main>
   );
