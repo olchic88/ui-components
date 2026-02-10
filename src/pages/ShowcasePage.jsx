@@ -55,6 +55,11 @@ import StatisticsSectionReact from "../components/marketing/StatisticsSection/St
 import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.png";
 import StatisticsSectionTailwind from "../components/marketing/StatisticsSection/StatisticsSectionTailwind.jsx";
 
+import NewsletterSectionHTML from "../components/marketing/NewsletterSection/NewsletterSectionHTML.jsx";
+import NewsletterSectionReact from "../components/marketing/NewsletterSection/NewsletterSectionReact.jsx";
+import abstract from "../components/marketing/NewsletterSection/abstract.jpg";
+import NewsletterSectionTailwind from "../components/marketing/NewsletterSection/NewsletterSectionTailwind.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -604,37 +609,27 @@ export default function Showcase() {
         />
       </section>
       <section className="showcase">
-        <h2 className="section-title">
-        Statistics Section (HTML+CSS)
-        </h2>
-        <StatisticsSectionHTML/>
-         <h2 className="section-title">
-        Statistics Section (React)
-        </h2>
+        <h2 className="section-title">Statistics Section (HTML+CSS)</h2>
+        <StatisticsSectionHTML />
+        <h2 className="section-title">Statistics Section (React)</h2>
         <StatisticsSectionReact
-         supportingText="Statistics"
-         title="More than premium abstract imagery"
-         subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
-         src={whiteBlocks}
-         alt="White blocks"
-         width={592}
-         height={544}
-         statsTitle="Our mission, in numbers"
-         statistics={[
-          {id: 1,
-            value: "25,664,890",
-            metric: "Downloads"
-          },
-          {id: 2,
-            value: "17,219",
-            metric: "Paid users"
-          },
-          {
-            id: 3,
-            value: "190,654,321",
-            metric: "Images in library"
-          }
-         ]}
+          supportingText="Statistics"
+          title="More than premium abstract imagery"
+          subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
+          src={whiteBlocks}
+          alt="White blocks"
+          width={592}
+          height={544}
+          statsTitle="Our mission, in numbers"
+          statistics={[
+            { id: 1, value: "25,664,890", metric: "Downloads" },
+            { id: 2, value: "17,219", metric: "Paid users" },
+            {
+              id: 3,
+              value: "190,654,321",
+              metric: "Images in library",
+            },
+          ]}
         />
         <Link to="/statistics-section-api" className="view-full-link">
           View live data version (API)
@@ -651,36 +646,99 @@ export default function Showcase() {
             />
           </svg>
         </Link>
-        <h2 className="section-title">
-        Statistics Section (React+Tailwind)
-        </h2>
+        <h2 className="section-title">Statistics Section (React+Tailwind)</h2>
         <StatisticsSectionTailwind
-        supportingText="Statistics"
-         title="More than premium abstract imagery"
-         subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
-         src={whiteBlocks}
-         alt="White blocks"
-         width={592}
-         height={544}
-         statsTitle="Our mission, in numbers"
-         statistics={[
-          {id: 1,
-            value: "25,664,890",
-            metric: "Downloads"
-          },
-          {id: 2,
-            value: "17,219",
-            metric: "Paid users"
-          },
-          {
-            id: 3,
-            value: "190,654,321",
-            metric: "Images in library"
-          }
-         ]}
-         fullpage={false}
-         />
-         <Link to="/statistics-section-api-tailwind" className="view-full-link">
+          supportingText="Statistics"
+          title="More than premium abstract imagery"
+          subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
+          src={whiteBlocks}
+          alt="White blocks"
+          width={592}
+          height={544}
+          statsTitle="Our mission, in numbers"
+          statistics={[
+            { id: 1, value: "25,664,890", metric: "Downloads" },
+            { id: 2, value: "17,219", metric: "Paid users" },
+            {
+              id: 3,
+              value: "190,654,321",
+              metric: "Images in library",
+            },
+          ]}
+          fullpage={false}
+        />
+        <Link to="/statistics-section-api-tailwind" className="view-full-link">
+          View live data version (API)
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">
+          Newsletter Section - Static (HTML+CSS)
+        </h2>
+        <NewsletterSectionHTML />
+        <h2 className="section-title">
+          Newsletter Section - Interactive (React)
+        </h2>
+        <NewsletterSectionReact
+          title="Get the finest curated abstracts delivered weekly to your inbox"
+          banner={abstract}
+          width={1176}
+          height={1216}
+          features={[
+            {
+              id: 1,
+              text: " Exclusive access to new abstract images and collections",
+            },
+            { id: 2, text: "Unlock special promotions only for subscribers" },
+            { id: 3, text: "Regular doses of artistic inspiration" },
+          ]}
+        />
+        <Link to="/newsletter-section-api" className="view-full-link">
+          View live data version (API)
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+              fill="currentColor"
+            />
+          </svg>
+        </Link>
+        <h2 className="section-title">
+          Newsletter Section - Interactive (React+Tailwind)
+        </h2>
+        <NewsletterSectionTailwind
+          title="Get the finest curated abstracts delivered weekly to your inbox"
+          banner={abstract}
+          width={1176}
+          height={1216}
+          features={[
+            {
+              id: 1,
+              text: " Exclusive access to new abstract images and collections",
+            },
+            { id: 2, text: "Unlock special promotions only for subscribers" },
+            { id: 3, text: "Regular doses of artistic inspiration" },
+          ]}
+          fullpage={false}
+        />
+        <Link to="/newsletter-section-api-tailwind" className="view-full-link">
           View live data version (API)
           <svg
             width="20"

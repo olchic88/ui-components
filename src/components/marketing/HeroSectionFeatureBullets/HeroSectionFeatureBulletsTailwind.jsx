@@ -35,7 +35,8 @@ export default function HeroSectionFeatureBulletsTailwind({
             bg-[linear-gradient(176.17deg,_#f9fafb_0.94%,_#edf0f3_316.54%)]
             shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),_0_4px_6px_-2px_rgba(0,0,0,0.05)]
             
-            md:grid-cols-6 md:landscape:grid-cols-12
+            md:grid-cols-6
+            md:landscape:grid-cols-12
             md:gap-y-8 md:py-[72px] md:p-4
 
             [@media(min-width:90rem)]:grid-cols-12
