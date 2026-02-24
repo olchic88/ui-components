@@ -117,20 +117,27 @@ export default function NewsletterSectionTailwind({
                   <label>
                     <span className="sr-only">Email</span>
                     <input
-                      className="w-full rounded
+                      className={`w-full rounded
                       px-[14px] py-[10px]
-                      border border-[var(--border-primary)]
                       bg-[var(--bg-primary-hover)]
+
+                      border
                       
-                      text-sm
-                      font-normal
+                      !text-sm leading-5 font-normal
                       text-[var(--color-primary)]
+                      [font-family:inherit]
 
                       outline-none
 
+                      placeholder:text-sm
                       placeholder:text-[var(--color-tertiary)]
 
-                      focus:shadow-[0_0_0_1px_#444ce7,0_1px_2px_rgba(16,24,40,0.05),0_0_0_4px_rgba(68,76,231,0.12)]"
+                    ${
+                      errorMessage
+                        ? "border-[#fca5a5] focus:shadow-[0px_0px_0px_1px_#d92d20,0px_0px_0px_4px_rgba(217,45,32,0.12)]"
+                        : "border-[var(--border-primary)] focus:shadow-[0_0_0_1px_#444ce7,0_1px_2px_rgba(16,24,40,0.05),0_0_0_4px_rgba(68,76,231,0.12)]"
+                    }
+                      `}
                       type="email"
                       name="email"
                       placeholder="Enter your email"
@@ -152,14 +159,14 @@ export default function NewsletterSectionTailwind({
                 /* ax-button button button-size-md button-primary button-newsletter */
                 className="inline-flex items-center justify-center
                 w-full rounded-sm
-                font-medium
                 outline-none transition-[background-color,box-shadow,color,transform] duration-300
       
                 focus:shadow-[0px_0px_0px_4px_rgba(68,76,231,0.12)]
                 
 
                 h-10 py-[10px] px-[14px] 
-                text-sm font-medium
+                !text-sm font-medium
+                [font-family:inherit]
 
                 text-[var(--color-primary-invert)]
                 bg-[var(--bg-brand-primary)]

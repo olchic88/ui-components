@@ -80,7 +80,7 @@ export default function NewsletterSectionReact({
                   <label>
                     <span className="sr-only">Email</span>
                     <input
-                      className="input-field"
+                      className={`input-field ${errorMessage ? "input-field-error" : ""}`}
                       type="email"
                       name="email"
                       placeholder="Enter your email"
