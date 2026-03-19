@@ -20,6 +20,8 @@ import StatisticsSectionAPIPage from "./pages/StatisticsSectionAPIPage.jsx";
 import StatisticsSectionAPITailwindPage from "./pages/StatisticsSectionAPITailwindPage.jsx";
 import NewsletterSectionAPIPage from "./pages/NewsletterSectionAPIPage.jsx";
 import NewsletterSectionAPITailwindPage from "./pages/NewsletterSectionAPITailwindPage.jsx";
+import ContactSectionAPIPage from "./pages/ContactSectionAPIPage.jsx";
+import ContactSectionAPITailwindPage from "./pages/ContactSectionAPITailwindPage.jsx";
 
 function App() {
   // throw new Error("Boom"); //
@@ -115,17 +117,25 @@ function App() {
             element={<StatisticsSectionAPIPage />}
           />
           <Route
-          path="statistics-section-api-tailwind"
-          element={<StatisticsSectionAPITailwindPage/>}
-        />
-        <Route
-        path="newsletter-section-api"
-        element={<NewsletterSectionAPIPage/>}
-        />
-        <Route
-        path="newsletter-section-api-tailwind"
-        element={<NewsletterSectionAPITailwindPage/>}
-        />
+            path="statistics-section-api-tailwind"
+            element={<StatisticsSectionAPITailwindPage />}
+          />
+          <Route
+            path="newsletter-section-api"
+            element={<NewsletterSectionAPIPage />}
+          />
+          <Route
+            path="newsletter-section-api-tailwind"
+            element={<NewsletterSectionAPITailwindPage />}
+          />
+          <Route
+            path="contact-section-api"
+            element={<ContactSectionAPIPage />}
+          />
+          <Route
+          path="contact-section-api-tailwind"
+          element={<ContactSectionAPITailwindPage/>}
+          />
         </Routes>
       </Suspense>
     </BrowserRouter>

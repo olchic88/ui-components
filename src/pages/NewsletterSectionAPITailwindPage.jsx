@@ -53,6 +53,7 @@ export default function NewsletterSectionAPITailwindPage() {
   return (
     <>
       <div className="fullpage">
+        <title>Newsletter Section</title>
         <NewsletterSectionTailwind
           title="Get the finest curated abstracts delivered weekly to your inbox"
           banner={abstract}

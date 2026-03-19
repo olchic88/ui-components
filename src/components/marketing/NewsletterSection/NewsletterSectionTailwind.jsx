@@ -44,7 +44,7 @@ export default function NewsletterSectionTailwind({
         bg-[var(--bg-primary)]
         shadow-[0px_1px_2px_rgba(0,0,0,0.05)]
         
-        md:grid-cols-6 gap-[64px]
+        md:grid-cols-6 md:gap-[64px]
         md:py-16 md:px-4
         md:shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),_0px_2px_4px_-1px_rgba(0,0,0,0.06)]
 
@@ -146,8 +146,8 @@ export default function NewsletterSectionTailwind({
                 focus:shadow-[0px_0px_0px_4px_rgba(68,76,231,0.12)]
                 
 
-                h-10 py-[10px] px-[14px] 
-                !text-sm font-medium
+                h-10 py-[10px] px-[16px] 
+                !text-sm !font-medium
                 [font-family:inherit]
 
                 text-[var(--color-primary-invert)]

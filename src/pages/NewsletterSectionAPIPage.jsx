@@ -53,6 +53,7 @@ export default function NewsletterSectionAPIPage() {
   return (
     <>
       <div className="fullpage">
+        <title>Newsletter Section</title>
         <NewsletterSectionReact
           title="Get the finest curated abstracts delivered weekly to your inbox"
           banner={abstract}

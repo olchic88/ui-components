@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 
+import { AddressIcon, PhoneIcon, EmailIcon, LinkIcon } from "../icons";
+
 import TestimonialCardHTML from "../components/marketing/TestimonialCard/TestimonialCardHTML.jsx";
 import TestimonialCardReact from "../components/marketing/TestimonialCard/TestimonialCardReact.jsx";
 import TestimonialCardTailwind from "../components/marketing/TestimonialCard/TestimonialCardTailwind.jsx";
@@ -59,6 +61,10 @@ import NewsletterSectionHTML from "../components/marketing/NewsletterSection/New
 import NewsletterSectionReact from "../components/marketing/NewsletterSection/NewsletterSectionReact.jsx";
 import abstract from "../components/marketing/NewsletterSection/abstract.jpg";
 import NewsletterSectionTailwind from "../components/marketing/NewsletterSection/NewsletterSectionTailwind.jsx";
+
+import ContactSectionHTML from "../components/marketing/ContactSection/ContactSectionHTML.jsx";
+import ContactSectionReact from "../components/marketing/ContactSection/ContactSectionReact.jsx";
+import ContactSectionTailwind from "../components/marketing/ContactSection/ContactSectionTailwind.jsx";
 
 export default function Showcase() {
   return (
@@ -163,18 +169,7 @@ export default function Showcase() {
         <HeroSectionSimpleHTML />
         <Link to="/hero-simple-html" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Hero Section Simple (React)</h2>
         <HeroSectionSimpleReact
@@ -188,18 +183,7 @@ export default function Showcase() {
         />
         <Link to="/hero-simple-react" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Hero Section Simple (React+Tailwind)</h2>
         <HeroSectionSimpleTailwind
@@ -214,18 +198,7 @@ export default function Showcase() {
         />
         <Link to="/hero-simple-tailwind" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
       </section>
       <section className="showcase">
@@ -235,18 +208,7 @@ export default function Showcase() {
         <HeroSectionFeatureBulletsHTML />
         <Link to="/hero-feature-bullets-html" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Hero Section Feature Bullets (React)</h2>
         <HeroSectionFeatureBulletsReact
@@ -263,18 +225,7 @@ export default function Showcase() {
         />
         <Link to="/hero-feature-bullets-react" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">
           Hero Section Feature Bullets (React+Tailwind)
@@ -294,18 +245,7 @@ export default function Showcase() {
         />
         <Link to="/hero-feature-bullets-tailwind" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
       </section>
       <section className="showcase">
@@ -313,34 +253,12 @@ export default function Showcase() {
         <FeatureSectionImageHTML side="right" heading={true} />
         <Link to="/feature-section-image-right-html" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <FeatureSectionImageHTML side="left" heading={true} />
         <Link to="/feature-section-image-left-html" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Feature Section Side Image (React)</h2>
         <FeatureSectionImageReact
@@ -353,18 +271,7 @@ export default function Showcase() {
           className="view-full-link"
         >
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <FeatureSectionImageReact
           side="left"
@@ -373,18 +280,7 @@ export default function Showcase() {
         />
         <Link to="/feature-section-image-left-react" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">
           Feature Section Side Image (React+Tailwind)
@@ -400,18 +296,7 @@ export default function Showcase() {
           className="view-full-link"
         >
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <FeatureSectionImageTailwind
           side="left"
@@ -424,18 +309,7 @@ export default function Showcase() {
           className="view-full-link"
         >
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
       </section>
       <section className="showcase">
@@ -443,35 +317,13 @@ export default function Showcase() {
         <FeatureSectionGridHTML />
         <Link to="/feature-section-grid-html" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Feature Section Grid (React)</h2>
         <FeatureSectionGridReact {...featureSectionGridData} />
         <Link to="/feature-section-grid-react" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Feature Section Grid (React+Tailwind)</h2>
         <FeatureSectionGridTailwind
@@ -480,18 +332,7 @@ export default function Showcase() {
         />
         <Link to="/feature-section-grid-tailwind" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
       </section>
       <section className="showcase">
@@ -499,18 +340,7 @@ export default function Showcase() {
         <PricingSectionSingleHTML />
         <Link to="/pricing-section-single-html" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Pricing Section Single (React)</h2>
         <PricingSectionSingleReact
@@ -532,18 +362,7 @@ export default function Showcase() {
         />
         <Link to="/pricing-section-single-react" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">
           Pricing Section Single (React+Tailwind)
@@ -568,18 +387,7 @@ export default function Showcase() {
         />
         <Link to="/pricing-section-single-tailwind" className="view-full-link">
           View full page
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
       </section>
       <section className="showcase">
@@ -633,18 +441,7 @@ export default function Showcase() {
         />
         <Link to="/statistics-section-api" className="view-full-link">
           View live data version (API)
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">Statistics Section (React+Tailwind)</h2>
         <StatisticsSectionTailwind
@@ -669,18 +466,7 @@ export default function Showcase() {
         />
         <Link to="/statistics-section-api-tailwind" className="view-full-link">
           View live data version (API)
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
       </section>
       <section className="showcase">
@@ -707,18 +493,7 @@ export default function Showcase() {
         />
         <Link to="/newsletter-section-api" className="view-full-link">
           View live data version (API)
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
         </Link>
         <h2 className="section-title">
           Newsletter Section - Interactive (React+Tailwind)
@@ -740,18 +515,71 @@ export default function Showcase() {
         />
         <Link to="/newsletter-section-api-tailwind" className="view-full-link">
           View live data version (API)
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
-              fill="currentColor"
-            />
-          </svg>
+          <LinkIcon />
+        </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Contact Section - Static (HTML+CSS)</h2>
+        <ContactSectionHTML />
+        <h2 className="section-title">Contact Section - Interactive (React)</h2>
+        <ContactSectionReact
+          title="Talk to our team"
+          subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
+          contactDetails={[
+            {
+              id: 1,
+              icon: AddressIcon,
+              text: "123 Maple Street, Springfield, IL, USA",
+            },
+            {
+              id: 2,
+              icon: PhoneIcon,
+              text: "+1 (650) 555-0198",
+              href: "tel:+16505550198",
+            },
+            {
+              id: 3,
+              icon: EmailIcon,
+              text: "hello@abstractly.com",
+              href: "mailto:hello@abstractly.com",
+            },
+          ]}
+        />
+        <Link to="/contact-section-api" className="view-full-link">
+          View live data version (API)
+          <LinkIcon />
+        </Link>
+        <h2 className="section-title">
+          Contact Section - Interactive (React+Tailwind)
+        </h2>
+        <ContactSectionTailwind
+          title="Talk to our team"
+          subtitle="We're committed to delivering the
+        support you require to make your experience as smooth as possible."
+          contactDetails={[
+            {
+              id: 1,
+              icon: AddressIcon,
+              text: "123 Maple Street, Springfield, IL, USA",
+            },
+            {
+              id: 2,
+              icon: PhoneIcon,
+              text: "+1 (650) 555-0198",
+              href: "tel:+16505550198",
+            },
+            {
+              id: 3,
+              icon: EmailIcon,
+              text: "hello@abstractly.com",
+              href: "mailto:hello@abstractly.com",
+            },
+          ]}
+          fullpage={false}
+        />
+        <Link to="/contact-section-api-tailwind" className="view-full-link">
+          View live data version (API)
+          <LinkIcon />
         </Link>
       </section>
     </main>
