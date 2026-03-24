@@ -66,6 +66,14 @@ import ContactSectionHTML from "../components/marketing/ContactSection/ContactSe
 import ContactSectionReact from "../components/marketing/ContactSection/ContactSectionReact.jsx";
 import ContactSectionTailwind from "../components/marketing/ContactSection/ContactSectionTailwind.jsx";
 
+import TeamSectionHTML from "../components/marketing/TeamSection/TeamSectionHTML.jsx";
+import TeamSectionReact from "../components/marketing/TeamSection/TeamSectionReact.jsx";
+import joe from "../components/marketing/TeamSection/joe.webp";
+import ash from "../components/marketing/TeamSection/ash.webp";
+import farias from "../components/marketing/TeamSection/farias.webp";
+import sarah from "../components/marketing/TeamSection/sarah.webp";
+import TeamSectionTailwind from "../components/marketing/TeamSection/TeamSectionTailwind.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -581,6 +589,91 @@ export default function Showcase() {
           View live data version (API)
           <LinkIcon />
         </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Team Section (HTML+CSS)</h2>
+        <TeamSectionHTML />
+        <h2 className="section-title">Team Section (React)</h2>
+        <TeamSectionReact
+          supportingText="Team"
+          title="Meet our team"
+          subtitle="From skilled designers to tech-savvy developers, each member brings a unique perspective and expertise to the table."
+          members={[
+            {
+              id: 1,
+              img: joe,
+              name: "Joe Jackson",
+              designation: "Founder & CEO",
+              description:
+                "Joe leads with a strategic vision for innovation and growth. With a passion for combining artistry with technology, he drives our mission to deliver cutting-edge solutions.",
+            },
+            {
+              id: 2,
+              img: ash,
+              name: "Ash Karter",
+              designation: "Founder & CFO",
+              description:
+                "Ash brings financial acumen and a keen eye for detail to our operations. Her leadership ensures sustainable growth and operational excellence.",
+            },
+            {
+              id: 3,
+              img: farias,
+              name: "Farias Amed",
+              designation: "Front End AI Engineer",
+              description:
+                "Farias is at the forefront of AI-driven design, developing interfaces that blend intuitive usability with advanced functionality.",
+            },
+            {
+              id: 4,
+              img: sarah,
+              name: "Sarah Haust",
+              designation: "Dev Ops",
+              description:
+                "Sarah orchestrates our development pipelines with precision, ensuring seamless deployment cycles and system reliability.",
+            },
+          ]}
+        />
+        <h2 className="section-title">Team Section (React+Tailwind)</h2>
+        <TeamSectionTailwind
+          supportingText="Team"
+          title="Meet our team"
+          subtitle="From skilled designers to tech-savvy developers, each member brings a unique perspective and expertise to the table."
+          members={[
+            {
+              id: 1,
+              img: joe,
+              name: "Joe Jackson",
+              designation: "Founder & CEO",
+              description:
+                "Joe leads with a strategic vision for innovation and growth. With a passion for combining artistry with technology, he drives our mission to deliver cutting-edge solutions.",
+            },
+            {
+              id: 2,
+              img: ash,
+              name: "Ash Karter",
+              designation: "Founder & CFO",
+              description:
+                "Ash brings financial acumen and a keen eye for detail to our operations. Her leadership ensures sustainable growth and operational excellence.",
+            },
+            {
+              id: 3,
+              img: farias,
+              name: "Farias Amed",
+              designation: "Front End AI Engineer",
+              description:
+                "Farias is at the forefront of AI-driven design, developing interfaces that blend intuitive usability with advanced functionality.",
+            },
+            {
+              id: 4,
+              img: sarah,
+              name: "Sarah Haust",
+              designation: "Dev Ops",
+              description:
+                "Sarah orchestrates our development pipelines with precision, ensuring seamless deployment cycles and system reliability.",
+            },
+          ]}
+          fullpage={false}
+        />
       </section>
     </main>
   );
