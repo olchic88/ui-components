@@ -1,0 +1,131 @@
+.container-section {
+  padding: 16px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.not-found-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 48px 12px;
+
+  background-image:
+    linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%),
+    url(abstract-background.webp);
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+/* for Tailwind */
+.not-found-bg {
+  background-image:
+    linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%),
+    url(abstract-background.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.fullpage .container-section {
+  max-width: 100%;
+  padding: 0;
+}
+
+.fullpage .not-found-section {
+  justify-content: center;
+  height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.not-found-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.not-found-section-header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.not-found-section-header-supporting-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: var(--color-brand-primary);
+}
+
+.not-found-section-header-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.not-found-section-description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+/* button in index.css */
+
+@media (min-width: 768px) {
+  .not-found-section {
+    gap: 64px;
+    padding: 64px 16px;
+  }
+
+  .not-found-section-content {
+    gap: 24px;
+  }
+
+  .not-found-section-header {
+    gap: 12px;
+  }
+
+  .not-found-section-header-title {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .not-found-section-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  /* button in index.css */
+}
+
+@media (min-width: 1440px) {
+  .not-found-section {
+    padding: 96px;
+    background-image:
+      linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 88.14%),
+      url(abstract-background.webp);
+  }
+
+  /* for Tailwind */
+  .not-found-bg {
+    background-image:
+      linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 88.14%),
+      url(abstract-background.webp);
+  }
+
+  .not-found-section-header-title {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+}

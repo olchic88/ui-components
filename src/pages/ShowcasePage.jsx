@@ -73,6 +73,9 @@ import ash from "../components/marketing/TeamSection/ash.webp";
 import farias from "../components/marketing/TeamSection/farias.webp";
 import sarah from "../components/marketing/TeamSection/sarah.webp";
 import TeamSectionTailwind from "../components/marketing/TeamSection/TeamSectionTailwind.jsx";
+import NotFoundSectionHTML from "../components/marketing/NotFoundSection/NotFoundSectionHTML.jsx";
+import NotFoundSectionReact from "../components/marketing/NotFoundSection/NotFoundSectionReact.jsx";
+import NotFoundSectionTailwind from "../components/marketing/NotFoundSection/NotFoundSectionTailwind.jsx";
 
 export default function Showcase() {
   return (
@@ -674,6 +677,35 @@ export default function Showcase() {
           ]}
           fullpage={false}
         />
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">404 Section (HTML+CSS)</h2>
+        <NotFoundSectionHTML />
+        <Link to="/not-found-html" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
+        <h2 className="section-title">404 Section (React)</h2>
+        <NotFoundSectionReact
+          supportingText="Not found"
+          title="We can’t find the page"
+          description="Sorry, the page you are looking for doesn't exist or has been moved."
+        />
+        <Link to="/not-found-react" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
+        <h2 className="section-title">404 Section (React+Tailwind)</h2>
+        <NotFoundSectionTailwind
+          supportingText="Not found"
+          title="We can’t find the page"
+          description="Sorry, the page you are looking for doesn't exist or has been moved."
+          fullpage={false}
+        />
+        <Link to="/not-found-tailwind" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
       </section>
     </main>
   );
