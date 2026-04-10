@@ -4,3 +4,4 @@ export { EmailIcon } from "./EmailIcon";
 export { LinkIcon } from "./LinkIcon";
 export { ConfirmationIcon } from "./ConfirmationIcon";
 export { CheckIcon } from "./CheckIcon";
+export { AccordionIcon } from "./AccordionIcon";
