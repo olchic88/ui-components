@@ -1,14 +1,22 @@
-export default function TestimonialCardTailwind({ img, name, username, text }) {
+export default function TestimonialCardTailwind({
+  img,
+  name,
+  username,
+  text,
+  className,
+}) {
   return (
     <figure
-      className="
+      className={`
     flex flex-col gap-4
     w-full
-    p-6 !my-2 md:!my-4
+    max-w-[340px]
+    p-6 
     rounded-lg shadow-md
-    bg-[var(--bg-primary)]"
+    bg-[var(--bg-primary)]
+    ${className}
+    `}
     >
-      {" "}
       {/* !my because of figure {margin: 0;} in index.css */}
       <figcaption className="flex gap-4">
         <img
@@ -19,10 +27,7 @@ export default function TestimonialCardTailwind({ img, name, username, text }) {
           height={48}
         />
         <div className="grow min-w-0">
-          <p
-            className="text-lg font-semibold text-[var(--color-primary)]"
-            wrap-anywhere
-          >
+          <p className="text-lg font-semibold text-[var(--color-primary)] wrap-anywhere">
             {name}
           </p>
           <p

@@ -1,6 +1,5 @@
 import "./testimonialCard.css";
-import profileThumbnail1 from "./profile-thumbnail-1.png";
-import profileThumbnail2 from "./profile-thumbnail-2.png";
+import profileThumbnail from "./profile-thumbnail.webp";
 
 export default function TestimonialCardHTML() {
   return (
@@ -9,52 +8,21 @@ export default function TestimonialCardHTML() {
         <figcaption className="testimonial-card-author">
           <img
             className="testimonial-card-img"
-            src={profileThumbnail1}
-            alt="Michael Carter's profile picture"
+            src={profileThumbnail}
+            alt="Sarah Dole's profile picture"
             width={48}
             height={48}
           />
           <div className="testimonial-card-info">
-            <p className="testimonial-card-name">Michael Carter</p>
-            <p className="testimonial-card-username">&#64;mikec</p>
+            <p className="testimonial-card-name">Sarah Dole</p>
+            <p className="testimonial-card-username">&#64;sarahdole</p>
           </div>
         </figcaption>
         <blockquote className="testimonial-card-text">
           <p>
-            I’ve started using this app to track my workouts, and it’s been a
-            game changer. The progress charts keep me motivated every day.
-          </p>
-        </blockquote>
-      </figure>
-
-      <figure className="testimonial-card">
-        <figcaption className="testimonial-card-author">
-          <img
-            className="testimonial-card-img"
-            src={profileThumbnail2}
-            alt="Jessica Brown's profile picture"
-            width={48}
-            height={48}
-          />
-          <div className="testimonial-card-info">
-            <p className="testimonial-card-name">
-              Elizabeth Alexandra Montgomery
-            </p>
-            <p
-              className="testimonial-card-username"
-              title="elizabeth_alexandra_montgomery_the_third"
-            >
-              &#64;elizabeth_alexandra_montgomery_the_third
-            </p>
-          </div>
-        </figcaption>
-        <blockquote className="testimonial-card-text">
-          <p>
-            I’ve been using this tool for a few weeks now, and I’m genuinely
-            impressed. It saves me hours of manual work every single day and
-            lets me focus on the creative part of my projects instead of routine
-            tasks. Highly recommend it to anyone who values efficiency! Also,
-            check this supercalifragilisticexpialidociouswordthatkeepsgrowing!
+            I've been searching for high-quality abstract images for my design
+            projects, and I'm thrilled to have found this platform. The variety
+            and depth of creativity are astounding!
           </p>
         </blockquote>
       </figure>
