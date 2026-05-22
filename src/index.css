@@ -45,11 +45,13 @@ body {
   padding: 0;
 }
 
+/*
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
 }
+  */
 
 input,
 textarea,
@@ -95,6 +97,11 @@ blockquote {
 
 .showcase .section-title {
   margin-left: 16px;
+}
+
+.showcase-center {
+  display: flex;
+  justify-content: center;
 }
 
 .view-full-link {
@@ -457,6 +464,7 @@ blockquote {
 }
 
 @media (min-width: 768px) {
+
   .button-size-lg-xl {
     height: 48px;
     padding: 12px 20px;

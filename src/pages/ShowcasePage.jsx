@@ -5,8 +5,7 @@ import { AddressIcon, PhoneIcon, EmailIcon, LinkIcon } from "../icons";
 import TestimonialCardHTML from "../components/marketing/TestimonialCard/TestimonialCardHTML.jsx";
 import TestimonialCardReact from "../components/marketing/TestimonialCard/TestimonialCardReact.jsx";
 import TestimonialCardTailwind from "../components/marketing/TestimonialCard/TestimonialCardTailwind.jsx";
-import profileThumbnail1 from "../components/marketing/TestimonialCard/profile-thumbnail-1.png";
-import profileThumbnail2 from "../components/marketing/TestimonialCard/profile-thumbnail-2.png";
+import profileThumbnail from "../components/marketing/TestimonialCard/profile-thumbnail.webp";
 
 import BlogCardHTML from "../components/marketing/BlogCard/BlogCardHTML.jsx";
 import BlogCardReact from "../components/marketing/BlogCard/BlogCardReact.jsx";
@@ -73,110 +72,97 @@ import ash from "../components/marketing/TeamSection/ash.webp";
 import farias from "../components/marketing/TeamSection/farias.webp";
 import sarah from "../components/marketing/TeamSection/sarah.webp";
 import TeamSectionTailwind from "../components/marketing/TeamSection/TeamSectionTailwind.jsx";
+
 import NotFoundSectionHTML from "../components/marketing/NotFoundSection/NotFoundSectionHTML.jsx";
 import NotFoundSectionReact from "../components/marketing/NotFoundSection/NotFoundSectionReact.jsx";
 import NotFoundSectionTailwind from "../components/marketing/NotFoundSection/NotFoundSectionTailwind.jsx";
+
 import FAQSectionHTML from "../components/marketing/FAQSection/FAQSectionHTML.jsx";
 import FAQSectionReact from "../components/marketing/FAQSection/FAQSectionReact.jsx";
 import FAQSectionTailwind from "../components/marketing/FAQSection/FAQSectionTailwind.jsx";
 
+import TestimonialsSectionHTML from "../components/marketing/TestimonialsSection/TestimonialsSectionHTML.jsx";
+import { testimonials } from "../components/marketing/TestimonialsSection/testimonialsSectionData.jsx";
+import TestimonialsSectionReact from "../components/marketing/TestimonialsSection/TestimonialsSectionReact.jsx";
+import TestimonialsSectionTailwind from "../components/marketing/TestimonialsSection/TestimonialsSectionTailwind.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
-      <div className="container">
-        <section>
-          <h2 className="section-title">Testimonial Cards (HTML+CSS)</h2>
-          <div className="testimonial-card-container">
-            <TestimonialCardHTML />
-          </div>
-          <h2 className="section-title">Testimonial Cards (React)</h2>
-          <div className="testimonial-card-container">
-            <TestimonialCardReact
-              img={profileThumbnail1}
-              name="Michael Carter"
-              username="mikec"
-              text="I’ve started using this app to track my workouts, and it’s been a
-                game changer. The progress charts keep me motivated every day."
-            />
-            <TestimonialCardReact
-              img={profileThumbnail2}
-              name="Elizabeth Alexandra Montgomery"
-              username="elizabeth_alexandra_montgomery_the_third"
-              text="I’ve been using this tool for a few weeks now, and I’m genuinely
-                impressed. It saves me hours of manual work every single day and
-                lets me focus on the creative part of my projects instead of routine
-                tasks. Highly recommend it to anyone who values efficiency! Also, check this supercalifragilisticexpialidociouswordthatkeepsgrowing!"
-            />
-          </div>
-          <h2 className="section-title">Testimonial Cards (React+Tailwind)</h2>
-          <div className="testimonial-card-container">
-            <TestimonialCardTailwind
-              img={profileThumbnail1}
-              name="Michael Carter"
-              username="mikec"
-              text="I’ve started using this app to track my workouts, and it’s been a
-                game changer. The progress charts keep me motivated every day."
-            />
-            <TestimonialCardTailwind
-              img={profileThumbnail2}
-              name="Elizabeth Alexandra Montgomery"
-              username="elizabeth_alexandra_montgomery_the_third"
-              text="I’ve been using this tool for a few weeks now, and I’m genuinely
-                impressed. It saves me hours of manual work every single day and
-                lets me focus on the creative part of my projects instead of routine
-                tasks. Highly recommend it to anyone who values efficiency! Also, check this supercalifragilisticexpialidociouswordthatkeepsgrowing!"
-            />
-          </div>
-        </section>
-        <section>
-          <h2 className="section-title">Blog Card (HTML+CSS)</h2>
-          <BlogCardHTML />
-          <h2 className="section-title">Blog Card (React)</h2>
-          <BlogCardReact
-            src={blogCard1}
-            alt="Beautifully designed living room with modern decor"
-            width={340}
-            height={288}
-            badge="Interior"
-            title="Top 5 Living Room Inspirations"
-            text="Curated vibrants colors for your living, make it pop & calm in the same time."
-          />
-          <h2 className="section-title">Blog Card (React+Tailwind)</h2>
-          <BlogCardTailwind
-            src={blogCard1}
-            alt="Beautifully designed living room with modern decor"
-            width={340}
-            height={288}
-            badge="Interior"
-            title="Top 5 Living Room Inspirations"
-            text="Curated vibrants colors for your living, make it pop & calm in the same time."
-          />
-        </section>
-        <section>
-          <h2 className="section-title">Profile Card (HTML+CSS)</h2>
-          <ProfileCardHTML />
-          <h2 className="section-title">Profile Card (React)</h2>
-          <ProfileCardReact
-            src={profile}
-            width={64}
-            height={64}
+      <section className="showcase">
+        <h2 className="section-title">Testimonial Card (HTML+CSS)</h2>
+        <div className="showcase-center">
+          <TestimonialCardHTML />
+        </div>
+
+        <h2 className="section-title">Testimonial Card (React)</h2>
+        <div className="showcase-center">
+          <TestimonialCardReact
+            img={profileThumbnail}
             name="Sarah Dole"
-            designation="Front End Engineer @ Microsoft"
-            bio="I turn coffee into bugs which are fixed by someone else. Certified
-          Stack Overflow and ChatGPT developer."
+            username="sarahdole"
+            text="I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!"
           />
-          <h2 className="section-title">Profile Card (React+Tailwind)</h2>
-          <ProfileCardTailwind
-            src={profile}
-            width={64}
-            height={64}
+        </div>
+
+        <h2 className="section-title">Testimonial Card (React+Tailwind)</h2>
+        <div className="showcase-center">
+          <TestimonialCardTailwind
+            img={profileThumbnail}
             name="Sarah Dole"
-            designation="Front End Engineer @ Microsoft"
-            bio="I turn coffee into bugs which are fixed by someone else. Certified
-          Stack Overflow and ChatGPT developer."
+            username="sarahdole"
+            text="I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!"
           />
-        </section>
-      </div>
+        </div>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Blog Card (HTML+CSS)</h2>
+        <BlogCardHTML />
+        <h2 className="section-title">Blog Card (React)</h2>
+        <BlogCardReact
+          src={blogCard1}
+          alt="Beautifully designed living room with modern decor"
+          width={340}
+          height={288}
+          badge="Interior"
+          title="Top 5 Living Room Inspirations"
+          text="Curated vibrants colors for your living, make it pop & calm in the same time."
+        />
+        <h2 className="section-title">Blog Card (React+Tailwind)</h2>
+        <BlogCardTailwind
+          src={blogCard1}
+          alt="Beautifully designed living room with modern decor"
+          width={340}
+          height={288}
+          badge="Interior"
+          title="Top 5 Living Room Inspirations"
+          text="Curated vibrants colors for your living, make it pop & calm in the same time."
+        />
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Profile Card (HTML+CSS)</h2>
+        <ProfileCardHTML />
+        <h2 className="section-title">Profile Card (React)</h2>
+        <ProfileCardReact
+          src={profile}
+          width={64}
+          height={64}
+          name="Sarah Dole"
+          designation="Front End Engineer @ Microsoft"
+          bio="I turn coffee into bugs which are fixed by someone else. Certified
+          Stack Overflow and ChatGPT developer."
+        />
+        <h2 className="section-title">Profile Card (React+Tailwind)</h2>
+        <ProfileCardTailwind
+          src={profile}
+          width={64}
+          height={64}
+          name="Sarah Dole"
+          designation="Front End Engineer @ Microsoft"
+          bio="I turn coffee into bugs which are fixed by someone else. Certified
+          Stack Overflow and ChatGPT developer."
+        />
+      </section>
 
       <section className="showcase">
         <h2 className="section-title">Hero Section Simple (HTML+CSS)</h2>
@@ -800,6 +786,23 @@ export default function Showcase() {
                 "We regularly update our image collection with fresh and captivating content to keep our users inspired and engaged. New images are added consistently to ensure there's always something new to discover on our platform.",
             },
           ]}
+          fullpage={false}
+        />
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">
+          Testimonials Section - masonry-like layout (HTML+CSS)
+        </h2>
+        <TestimonialsSectionHTML />
+        <h2 className="section-title">
+          Testimonials Section - masonry-like layout (React)
+        </h2>
+        <TestimonialsSectionReact testimonials={testimonials} />
+        <h2 className="section-title">
+          Testimonials Section - masonry-like layout (React+Tailwind)
+        </h2>
+        <TestimonialsSectionTailwind
+          testimonials={testimonials}
           fullpage={false}
         />
       </section>
