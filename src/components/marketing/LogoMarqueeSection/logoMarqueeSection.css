@@ -1,0 +1,119 @@
+.container-section {
+  padding: 16px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo-marquee-section {
+  padding: 48px 12px;
+
+  background-color: var(--bg-primary);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.logo-marquee-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 264px 0px;
+}
+
+.logo-marquee-section-content h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.logo-marquee-section-logos-wrapper {
+  overflow: hidden;
+}
+
+.logo-marquee-section-logos {
+  --gap: 80px;
+
+  gap: var(--gap);
+
+  display: flex;
+  width: 200%;
+
+  user-select: none;
+}
+
+.logo-marquee-section-logos-strip {
+  gap: var(--gap);
+  list-style: none;
+  margin: 0;
+  padding: 2px 0px;
+
+  display: flex;
+
+  flex-shrink: 0;
+
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: calc(-100% - var(--gap));
+  }
+}
+
+.logo-marquee-section-logos-wrapper:hover .logo-marquee-section-logos-strip {
+  animation-play-state: paused;
+}
+
+.logo-marquee-section-logos-strip img {
+  width: 218px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-marquee-section {
+    gap: 64px;
+    padding: 64px 16px;
+    box-shadow:
+      0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .logo-marquee-section-content {
+    padding: 356px 8px;
+  }
+
+  .logo-marquee-section-logos {
+    --gap: 8px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo-marquee-section {
+    padding: 96px;
+    box-shadow:
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+
+  .logo-marquee-section-content {
+    padding: 196px 8px;
+  }
+
+  .logo-marquee-section-logos {
+    --gap: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee-section-logos-strip {
+    animation: none;
+  }
+}

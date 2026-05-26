@@ -85,6 +85,9 @@ import TestimonialsSectionHTML from "../components/marketing/TestimonialsSection
 import { testimonials } from "../components/marketing/TestimonialsSection/testimonialsSectionData.jsx";
 import TestimonialsSectionReact from "../components/marketing/TestimonialsSection/TestimonialsSectionReact.jsx";
 import TestimonialsSectionTailwind from "../components/marketing/TestimonialsSection/TestimonialsSectionTailwind.jsx";
+import LogoMarqueeSectionHTML from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionHTML.jsx";
+import LogoMarqueeSectionReact from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionReact.jsx";
+import LogoMarqueeSectionTailwind from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionTailwind.jsx";
 
 export default function Showcase() {
   return (
@@ -805,6 +808,14 @@ export default function Showcase() {
           testimonials={testimonials}
           fullpage={false}
         />
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Logo Marquee Section (HTML+CSS)</h2>
+        <LogoMarqueeSectionHTML/>
+        <h2 className="section-title">Logo Marquee Section (React)</h2>
+        <LogoMarqueeSectionReact/>
+         <h2 className="section-title">Logo Marquee Section (React+Tailwind)</h2>
+         <LogoMarqueeSectionTailwind fullpage={false}/>
       </section>
     </main>
   );

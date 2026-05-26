@@ -463,8 +463,21 @@ blockquote {
   border-radius: 4px;
 }
 
-@media (min-width: 768px) {
+/* for LogoMarqueeSectionTailwind */
+@theme {
+  --animate-marquee-tw: marquee-tw 30s linear infinite;
+}
 
+@keyframes marquee-tw {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: calc(-100% - var(--marquee-gap));
+  }
+}
+
+@media (min-width: 768px) {
   .button-size-lg-xl {
     height: 48px;
     padding: 12px 20px;
