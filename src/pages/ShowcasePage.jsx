@@ -88,6 +88,8 @@ import TestimonialsSectionTailwind from "../components/marketing/TestimonialsSec
 import LogoMarqueeSectionHTML from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionHTML.jsx";
 import LogoMarqueeSectionReact from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionReact.jsx";
 import LogoMarqueeSectionTailwind from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionTailwind.jsx";
+import CookieBannerHTML from "../components/marketing/CookieConsent/CookieBannerHTML.jsx";
+import CookieModalHTML from "../components/marketing/CookieConsent/CookieModalHTML.jsx";
 
 export default function Showcase() {
   return (
@@ -816,6 +818,19 @@ export default function Showcase() {
         <LogoMarqueeSectionReact/>
          <h2 className="section-title">Logo Marquee Section (React+Tailwind)</h2>
          <LogoMarqueeSectionTailwind fullpage={false}/>
+      </section>
+      <section className="showcase">
+         <h2 className="section-title">Cookie Consent - Static (HTML+CSS)</h2>
+         <CookieBannerHTML/>
+         <CookieModalHTML/>
+         <h2 className="section-title">Cookie Consent - Interactive (React)</h2>
+         <Link to="/cookie-consent-react" className="view-full-link">View full implementation (localStorage, scripts, modal behavior)
+          <LinkIcon />
+        </Link>
+         <h2 className="section-title">Cookie Consent - Interactive (React+Tailwind)</h2>
+         <Link to="/cookie-consent-tailwind" className="view-full-link">View full implementation (localStorage, scripts, modal behavior)
+          <LinkIcon />
+        </Link>
       </section>
     </main>
   );

@@ -25,6 +25,8 @@ import ContactSectionAPITailwindPage from "./pages/ContactSectionAPITailwindPage
 import NotFoundSectionHTMLPage from "./pages/NotFoundSectionHTMLPage.jsx";
 import NotFoundSectionReactPage from "./pages/NotFoundSectionReactPage.jsx";
 import NotFoundSectionTailwindPage from "./pages/NotFoundSectionTailwindPage.jsx";
+import CookieConsentReactPage from "./pages/CookieConsentReactPage.jsx";
+import CookieConsentTailwindPage from "./pages/CookieConsentTailwindPage.jsx";
 
 function App() {
   // throw new Error("Boom"); //
@@ -150,6 +152,14 @@ function App() {
           <Route
           path="not-found-tailwind"
           element={<NotFoundSectionTailwindPage/>}
+          />
+          <Route
+          path="cookie-consent-react"
+          element={<CookieConsentReactPage/>}
+          />
+          <Route
+          path="cookie-consent-tailwind"
+          element={<CookieConsentTailwindPage/>}
           />
         </Routes>
       </Suspense>
