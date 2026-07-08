@@ -5,3 +5,8 @@ export { LinkIcon } from "./LinkIcon";
 export { ConfirmationIcon } from "./ConfirmationIcon";
 export { CheckIcon } from "./CheckIcon";
 export { AccordionIcon } from "./AccordionIcon";
+export { YoutubeIcon } from "./YoutubeIcon";
+export { InstagramIcon } from "./InstagramIcon";
+export { FacebookIcon } from "./FacebookIcon";
+export { GitHubIcon } from "./GitHubIcon";
+export { XIcon } from "./XIcon";

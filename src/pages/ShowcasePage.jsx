@@ -1,6 +1,16 @@
-import { Link } from "react-router";
+import { href, Link } from "react-router";
 
-import { AddressIcon, PhoneIcon, EmailIcon, LinkIcon } from "../icons";
+import {
+  AddressIcon,
+  PhoneIcon,
+  EmailIcon,
+  LinkIcon,
+  InstagramIcon,
+  FacebookIcon,
+  YoutubeIcon,
+  GitHubIcon,
+  XIcon,
+} from "../icons";
 
 import TestimonialCardHTML from "../components/marketing/TestimonialCard/TestimonialCardHTML.jsx";
 import TestimonialCardReact from "../components/marketing/TestimonialCard/TestimonialCardReact.jsx";
@@ -85,11 +95,16 @@ import TestimonialsSectionHTML from "../components/marketing/TestimonialsSection
 import { testimonials } from "../components/marketing/TestimonialsSection/testimonialsSectionData.jsx";
 import TestimonialsSectionReact from "../components/marketing/TestimonialsSection/TestimonialsSectionReact.jsx";
 import TestimonialsSectionTailwind from "../components/marketing/TestimonialsSection/TestimonialsSectionTailwind.jsx";
+
 import LogoMarqueeSectionHTML from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionHTML.jsx";
 import LogoMarqueeSectionReact from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionReact.jsx";
 import LogoMarqueeSectionTailwind from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionTailwind.jsx";
 import CookieBannerHTML from "../components/marketing/CookieConsent/CookieBannerHTML.jsx";
 import CookieModalHTML from "../components/marketing/CookieConsent/CookieModalHTML.jsx";
+
+import FooterSectionHTML from "../components/marketing/FooterSection/FooterSectionHTML.jsx";
+import FooterSectionReact from "../components/marketing/FooterSection/FooterSectionReact.jsx";
+import FooterSectionTailwind from "../components/marketing/FooterSection/FooterSectionTailwind.jsx";
 
 export default function Showcase() {
   return (
@@ -813,24 +828,114 @@ export default function Showcase() {
       </section>
       <section className="showcase">
         <h2 className="section-title">Logo Marquee Section (HTML+CSS)</h2>
-        <LogoMarqueeSectionHTML/>
+        <LogoMarqueeSectionHTML />
         <h2 className="section-title">Logo Marquee Section (React)</h2>
-        <LogoMarqueeSectionReact/>
-         <h2 className="section-title">Logo Marquee Section (React+Tailwind)</h2>
-         <LogoMarqueeSectionTailwind fullpage={false}/>
+        <LogoMarqueeSectionReact />
+        <h2 className="section-title">Logo Marquee Section (React+Tailwind)</h2>
+        <LogoMarqueeSectionTailwind fullpage={false} />
       </section>
       <section className="showcase">
-         <h2 className="section-title">Cookie Consent - Static (HTML+CSS)</h2>
-         <CookieBannerHTML/>
-         <CookieModalHTML/>
-         <h2 className="section-title">Cookie Consent - Interactive (React)</h2>
-         <Link to="/cookie-consent-react" className="view-full-link">View full implementation (localStorage, scripts, modal behavior)
+        <h2 className="section-title">Cookie Consent - Static (HTML+CSS)</h2>
+        <CookieBannerHTML />
+        <CookieModalHTML />
+        <h2 className="section-title">Cookie Consent - Interactive (React)</h2>
+        <Link to="/cookie-consent-react" className="view-full-link">
+          View full implementation (localStorage, scripts, modal behavior)
           <LinkIcon />
         </Link>
-         <h2 className="section-title">Cookie Consent - Interactive (React+Tailwind)</h2>
-         <Link to="/cookie-consent-tailwind" className="view-full-link">View full implementation (localStorage, scripts, modal behavior)
+        <h2 className="section-title">
+          Cookie Consent - Interactive (React+Tailwind)
+        </h2>
+        <Link to="/cookie-consent-tailwind" className="view-full-link">
+          View full implementation (localStorage, scripts, modal behavior)
           <LinkIcon />
         </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Footer Section (HTML+CSS)</h2>
+        <FooterSectionHTML />
+        <h2 className="section-title">Footer Section (React)</h2>
+        <FooterSectionReact
+          footerLinks={[
+            { id: 1, label: "Features", to: "/" },
+            { id: 2, label: "Pricing", to: "/" },
+            { id: 3, label: "About us", to: "/" },
+            { id: 4, label: "Contact", to: "/" },
+          ]}
+          socialMediaLinks={[
+            {
+              id: 1,
+              label: "Youtube",
+              href: "/",
+              icon: <YoutubeIcon />,
+            },
+            {
+              id: 2,
+              label: "Instagram",
+              href: "/",
+              icon: <InstagramIcon />,
+            },
+            {
+              id: 3,
+              label: "Facebook",
+              href: "/",
+              icon: <FacebookIcon />,
+            },
+            {
+              id: 4,
+              label: "GitHub",
+              href: "/",
+              icon: <GitHubIcon />,
+            },
+            {
+              id: 5,
+              label: "X",
+              href: "/",
+              icon: <XIcon />,
+            },
+          ]}
+        />
+        <h2 className="section-title">Footer Section (React+Tailwind)</h2>
+        <FooterSectionTailwind
+          footerLinks={[
+            { id: 1, label: "Features", to: "/" },
+            { id: 2, label: "Pricing", to: "/" },
+            { id: 3, label: "About us", to: "/" },
+            { id: 4, label: "Contact", to: "/" },
+          ]}
+          socialMediaLinks={[
+            {
+              id: 1,
+              label: "Youtube",
+              href: "/",
+              icon: <YoutubeIcon className="block" />,
+            },
+            {
+              id: 2,
+              label: "Instagram",
+              href: "/",
+              icon: <InstagramIcon className="block" />,
+            },
+            {
+              id: 3,
+              label: "Facebook",
+              href: "/",
+              icon: <FacebookIcon className="block" />,
+            },
+            {
+              id: 4,
+              label: "GitHub",
+              href: "/",
+              icon: <GitHubIcon className="block" />,
+            },
+            {
+              id: 5,
+              label: "X",
+              href: "/",
+              icon: <XIcon className="block" />,
+            },
+          ]}
+        />
       </section>
     </main>
   );

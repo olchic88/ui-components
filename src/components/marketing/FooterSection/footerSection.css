@@ -1,0 +1,133 @@
+.container-section {
+  padding: 16px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.fullpage .container-section {
+  max-width: 100%;
+  padding: 0;
+}
+
+.footer-section {
+  padding: 286px 0px;
+
+  background-color: var(--bg-primary);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.fullpage .footer-section {
+  min-height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+
+  padding: 48px 32px;
+}
+
+.footer-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  color: var(--color-secondary);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+
+  text-decoration: none;
+  padding: 0;
+}
+
+.footer-section-nav a {
+  outline: none;
+}
+
+.footer-section-nav a:hover {
+  color: var(--color-primary);
+}
+
+.footer-section-nav a:focus {
+  color: var(--color-primary);
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  border-radius: 4px;
+}
+
+.footer-section-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-section-icons a {
+  display: inline-flex;
+  color: var(--color-disabled);
+  outline: none;
+  padding: 0 2px;
+}
+
+.footer-section-icons a:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  border-radius: 4px;
+}
+
+.footer-section-icons a:hover,
+.footer-section-icons a:focus {
+  color: var(--color-primary);
+}
+
+.footer-section-icons svg {
+  display: block;
+}
+
+.footer-section small {
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    box-shadow:
+      0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 376px 0px;
+  }
+  .footer {
+    padding: 64px 16px;
+  }
+  .footer-section-nav {
+    gap: 26px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer-section {
+    box-shadow:
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 216px 0px;
+  }
+  .footer {
+    padding: 96px 16px;
+  }
+}
