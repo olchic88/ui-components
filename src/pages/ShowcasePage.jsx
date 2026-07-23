@@ -106,6 +106,10 @@ import FooterSectionHTML from "../components/marketing/FooterSection/FooterSecti
 import FooterSectionReact from "../components/marketing/FooterSection/FooterSectionReact.jsx";
 import FooterSectionTailwind from "../components/marketing/FooterSection/FooterSectionTailwind.jsx";
 
+import NavbarHTML from "../components/marketing/NavbarComponent/NavbarHTML.jsx";
+import NavbarReact from "../components/marketing/NavbarComponent/NavbarReact.jsx";
+import NavbarTailwind from "../components/marketing/NavbarComponent/NavbarTailwind.jsx";
+
 export default function Showcase() {
   return (
     <main id="layout-page-overlay">
@@ -934,6 +938,34 @@ export default function Showcase() {
               href: "/",
               icon: <XIcon className="block" />,
             },
+          ]}
+        />
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">Navbar Component - Static (HTML+CSS)</h2>
+        <NavbarHTML />
+        <h2 className="section-title">
+          Navbar Component - Interactive (React)
+        </h2>
+        <NavbarReact
+          navbarLinks={[
+            { label: "Home", to: "/" },
+            { label: "Features", to: "/" },
+            { label: "Pricing", to: "/" },
+            { label: "About us", to: "/" },
+            { label: "Contact", to: "/" },
+          ]}
+        />
+        <h2 className="section-title">
+          Navbar Component - Interactive (React+Tailwind)
+        </h2>
+        <NavbarTailwind
+          navbarLinks={[
+            { label: "Home", to: "/" },
+            { label: "Features", to: "/" },
+            { label: "Pricing", to: "/" },
+            { label: "About us", to: "/" },
+            { label: "Contact", to: "/" },
           ]}
         />
       </section>

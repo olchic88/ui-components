@@ -1,0 +1,199 @@
+.container-section {
+  padding: 16px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.fullpage .container-section {
+  max-width: 100%;
+  padding: 0;
+}
+
+.navbar-section {
+  min-height: 710px;
+  background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+
+  position: relative; /* for sidebar, but in real project we need to use for sidebar position: fixed */
+  overflow: hidden;
+}
+
+.fullpage .navbar-section {
+  min-height: 100vh;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.navbar {
+  height: 68px;
+  max-width: 1216px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding-inline: 16px;
+}
+
+.button-sidebar-open {
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+}
+
+.button-sidebar-open svg {
+  display: block;
+}
+
+.button-sidebar-open:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
+#sidebar {
+  position: absolute; /* but in real project we need to use position: fixed */
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 300px;
+  min-height: 710px; /* for showcase case, it should have height 100vh */
+  padding: 32px 16px 16px 16px;
+  background-color: var(--bg-primary);
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  translate: calc(-100% - 16px) 0;
+  transition: translate 300ms;
+}
+
+#sidebar.open {
+  translate: 0 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 163px;
+  height: 32px;
+}
+
+.navbar-logo a {
+  display: inline-block;
+  outline: none;
+}
+
+.navbar-logo a:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  border-radius: 4px;
+}
+
+.button-sidebar-close {
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-sidebar-close svg {
+  display: block;
+}
+
+.button-sidebar-close:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
+.navbar-content {
+  display: none;
+}
+
+.navbar-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* + index.css */
+.navbar-link {
+  padding: 0 2px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #525252;
+  font-weight: 500;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: #171717;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--color-primary);
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus {
+  color: var(--color-primary);
+}
+
+.navbar-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-inline: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    padding: 0;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .button-sidebar-open {
+    display: none;
+  }
+
+  .navbar-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 96px;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .navbar-actions {
+    flex-direction: row;
+  }
+
+  .button-navbar-learn {
+    width: 125px;
+  }
+
+  .button-navbar-pricing {
+    width: 121px;
+  }
+}

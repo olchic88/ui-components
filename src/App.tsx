@@ -138,29 +138,27 @@ function App() {
             element={<ContactSectionAPIPage />}
           />
           <Route
-          path="contact-section-api-tailwind"
-          element={<ContactSectionAPITailwindPage/>}
+            path="contact-section-api-tailwind"
+            element={<ContactSectionAPITailwindPage />}
+          />
+          <Route path="not-found-html" element={<NotFoundSectionHTMLPage />} />
+          <Route
+            path="not-found-react"
+            element={<NotFoundSectionReactPage />}
           />
           <Route
-          path="not-found-html"
-          element={<NotFoundSectionHTMLPage/>}
+            path="not-found-tailwind"
+            element={<NotFoundSectionTailwindPage />}
           />
           <Route
-          path="not-found-react"
-          element={<NotFoundSectionReactPage/>}
+            path="cookie-consent-react"
+            element={<CookieConsentReactPage />}
           />
           <Route
-          path="not-found-tailwind"
-          element={<NotFoundSectionTailwindPage/>}
+            path="cookie-consent-tailwind"
+            element={<CookieConsentTailwindPage />}
           />
-          <Route
-          path="cookie-consent-react"
-          element={<CookieConsentReactPage/>}
-          />
-          <Route
-          path="cookie-consent-tailwind"
-          element={<CookieConsentTailwindPage/>}
-          />
+          
         </Routes>
       </Suspense>
     </BrowserRouter>
