@@ -1,10 +1,10 @@
 import "./heroSectionSimple.css";
-import prism from "./prism.png";
+import prism from "./prism.webp";
 
 export default function HeroSectionSimpleHTML() {
   return (
     <div className="container-section">
-      <div className="hero-section">
+      <div className="hero-section hero-showcase">
         <div className="hero-content">
           <div className="hero-header">
             <h3 className="hero-title">Well crafted abstract images</h3>
