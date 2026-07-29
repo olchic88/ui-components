@@ -3,7 +3,7 @@ import logo from "./abstractly.svg";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
-export default function NavbarReact({ navbarLinks }) {
+export default function NavbarReact({ navbarLinks, logoTo }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeSidebar = () => setIsOpen(false);
@@ -23,13 +23,13 @@ export default function NavbarReact({ navbarLinks }) {
 
   return (
     <>
-      <header className="navbar">
+      <nav className="navbar">
         <div className="navbar-logo">
-          <Link to="/">
+          <Link to={logoTo}>
             <img src={logo} alt="Abstractly's logo" width={112} height={32} />
           </Link>
         </div>
-        <nav className="navbar-content">
+        <div className="navbar-content">
           <ul className="navbar-links">
             {navbarLinks.map((link) => (
               <li key={link.id}>
@@ -53,7 +53,7 @@ export default function NavbarReact({ navbarLinks }) {
               See pricing
             </Link>
           </div>
-        </nav>
+        </div>
         <button
           aria-label="Open menu"
           className="ax-button button-sidebar-open"
@@ -72,19 +72,19 @@ export default function NavbarReact({ navbarLinks }) {
             />
           </svg>
         </button>
-      </header>
+      </nav>
 
       <nav id="sidebar" className={`${isOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <div className="navbar-logo">
-            <Link to="/">
+            <Link to={logoTo}>
               <img src={logo} alt="Abstractly's logo" width={112} height={32} />
             </Link>
           </div>
           <button
             aria-label="Close menu"
             className="ax-button button-sidebar-close"
-            onClick={() => setIsOpen(false)}
+            onClick={closeSidebar}
           >
             <svg
               width="20"

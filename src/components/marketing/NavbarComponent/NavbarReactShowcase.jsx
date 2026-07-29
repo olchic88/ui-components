@@ -13,7 +13,7 @@ export default function NavbarReactShowcase() {
   return (
     <div className="container-section">
       <div className="navbar-section">
-        <NavbarReact navbarLinks={navbarLinks} />
+        <NavbarReact navbarLinks={navbarLinks} logoTo={"/"} />
       </div>
     </div>
   );

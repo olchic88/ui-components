@@ -6,7 +6,7 @@ export default function NavbarHTML() {
   return (
     <div className="container-section">
       <div className="navbar-section">
-        <header className="navbar">
+        <div className="navbar">
           <div className="navbar-logo">
             <Link to="/">
               <img src={logo} alt="Abstractly's logo" width={112} height={32} />
@@ -72,7 +72,7 @@ export default function NavbarHTML() {
               />
             </svg>
           </button>
-        </header>
+        </div>
 
         <nav id="sidebar" className="open">
           <div className="sidebar-header">

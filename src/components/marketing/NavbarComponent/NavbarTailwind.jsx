@@ -62,7 +62,7 @@ export default function NavbarTailwind({ navbarLinks }) {
         bg-[linear-gradient(147.52deg,_#f9fafb_8.89%,_#d2d6db_100.48%)] 
         shadow-[0px_1px_2px_rgba(0,0,0,0.05)]`}
       >
-        <header
+        <nav
           className={`
             flex items-center justify-between gap-20 
             h-[68px] max-w-[1216px] mx-auto 
@@ -78,7 +78,7 @@ export default function NavbarTailwind({ navbarLinks }) {
               <img src={logo} alt="Abstractly's logo" width={112} height={32} />
             </Link>
           </div>
-          <nav className="hidden [@media(min-width:90rem)]:flex-1 [@media(min-width:90rem)]:items-center [@media(min-width:90rem)]:gap-24 [@media(min-width:90rem)]:flex">
+          <div className="hidden [@media(min-width:90rem)]:flex-1 [@media(min-width:90rem)]:items-center [@media(min-width:90rem)]:gap-24 [@media(min-width:90rem)]:flex">
             <ul
               className={`flex flex-1 flex-col gap-2
             [@media(min-width:90rem)]:flex-row 
@@ -113,7 +113,7 @@ export default function NavbarTailwind({ navbarLinks }) {
                 See pricing
               </Link>
             </div>
-          </nav>
+          </div>
           <button
             aria-label="Open menu"
             className={`
@@ -138,7 +138,7 @@ export default function NavbarTailwind({ navbarLinks }) {
               />
             </svg>
           </button>
-        </header>
+        </nav>
 
         <nav
           className={`
@@ -179,7 +179,7 @@ export default function NavbarTailwind({ navbarLinks }) {
             <button
               aria-label="Close menu"
               className="cursor-pointer rounded outline-none focus:shadow-[0_0_0_4px_rgba(68,76,231,0.12)]"
-              onClick={() => setIsOpen(false)}
+              onClick={closeSidebar}
             >
               <svg
                 className="block"
