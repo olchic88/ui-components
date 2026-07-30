@@ -1,5 +1,5 @@
-import unsplashLeft from "./unsplashLeft.jpg";
-import unsplashRight from "./unsplashRight.jpg";
+import unsplashLeft from "./unsplashLeft.webp";
+import unsplashRight from "./unsplashRight.webp";
 
 export const featureSectionImageData = {
   right: {

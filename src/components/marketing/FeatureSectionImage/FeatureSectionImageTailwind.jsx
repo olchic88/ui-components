@@ -1,6 +1,5 @@
 export default function FeatureSectionImageTailwind({
   side,
-  heading,
   supportingText,
   title,
   subtitle,
@@ -13,11 +12,6 @@ export default function FeatureSectionImageTailwind({
 }) {
   return (
     <section>
-      {heading && (
-        <h3 className="my-[6px] ml-4 text-base font-semibold tracking-[0.3px]">
-          {side === "right" ? "Image Right" : "Image Left"}
-        </h3>
-      )}
       <div
         className={`mx-auto w-full
         ${fullpage ? "max-w-full p-0" : "max-w-[1440px] p-4"}`}

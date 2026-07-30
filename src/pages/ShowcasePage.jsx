@@ -38,11 +38,11 @@ import HeroSectionFeatureBulletsTailwind from "../components/marketing/HeroSecti
 import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.png";
 
 import FeatureSectionImageHTML from "../components/marketing/FeatureSectionImage/FeatureSectionImageHTML.jsx";
-import FeatureSectionImageReact from "../components/marketing/FeatureSectionImage/FeatureSectionImageReact.jsx";
+import FeatureSectionImageReactShowcase from "../components/marketing/FeatureSectionImage/FeatureSectionImageReactShowcase.jsx";
 import FeatureSectionImageTailwind from "../components/marketing/FeatureSectionImage/FeatureSectionImageTailwind.jsx";
 import { featureSectionImageData } from "../components/marketing/FeatureSectionImage/featureSectionImageData.jsx";
-import unsplashLeft from "../components/marketing/FeatureSectionImage/unsplashLeft.jpg";
-import unsplashRight from "../components/marketing/FeatureSectionImage/unsplashRight.jpg";
+import unsplashLeft from "../components/marketing/FeatureSectionImage/unsplashLeft.webp";
+import unsplashRight from "../components/marketing/FeatureSectionImage/unsplashRight.webp";
 
 import FeatureSectionGridHTML from "../components/marketing/FeatureSectionGrid/FeatureSectionGridHTML.jsx";
 import FeatureSectionGridReactShowcase from "../components/marketing/FeatureSectionGrid/FeatureSectionGridReactShowcase.jsx";
@@ -267,22 +267,18 @@ export default function Showcase() {
       </section>
       <section className="showcase">
         <h2 className="section-title">Feature Section Side Image (HTML+CSS)</h2>
-        <FeatureSectionImageHTML side="right" heading={true} />
+        <FeatureSectionImageHTML side="right" />
         <Link to="/feature-section-image-right-html" className="view-full-link">
           View full page
           <LinkIcon />
         </Link>
-        <FeatureSectionImageHTML side="left" heading={true} />
+        <FeatureSectionImageHTML side="left" />
         <Link to="/feature-section-image-left-html" className="view-full-link">
           View full page
           <LinkIcon />
         </Link>
         <h2 className="section-title">Feature Section Side Image (React)</h2>
-        <FeatureSectionImageReact
-          side="right"
-          heading={true}
-          {...featureSectionImageData.right}
-        />
+        <FeatureSectionImageReactShowcase />
         <Link
           to="/feature-section-image-right-react"
           className="view-full-link"
@@ -290,11 +286,6 @@ export default function Showcase() {
           View full page
           <LinkIcon />
         </Link>
-        <FeatureSectionImageReact
-          side="left"
-          heading={true}
-          {...featureSectionImageData.left}
-        />
         <Link to="/feature-section-image-left-react" className="view-full-link">
           View full page
           <LinkIcon />
@@ -304,7 +295,6 @@ export default function Showcase() {
         </h2>
         <FeatureSectionImageTailwind
           side="right"
-          heading={true}
           fullpage={false}
           {...featureSectionImageData.right}
         />

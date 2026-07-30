@@ -1,20 +1,15 @@
 import "./featureSectionImage.css";
 
-import unsplashLeft from "./unsplashLeft.jpg";
-import unsplashRight from "./unsplashRight.jpg";
+import unsplashLeft from "./unsplashLeft.webp";
+import unsplashRight from "./unsplashRight.webp";
 
-export default function FeatureSectionImage({ side, heading }) {
+export default function FeatureSectionImage({ side }) {
   return (
     <>
       {side === "right" && (
         <section className="feature-section-image-right">
-          {heading ? (
-            <h3 className="feature-section-subtitle">Image Right</h3>
-          ) : (
-            ""
-          )}
           <div className="container-section">
-            <div className="feature-section">
+            <div className="feature-section feature-section-showcase feature-section-showcase-item">
               <div className="feature-section-header">
                 <p className="feature-section-header-supporting-text">
                   High quality images
@@ -115,13 +110,8 @@ export default function FeatureSectionImage({ side, heading }) {
       )}
       {side === "left" && (
         <section className="feature-section-image-left">
-          {heading ? (
-            <h3 className="feature-section-subtitle">Image Left</h3>
-          ) : (
-            ""
-          )}
           <div className="container-section">
-            <div className="feature-section">
+            <div className="feature-section feature-section-showcase feature-section-showcase-item">
               <div className="feature-section-header">
                 <p className="feature-section-header-supporting-text">
                   Best-in-class support
