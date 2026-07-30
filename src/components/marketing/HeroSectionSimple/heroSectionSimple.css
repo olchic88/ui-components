@@ -205,6 +205,9 @@
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 32px;
     padding: 105px 96px;
+  }
+
+  .hero-showcase {
     border-radius: 6px;
   }
 
