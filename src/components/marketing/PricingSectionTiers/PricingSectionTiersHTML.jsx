@@ -3,7 +3,7 @@ import "./pricingSectionTiers.css";
 export default function PricingSectionTiersHTML() {
   return (
     <div className="container-section">
-      <div className="pricing-section-tiers">
+      <div className="pricing-section-tiers pricing-section-tiers-showcase">
         <div className="pricing-section-tiers-header">
           <p className="pricing-section-tiers-header-supporting-text">
             Pricing Tiers

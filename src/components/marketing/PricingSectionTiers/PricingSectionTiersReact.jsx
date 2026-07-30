@@ -21,7 +21,7 @@ export default function PricingSectionTiersReact({
   }
 
   return (
-    <div className="container-section">
+    
       <div className="pricing-section-tiers">
         <div className="pricing-section-tiers-header">
           <p className="pricing-section-tiers-header-supporting-text">
@@ -106,6 +106,6 @@ export default function PricingSectionTiersReact({
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }

@@ -54,7 +54,7 @@ import PricingSectionSingleReact from "../components/marketing/PricingSectionSin
 import PricingSectionSingleTailwind from "../components/marketing/PricingSectionSingle/PricingSectionSingleTailwind.jsx";
 
 import PricingSectionTiersHTML from "../components/marketing/PricingSectionTiers/PricingSectionTiersHTML.jsx";
-import PricingSectionTiersReact from "../components/marketing/PricingSectionTiers/PricingSectionTiersReact.jsx";
+import PricingSectionTiersReactShowcase from "../components/marketing/PricingSectionTiers/PricingSectionTiersReactShowcase.jsx";
 import {
   pricingSectionTiersData,
   plan,
@@ -405,13 +405,7 @@ export default function Showcase() {
         <h2 className="section-title">
           Pricing Section Tiers - Interactive (React)
         </h2>
-        <PricingSectionTiersReact
-          pricingSectionTiersData={pricingSectionTiersData}
-          plan={plan}
-          supportingText="Pricing Tiers"
-          title="Fit for all your needs"
-          subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
-        />
+        <PricingSectionTiersReactShowcase />
         <h2 className="section-title">
           Pricing Section Tiers - Interactive (React+Tailwind)
         </h2>
