@@ -45,9 +45,9 @@ import unsplashLeft from "../components/marketing/FeatureSectionImage/unsplashLe
 import unsplashRight from "../components/marketing/FeatureSectionImage/unsplashRight.jpg";
 
 import FeatureSectionGridHTML from "../components/marketing/FeatureSectionGrid/FeatureSectionGridHTML.jsx";
-import FeatureSectionGridReact from "../components/marketing/FeatureSectionGrid/FeatureSectionGridReact.jsx";
-import { featureSectionGridData } from "../components/marketing/FeatureSectionGrid/featureSectionGridData.jsx";
+import FeatureSectionGridReactShowcase from "../components/marketing/FeatureSectionGrid/FeatureSectionGridReactShowcase.jsx";
 import FeatureSectionGridTailwind from "../components/marketing/FeatureSectionGrid/FeatureSectionGridTailwind.jsx";
+import { featureSectionGridData } from "../components/marketing/FeatureSectionGrid/featureSectionGridData.jsx";
 
 import PricingSectionSingleHTML from "../components/marketing/PricingSectionSingle/PricingSectionSingleHTML.jsx";
 import PricingSectionSingleReact from "../components/marketing/PricingSectionSingle/PricingSectionSingleReact.jsx";
@@ -337,7 +337,7 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
         <h2 className="section-title">Feature Section Grid (React)</h2>
-        <FeatureSectionGridReact {...featureSectionGridData} />
+        <FeatureSectionGridReactShowcase />
         <Link to="/feature-section-grid-react" className="view-full-link">
           View full page
           <LinkIcon />

@@ -11,7 +11,9 @@
   gap: 48px;
 
   padding: 48px 12px;
+}
 
+.feature-section-grid-showcase {
   background-color: var(--bg-primary);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -96,7 +98,9 @@
   width: 48px;
   height: 48px;
   background-color: var(--bg-primary);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
   border-radius: 9999px;
   color: var(--color-brand-primary);
 
@@ -124,7 +128,8 @@
   .feature-section-grid {
     gap: 64px;
     padding: 64px 16px;
-    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    box-shadow:
+      0px 4px 6px -1px rgba(0, 0, 0, 0.1),
       0px 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
@@ -152,7 +157,8 @@
 @media screen and (min-width: 1440px) {
   .feature-section-grid {
     padding: 96px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    box-shadow:
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1),
       0px 4px 6px -2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
   }

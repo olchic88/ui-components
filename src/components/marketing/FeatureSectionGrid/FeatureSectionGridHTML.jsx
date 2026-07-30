@@ -3,7 +3,7 @@ import "./featureSectionGrid.css";
 export default function FeatureSectionGridHTML() {
   return (
     <div className="container-section">
-      <div className="feature-section-grid">
+      <div className="feature-section-grid feature-section-grid-showcase">
         <div className="feature-section-grid-header">
           <p className="feature-section-grid-header-supporting-text">
             Premium abstract images
