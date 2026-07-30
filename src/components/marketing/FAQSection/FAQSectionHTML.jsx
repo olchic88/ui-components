@@ -4,7 +4,7 @@ import "./faqSection.css";
 export default function FAQSectionHTML() {
   return (
     <div className="container-section">
-      <div className="faq-section">
+      <div className="faq-section faq-section-showcase">
         <div className="faq-section-header">
           <h3 className="faq-section-title">Frequently asked questions</h3>
           <p className="faq-section-subtitle">Choose any questions you need</p>
