@@ -28,9 +28,9 @@ import ProfileCardTailwind from "../components/marketing/ProfileCard/ProfileCard
 import profile from "../components/marketing/ProfileCard/profile.png";
 
 import HeroSectionSimpleHTML from "../components/marketing/HeroSectionSimple/HeroSectionSimpleHTML.jsx";
-import HeroSectionSimpleReact from "../components/marketing/HeroSectionSimple/HeroSectionSimpleReact.jsx";
+import HeroSectionSimpleReactShowcase from "../components/marketing/HeroSectionSimple/HeroSectionSimpleReactShowcase.jsx";
 import HeroSectionSimpleTailwind from "../components/marketing/HeroSectionSimple/HeroSectionSimpleTailwind.jsx";
-import prism from "../components/marketing/HeroSectionSimple/prism.png";
+import prism from "../components/marketing/HeroSectionSimple/prism.webp";
 
 import HeroSectionFeatureBulletsHTML from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsHTML.jsx";
 import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReact.jsx";
@@ -97,8 +97,9 @@ import TestimonialsSectionReact from "../components/marketing/TestimonialsSectio
 import TestimonialsSectionTailwind from "../components/marketing/TestimonialsSection/TestimonialsSectionTailwind.jsx";
 
 import LogoMarqueeSectionHTML from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionHTML.jsx";
-import LogoMarqueeSectionReact from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionReact.jsx";
+import LogoMarqueeSectionReactShowcase from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionReactShowcase.jsx";
 import LogoMarqueeSectionTailwind from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionTailwind.jsx";
+
 import CookieBannerHTML from "../components/marketing/CookieConsent/CookieBannerHTML.jsx";
 import CookieModalHTML from "../components/marketing/CookieConsent/CookieModalHTML.jsx";
 
@@ -107,8 +108,8 @@ import FooterSectionReact from "../components/marketing/FooterSection/FooterSect
 import FooterSectionTailwind from "../components/marketing/FooterSection/FooterSectionTailwind.jsx";
 
 import NavbarHTML from "../components/marketing/NavbarComponent/NavbarHTML.jsx";
-import NavbarReact from "../components/marketing/NavbarComponent/NavbarReact.jsx";
 import NavbarTailwind from "../components/marketing/NavbarComponent/NavbarTailwind.jsx";
+import NavbarReactShowcase from "../components/marketing/NavbarComponent/NavbarReactShowcase.jsx";
 
 export default function Showcase() {
   return (
@@ -196,15 +197,7 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
         <h2 className="section-title">Hero Section Simple (React)</h2>
-        <HeroSectionSimpleReact
-          title="Well crafted abstract images"
-          description="High quality abstract images for your projects, wallpaper and
-                presentations."
-          src={prism}
-          alt="Colorful abstract geometric shapes"
-          width={696}
-          height={526}
-        />
+        <HeroSectionSimpleReactShowcase />
         <Link to="/hero-simple-react" className="view-full-link">
           View full page
           <LinkIcon />
@@ -834,7 +827,7 @@ export default function Showcase() {
         <h2 className="section-title">Logo Marquee Section (HTML+CSS)</h2>
         <LogoMarqueeSectionHTML />
         <h2 className="section-title">Logo Marquee Section (React)</h2>
-        <LogoMarqueeSectionReact />
+        <LogoMarqueeSectionReactShowcase />
         <h2 className="section-title">Logo Marquee Section (React+Tailwind)</h2>
         <LogoMarqueeSectionTailwind fullpage={false} />
       </section>
@@ -947,15 +940,7 @@ export default function Showcase() {
         <h2 className="section-title">
           Navbar Component - Interactive (React)
         </h2>
-        <NavbarReact
-          navbarLinks={[
-            { label: "Home", to: "/" },
-            { label: "Features", to: "/" },
-            { label: "Pricing", to: "/" },
-            { label: "About us", to: "/" },
-            { label: "Contact", to: "/" },
-          ]}
-        />
+        <NavbarReactShowcase />
         <h2 className="section-title">
           Navbar Component - Interactive (React+Tailwind)
         </h2>
@@ -969,6 +954,13 @@ export default function Showcase() {
           ]}
         />
       </section>
+      <section className="showcase">
+        <h2 className="section-title">Marketing Landing Page (React)</h2>
+      </section>
+      <Link to="/marketing" className="view-full-link">
+        View full page
+        <LinkIcon />
+      </Link>
     </main>
   );
 }
