@@ -14,14 +14,13 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-
-  padding: 48px 16px;
 }
 
 .faq-section-showcase {
   background-color: var(--bg-primary);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
+  padding: 48px 16px;
 }
 
 .fullpage .faq-section {
@@ -166,13 +165,13 @@
 @media (min-width: 768px) {
   .faq-section {
     gap: 64px;
-    padding: 64px 16px;
   }
 
   .faq-section-showcase {
     box-shadow:
       0px 4px 6px -1px rgba(0, 0, 0, 0.1),
       0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 64px 16px;
   }
 
   .faq-section-title {
@@ -197,12 +196,10 @@
 }
 
 @media (min-width: 1440px) {
-  .faq-section {
-    padding: 96px;
-  }
   .faq-section-showcase {
     box-shadow:
       0px 10px 15px -3px rgba(0, 0, 0, 0.1),
       0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 96px;
   }
 }

@@ -2,11 +2,11 @@ import "./navBar.css";
 import NavbarReact from "./NavbarReact";
 
 const navbarLinks = [
-  { label: "Home", to: "/" },
-  { label: "Features", to: "/" },
-  { label: "Pricing", to: "/" },
-  { label: "About us", to: "/" },
-  { label: "Contact", to: "/" },
+  { id: 1, label: "Home", to: "/" },
+  { id: 2, label: "Features", to: "/" },
+  { id: 3, label: "Pricing", to: "/" },
+  { id: 4, label: "About us", to: "/" },
+  { id: 5, label: "Contact", to: "/" },
 ];
 
 export default function NavbarReactShowcase() {

@@ -5,7 +5,7 @@ import prism from "./prism.webp";
 export default function HeroSectionSimpleReactShowcase() {
   return (
     <div className="container-section">
-      <div className="hero-showcase">
+      <div className="hero-section-showcase">
         <HeroSectionSimpleReact
           title="Well crafted abstract images"
           description="High quality abstract images for your projects, wallpaper and
