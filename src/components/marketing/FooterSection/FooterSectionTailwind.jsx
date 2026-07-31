@@ -4,7 +4,7 @@ export default function FooterSectionTailwind({
   footerLinks,
   socialMediaLinks,
 }) {
-  const currentYear = new Date().getFullYear;
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="w-full max-w-[1440px] mx-auto p-4">
@@ -16,7 +16,7 @@ export default function FooterSectionTailwind({
         [@media(min-width:90rem)]:rounded-md
         [@media(min-width:90rem)]:shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-2px_rgba(0,0,0,0.05)]`}
       >
-        <footer
+        <div
           className={`
             flex flex-col items-center justify-center gap-4 
             text-center
@@ -82,7 +82,7 @@ export default function FooterSectionTailwind({
               &copy; {currentYear} Abstractly, Inc. All rights reserved.
             </small>
           </p>
-        </footer>
+        </div>
       </div>
     </div>
   );

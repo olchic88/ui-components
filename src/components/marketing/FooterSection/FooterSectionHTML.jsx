@@ -4,8 +4,8 @@ import { Link } from "react-router";
 export default function FooterSectionHTML() {
   return (
     <div className="container-section">
-      <div className="footer-section">
-        <footer className="footer">
+      <div className="footer-section footer-section-showcase">
+        <div className="footer">
           <div className="footer-section-content">
             <nav aria-label="Footer">
               <ul className="footer-section-nav">
@@ -118,7 +118,7 @@ export default function FooterSectionHTML() {
           <p>
             <small>&copy; 2026 Abstractly, Inc. All rights reserved.</small>
           </p>
-        </footer>
+        </div>
       </div>
     </div>
   );

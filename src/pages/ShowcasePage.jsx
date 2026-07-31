@@ -104,7 +104,7 @@ import CookieBannerHTML from "../components/marketing/CookieConsent/CookieBanner
 import CookieModalHTML from "../components/marketing/CookieConsent/CookieModalHTML.jsx";
 
 import FooterSectionHTML from "../components/marketing/FooterSection/FooterSectionHTML.jsx";
-import FooterSectionReact from "../components/marketing/FooterSection/FooterSectionReact.jsx";
+import FooterSectionReactShowcase from "../components/marketing/FooterSection/FooterSectionReactShowcase.jsx";
 import FooterSectionTailwind from "../components/marketing/FooterSection/FooterSectionTailwind.jsx";
 
 import NavbarHTML from "../components/marketing/NavbarComponent/NavbarHTML.jsx";
@@ -760,46 +760,7 @@ export default function Showcase() {
         <h2 className="section-title">Footer Section (HTML+CSS)</h2>
         <FooterSectionHTML />
         <h2 className="section-title">Footer Section (React)</h2>
-        <FooterSectionReact
-          footerLinks={[
-            { id: 1, label: "Features", to: "/" },
-            { id: 2, label: "Pricing", to: "/" },
-            { id: 3, label: "About us", to: "/" },
-            { id: 4, label: "Contact", to: "/" },
-          ]}
-          socialMediaLinks={[
-            {
-              id: 1,
-              label: "Youtube",
-              href: "/",
-              icon: <YoutubeIcon />,
-            },
-            {
-              id: 2,
-              label: "Instagram",
-              href: "/",
-              icon: <InstagramIcon />,
-            },
-            {
-              id: 3,
-              label: "Facebook",
-              href: "/",
-              icon: <FacebookIcon />,
-            },
-            {
-              id: 4,
-              label: "GitHub",
-              href: "/",
-              icon: <GitHubIcon />,
-            },
-            {
-              id: 5,
-              label: "X",
-              href: "/",
-              icon: <XIcon />,
-            },
-          ]}
-        />
+        <FooterSectionReactShowcase/>
         <h2 className="section-title">Footer Section (React+Tailwind)</h2>
         <FooterSectionTailwind
           footerLinks={[
