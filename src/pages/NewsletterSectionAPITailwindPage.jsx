@@ -1,5 +1,5 @@
 import { callApi } from "../fetcher.jsx";
-import abstract from "../components/marketing/NewsletterSection/abstract.jpg";
+import abstract from "../components/marketing/NewsletterSection/abstract.webp";
 import NewsletterSectionTailwind from "../components/marketing/NewsletterSection/NewsletterSectionTailwind.jsx";
 import { useMutation } from "@tanstack/react-query";
 import { useEffect, useState } from "react";

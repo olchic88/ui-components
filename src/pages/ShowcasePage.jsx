@@ -67,8 +67,8 @@ import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.p
 import StatisticsSectionTailwind from "../components/marketing/StatisticsSection/StatisticsSectionTailwind.jsx";
 
 import NewsletterSectionHTML from "../components/marketing/NewsletterSection/NewsletterSectionHTML.jsx";
-import NewsletterSectionReact from "../components/marketing/NewsletterSection/NewsletterSectionReact.jsx";
-import abstract from "../components/marketing/NewsletterSection/abstract.jpg";
+import NewsletterSectionReactShowcase from "../components/marketing/NewsletterSection/NewsletterSectionReactShowcase.jsx";
+import abstract from "../components/marketing/NewsletterSection/abstract.webp";
 import NewsletterSectionTailwind from "../components/marketing/NewsletterSection/NewsletterSectionTailwind.jsx";
 
 import ContactSectionHTML from "../components/marketing/ContactSection/ContactSectionHTML.jsx";
@@ -478,20 +478,7 @@ export default function Showcase() {
         <h2 className="section-title">
           Newsletter Section - Interactive (React)
         </h2>
-        <NewsletterSectionReact
-          title="Get the finest curated abstracts delivered weekly to your inbox"
-          banner={abstract}
-          width={1176}
-          height={1216}
-          features={[
-            {
-              id: 1,
-              text: " Exclusive access to new abstract images and collections",
-            },
-            { id: 2, text: "Unlock special promotions only for subscribers" },
-            { id: 3, text: "Regular doses of artistic inspiration" },
-          ]}
-        />
+        <NewsletterSectionReactShowcase/>
         <Link to="/newsletter-section-api" className="view-full-link">
           View live data version (API)
           <LinkIcon />

@@ -1,11 +1,11 @@
 import "./newsletterSection.css";
-import abstract from "./abstract.jpg";
+import abstract from "./abstract.webp";
 
 export default function NewsletterSectionHTML() {
   return (
     <>
       <div className="container-section">
-        <div className="newsletter-section">
+        <section className="newsletter-section newsletter-section-showcase">
           <div className="newsletter-section-wrapper">
             <div className="newsletter-section-content">
               <h3 className="newsletter-section-title">
@@ -108,7 +108,7 @@ export default function NewsletterSectionHTML() {
             width={1176}
             height={1216}
           />
-        </div>
+        </section>
       </div>
       <div className="toast">
         <div className="toast-content toast-content-error">

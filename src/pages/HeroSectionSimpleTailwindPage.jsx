@@ -1,5 +1,5 @@
 import HeroSectionSimpleTailwind from "../components/marketing/HeroSectionSimple/HeroSectionSimpleTailwind.jsx";
-import prism from "../components/marketing/HeroSectionSimple/prism.png";
+import prism from "../components/marketing/HeroSectionSimple/prism.webp";
 
 export default function HeroSectionSimpleTailwindPage() {
   return (

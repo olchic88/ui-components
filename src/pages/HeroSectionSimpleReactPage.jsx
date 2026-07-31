@@ -1,5 +1,5 @@
 import HeroSectionSimpleReact from "../components/marketing/HeroSectionSimple/HeroSectionSimpleReact.jsx";
-import prism from "../components/marketing/HeroSectionSimple/prism.png";
+import prism from "../components/marketing/HeroSectionSimple/prism.webp";
 
 export default function HeroSectionSimpleReactPage() {
   return (

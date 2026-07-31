@@ -11,7 +11,9 @@
   gap: 16px;
 
   padding: 32px 12px;
+}
 
+.newsletter-section-showcase {
   background-color: var(--bg-primary);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -90,7 +92,6 @@
   gap: 6px;
 }
 
-
 .newsletter-section-form-content {
   display: flex;
   flex-direction: column;
@@ -99,7 +100,6 @@
 }
 
 /* .input-field in index.css */
-
 
 .newsletter-section-form-content-message {
   font-size: 1rem;
@@ -126,6 +126,9 @@
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 64px;
     padding: 64px 16px;
+  }
+
+  .newsletter-section-showcase {
     box-shadow:
       0px 4px 6px -1px rgba(0, 0, 0, 0.1),
       0px 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -164,21 +167,21 @@
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
-   .newsletter-section {
+  .newsletter-section {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 32px;
     align-items: center;
   }
-
 }
 
 @media (min-width: 1440px) {
   .newsletter-section {
     padding: 96px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
-
-
+  .newsletter-section-showcase {
+    box-shadow:
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
 }
