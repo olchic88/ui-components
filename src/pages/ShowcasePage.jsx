@@ -72,7 +72,7 @@ import abstract from "../components/marketing/NewsletterSection/abstract.webp";
 import NewsletterSectionTailwind from "../components/marketing/NewsletterSection/NewsletterSectionTailwind.jsx";
 
 import ContactSectionHTML from "../components/marketing/ContactSection/ContactSectionHTML.jsx";
-import ContactSectionReact from "../components/marketing/ContactSection/ContactSectionReact.jsx";
+import ContactSectionReactShowcase from "../components/marketing/ContactSection/ContactSectionReactShowcase.jsx";
 import ContactSectionTailwind from "../components/marketing/ContactSection/ContactSectionTailwind.jsx";
 
 import TeamSectionHTML from "../components/marketing/TeamSection/TeamSectionHTML.jsx";
@@ -478,7 +478,7 @@ export default function Showcase() {
         <h2 className="section-title">
           Newsletter Section - Interactive (React)
         </h2>
-        <NewsletterSectionReactShowcase/>
+        <NewsletterSectionReactShowcase />
         <Link to="/newsletter-section-api" className="view-full-link">
           View live data version (API)
           <LinkIcon />
@@ -510,29 +510,7 @@ export default function Showcase() {
         <h2 className="section-title">Contact Section - Static (HTML+CSS)</h2>
         <ContactSectionHTML />
         <h2 className="section-title">Contact Section - Interactive (React)</h2>
-        <ContactSectionReact
-          title="Talk to our team"
-          subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
-          contactDetails={[
-            {
-              id: 1,
-              icon: AddressIcon,
-              text: "123 Maple Street, Springfield, IL, USA",
-            },
-            {
-              id: 2,
-              icon: PhoneIcon,
-              text: "+1 (650) 555-0198",
-              href: "tel:+16505550198",
-            },
-            {
-              id: 3,
-              icon: EmailIcon,
-              text: "hello@abstractly.com",
-              href: "mailto:hello@abstractly.com",
-            },
-          ]}
-        />
+        <ContactSectionReactShowcase />
         <Link to="/contact-section-api" className="view-full-link">
           View live data version (API)
           <LinkIcon />

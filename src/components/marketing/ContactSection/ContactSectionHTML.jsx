@@ -4,7 +4,7 @@ export default function ContactSectionHTML() {
   return (
     <>
       <div className="container-section">
-        <div className="contact-section">
+        <div className="contact-section contact-section-showcase">
           <div className="contact-section-content-left">
             <div className="contact-section-header">
               <h3 className="contact-section-title">Talk to our team</h3>
