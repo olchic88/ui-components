@@ -159,126 +159,6 @@ blockquote {
   border: 1px solid var(--border-success);
 }
 
-/* reset */
-.ax-button {
-  all: unset;
-  outline: revert;
-  box-sizing: border-box;
-}
-
-/* base */
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  font-weight: 500;
-  font-family: inherit;
-  width: 100%;
-
-  text-decoration: none; /* for links */
-
-  outline: none;
-  transition:
-    background-color 300ms,
-    box-shadow 300ms,
-    color 300ms,
-    translate 180ms;
-}
-
-.button:focus {
-  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
-}
-
-/* size */
-
-.button-size-md {
-  height: 40px;
-  padding: 10px 14px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-}
-
-.button-size-lg {
-  height: 44px;
-  padding: 10px 16px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.button-size-lg-xl {
-  height: 44px;
-  padding: 10px 16px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-/* smaller padding on secondary btn for visual compactness */
-.button-secondary.button-size-lg {
-  padding: 9px 15px;
-}
-
-.button-size-xl {
-  height: 48px;
-  padding: 12px 20px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.button-secondary.button-size-xl {
-  padding: 11px 19px;
-}
-
-/* theme, button variants */
-.button-primary {
-  background: var(--bg-brand-primary);
-  box-shadow:
-    0px 1px 3px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.06);
-  color: var(--color-primary-invert);
-}
-
-.button-primary:hover,
-.button-primary:focus {
-  background-color: var(--bg-brand-primary-emphasize);
-}
-
-.button-primary:active,
-.button-secondary:active {
-  translate: 0.5px 0.5px;
-}
-
-/* .button.disabled for <Link> */
-.button-primary:disabled,
-.button-secondary:disabled,
-.button.disabled {
-  background-color: var(--bg-disabled);
-  box-shadow: none;
-  color: var(--color-disabled);
-  pointer-events: none;
-}
-
-.button-secondary {
-  border: 0.5px solid #e6e6e6;
-  background-color: var(--bg-primary);
-  box-shadow:
-    0px 1px 3px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.06);
-  color: var(--color-primary);
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
-  background-color: var(--bg-primary-hover);
-  border: 1px solid #e6e6e6;
-  color: var(--color-primary-hover);
-}
-
-.button-secondary:focus {
-  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
-}
-
 .button-danger {
   background-color: var(--color-error);
   color: var(--color-primary-invert);
@@ -297,23 +177,8 @@ blockquote {
 
 /* types */
 
-.button-toggle {
-  flex: 1;
-}
-
 .button-send-message {
   width: 212px;
-}
-
-.button-toggle.active {
-  color: var(--color-primary);
-}
-
-.button-toggle.inactive {
-  color: var(--color-secondary);
-  border: 0.5px solid #fff;
-  box-shadow: none;
-  background-color: none;
 }
 
 .button-notFound {
@@ -497,10 +362,6 @@ blockquote {
   .button-size-lg-xl {
     height: 48px;
     padding: 12px 20px;
-  }
-
-  .button-toggle {
-    flex: 0 0 140px;
   }
 
   .button-notFound {

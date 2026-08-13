@@ -5,12 +5,7 @@
   margin: 0 auto;
 }
 
-.fullpage .container-section {
-  max-width: 100%;
-  padding: 0;
-}
-
-.navbar-section {
+.navbar-section-showcase {
   min-height: 710px;
   background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
@@ -18,12 +13,6 @@
 
   position: relative; /* for sidebar, but in real project we need to use for sidebar position: fixed */
   overflow: hidden;
-}
-
-.fullpage .navbar-section {
-  min-height: 100vh;
-  border-radius: 0;
-  box-shadow: none;
 }
 
 .navbar {
@@ -35,7 +24,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 80px;
-  padding-inline: 16px;
 }
 
 .button-sidebar-open {
@@ -50,6 +38,14 @@
 
 .button-sidebar-open:focus {
   box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
+/* overlay */
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.4);
+  z-index: 1060;
 }
 
 #sidebar {
@@ -69,6 +65,8 @@
   overscroll-behavior: contain;
   translate: calc(-100% - 16px) 0;
   transition: translate 300ms;
+
+  z-index: 1065;
 }
 
 #sidebar.open {
@@ -157,7 +155,7 @@
 
 @media (min-width: 768px) {
   .navbar {
-    padding-inline: 32px;
+    padding-inline: 16px;
   }
 }
 
@@ -189,11 +187,11 @@
     flex-direction: row;
   }
 
-  .button-navbar-learn {
+  .navbar .button-navbar-learn {
     width: 125px;
   }
 
-  .button-navbar-pricing {
+  .navbar .button-navbar-pricing {
     width: 121px;
   }
 }

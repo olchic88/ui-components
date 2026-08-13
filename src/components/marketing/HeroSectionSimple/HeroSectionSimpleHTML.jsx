@@ -1,10 +1,12 @@
 import "./heroSectionSimple.css";
+import "../../../ui/Button/button.css";
+import { Link } from "react-router";
 import prism from "./prism.webp";
 
 export default function HeroSectionSimpleHTML() {
   return (
     <div className="container-section">
-      <div className="hero-section hero-showcase">
+      <div className="hero-section hero-section-showcase">
         <div className="hero-content">
           <div className="hero-header">
             <h3 className="hero-title">Well crafted abstract images</h3>
@@ -15,14 +17,20 @@ export default function HeroSectionSimpleHTML() {
           </div>
           <div className="hero-actions">
             <div className="hero-actions-btn">
-              <a className="hero-btn btn-secondary" href="#">
+              <Link
+                className="ax-button button button-secondary button-size-xl"
+                href="#"
+              >
                 Learn more
-              </a>
+              </Link>
             </div>
             <div className="hero-actions-btn">
-              <a className="hero-btn btn-primary" href="#">
+              <Link
+                className="ax-button button button-primary button-size-xl"
+                href="#"
+              >
                 See pricing
-              </a>
+              </Link>
             </div>
           </div>
         </div>

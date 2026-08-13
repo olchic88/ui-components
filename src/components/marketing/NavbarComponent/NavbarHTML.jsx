@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export default function NavbarHTML() {
   return (
     <div className="container-section">
-      <div className="navbar-section">
+      <div className="navbar-section navbar-section-showcase">
         <div className="navbar">
           <div className="navbar-logo">
             <Link to="/">

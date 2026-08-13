@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./newsletterSection.css";
 import { CheckIcon } from "../../../icons";
+import ButtonReact from "../../../ui/Button/ButtonReact";
 
 export default function NewsletterSectionReact({
   title,
@@ -79,13 +80,15 @@ export default function NewsletterSectionReact({
                 We only send you the best! No spam.
               </p>
             </div>
-            <button
+            <ButtonReact
+              variant="primary"
               type="submit"
-              className="ax-button button button-primary button-size-md button-newsletter"
+              size="md"
+              className="button-newsletter"
               disabled={isSubmitting}
             >
               Subscribe
-            </button>
+            </ButtonReact>
           </form>
         </div>
         <img

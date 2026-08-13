@@ -12,7 +12,7 @@ const navbarLinks = [
 export default function NavbarReactShowcase() {
   return (
     <div className="container-section">
-      <div className="navbar-section">
+      <div className="navbar-section-showcase">
         <NavbarReact navbarLinks={navbarLinks} logoTo={"/"} />
       </div>
     </div>

@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.logo-marquee-section {
+  padding: 48px 0;
+}
+
 .logo-marquee-section-showcase {
   background-color: var(--bg-primary);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
@@ -12,11 +16,14 @@
   padding: 264px 0px;
 }
 
+.logo-marquee-section-showcase .logo-marquee-section {
+  padding: 0;
+}
+
 .logo-marquee-section-content {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 48px 16px;
 }
 
 .logo-marquee-section-content h3 {
@@ -76,6 +83,7 @@
 @media (min-width: 768px) {
   .logo-marquee-section {
     gap: 64px;
+    padding: 64px 0;
   }
 
   .logo-marquee-section-showcase {
@@ -85,10 +93,6 @@
     padding: 356px 8px;
   }
 
-  .logo-marquee-section-content {
-    padding: 64px 0;
-  }
-
   .logo-marquee-section-logos {
     --gap: 8px;
     padding: 0;
@@ -96,16 +100,17 @@
 }
 
 @media (min-width: 1440px) {
+
+.logo-marquee-section {
+  padding: 96px 0;
+}
+
   .logo-marquee-section-showcase {
     box-shadow:
       0px 10px 15px -3px rgba(0, 0, 0, 0.1),
       0px 4px 6px -2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     padding: 196px 8px;
-  }
-
-  .logo-marquee-section-content {
-    padding: 96px 0px;
   }
 
   .logo-marquee-section-logos {

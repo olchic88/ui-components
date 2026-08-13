@@ -1,6 +1,7 @@
 import { useState } from "react";
-
 import "./pricingSectionTiers.css";
+import ButtonReact from "../../../ui/Button/ButtonReact";
+import { CheckCircleIcon } from "../../../icons";
 
 export default function PricingSectionTiersReact({
   supportingText,
@@ -34,20 +35,20 @@ export default function PricingSectionTiersReact({
       <div className="pricing-section-tiers-content">
         {/* segmented controls / segmented buttons */}
         <div className="pricing-section-tiers-toggle">
-          {["monthly", "annually"].map((period) => {
-            return (
-              <button
-                key={period}
-                className={`ax-button button button-size-lg button-secondary button-toggle ${
-                  billingPeriod === period ? "active" : "inactive"
-                }`}
-                aria-pressed={billingPeriod === period}
-                onClick={() => setBillingPeriod(period)}
-              >
-                {period === "monthly" ? "Monthly" : "Annually"}
-              </button>
-            );
-          })}
+          {["monthly", "annually"].map((period) => (
+            <ButtonReact
+              key={period}
+              size="lg"
+              variant="secondary"
+              className={`button-toggle ${
+                billingPeriod === period ? "active" : "inactive"
+              }`}
+              aria-pressed={billingPeriod === period}
+              onClick={() => setBillingPeriod(period)}
+            >
+              {period === "monthly" ? "Monthly" : "Annually"}
+            </ButtonReact>
+          ))}
         </div>
         <div className="pricing-section-tiers-plans">
           {pricingSectionTiersData[billingPeriod].map((tier) => {
@@ -85,35 +86,18 @@ export default function PricingSectionTiersReact({
                   {planMeta.features.map((feature) => {
                     return (
                       <li key={feature}>
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
-                            fill="#EEF2FF"
-                          />
-                          <path
-                            d="M9.64715 15.5245L10.0007 15.878L10.3543 15.5245L19.1931 6.68562L19.9002 7.39272L10.0007 17.2922L4.34383 11.6354L5.05093 10.9283L9.64715 15.5245Z"
-                            fill="#6366F1"
-                            stroke="#6366F1"
-                          />
-                        </svg>
+                        <CheckCircleIcon />
                         {feature}
                       </li>
                     );
                   })}
                 </ul>
-                <button
-                  className={`ax-button button button-size-xl
-                    ${activePlan === tier.plan ? "button-primary" : "button-secondary"}
-                    `}
+                <ButtonReact
+                  variant={activePlan === tier.plan ? "primary" : "secondary"}
+                  size="xl"
                 >
                   Buy now
-                </button>
+                </ButtonReact>
               </div>
             );
           })}

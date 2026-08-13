@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import "./heroSectionSimple.css";
+import ButtonReact from "../../../ui/Button/ButtonReact";
 
 export default function HeroSectionSimpleReact({
   title,
@@ -18,14 +19,14 @@ export default function HeroSectionSimpleReact({
         </div>
         <div className="hero-actions">
           <div className="hero-actions-btn">
-            <Link className="hero-btn btn-secondary" to="#">
+            <ButtonReact as="link" to="#" variant="secondary" size="xl">
               Learn more
-            </Link>
+            </ButtonReact>
           </div>
           <div className="hero-actions-btn">
-            <Link className="hero-btn btn-primary" to="#">
+            <ButtonReact as="link" to="#" variant="primary" size="xl">
               See pricing
-            </Link>
+            </ButtonReact>
           </div>
         </div>
       </div>

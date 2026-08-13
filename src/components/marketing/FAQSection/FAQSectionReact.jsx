@@ -1,4 +1,5 @@
 import { AccordionIcon } from "../../../icons";
+import ButtonReact from "../../../ui/Button/ButtonReact";
 import "./faqSection.css";
 
 import { useState } from "react";
@@ -62,12 +63,14 @@ export default function FAQSectionReact({ faqs }) {
               team.
             </p>
           </div>
-          <button
-            type="button"
-            className="ax-button button button-primary button-size-xl faq-section-button"
+          <ButtonReact
+            as="link"
+            variant="primary"
+            size="xl"
+            className="faq-section-button"
           >
             Get in touch
-          </button>
+          </ButtonReact>
         </div>
       </div>
     </section>

@@ -10,3 +10,6 @@ export { InstagramIcon } from "./InstagramIcon";
 export { FacebookIcon } from "./FacebookIcon";
 export { GitHubIcon } from "./GitHubIcon";
 export { XIcon } from "./XIcon";
+export { MenuIcon } from "./MenuIcon";
+export { CloseMenuIcon } from "./CloseMenuIcon";
+export { CheckCircleIcon } from "./CheckCircleIcon";

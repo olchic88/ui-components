@@ -11,7 +11,7 @@ import logo7 from "./logo-7.svg";
 export default function LogoMarqueeSectionHTML() {
   return (
     <div className="container-section">
-      <div className="logo-marquee-section">
+      <div className="logo-marquee-section logo-marquee-section-showcase">
         <div className="logo-marquee-section-content">
           <h3>Used by teams that you love</h3>
           <div className="logo-marquee-section-logos-wrapper">

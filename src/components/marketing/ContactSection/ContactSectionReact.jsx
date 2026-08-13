@@ -3,6 +3,7 @@ import "./contactSection.css";
 import { useState, useRef } from "react";
 
 import { ConfirmationIcon } from "../../../icons";
+import ButtonReact from "../../../ui/Button/ButtonReact";
 
 export default function ContactSectionReact({
   title,
@@ -73,7 +74,7 @@ export default function ContactSectionReact({
       return;
     }
 
-    console.log("Form submitted");
+    console.log("Form submitted", { name, email, message });
 
     onSubmit({ name, email, message }); // prop from parent ContactSectionAPIPage onSubmit={(data) => mutation.mutate(data)}, т.е. вызывается эта f
   }
@@ -194,13 +195,14 @@ export default function ContactSectionReact({
                 )}
               </div>
             </div>
-            <button
+            <ButtonReact
+              variant="primary"
+              size="lg"
               type="submit"
-              className="ax-button button button-size-lg button-primary"
               disabled={isSubmitting}
             >
               Submit
-            </button>
+            </ButtonReact>
           </form>
           {isSuccess && (
             <div className="contact-section-confirmation">
@@ -213,13 +215,14 @@ export default function ContactSectionReact({
                   email.
                 </p>
               </div>
-              <button
-                type="button"
+              <ButtonReact
+                variant="secondary"
+                size="lg"
                 onClick={handleReset}
-                className="ax-button button button-secondary button-size-lg button-send-message"
+                className="button-send-message"
               >
                 Send another message
-              </button>
+              </ButtonReact>
             </div>
           )}
         </div>

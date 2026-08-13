@@ -2,6 +2,8 @@ import "./navBar.css";
 import logo from "./abstractly.svg";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
+import ButtonReact from "../../../ui/Button/ButtonReact";
+import { CloseMenuIcon, MenuIcon } from "../../../icons";
 
 export default function NavbarReact({ navbarLinks, logoTo }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,47 +35,49 @@ export default function NavbarReact({ navbarLinks, logoTo }) {
           <ul className="navbar-links">
             {navbarLinks.map((link) => (
               <li key={link.id}>
-                <Link to={link.to} className="navbar-link link">
-                  {link.label}
-                </Link>
+                {link.type === "anchor" ? (
+                  <a href={link.to} className="navbar-link link">
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link to={link.to} className="navbar-link link">
+                    {link.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
           <div className="navbar-actions">
-            <Link
-              to="/"
-              className="ax-button button button-secondary button-size-lg button-navbar-learn"
+            <ButtonReact
+              as="link"
+              to="#"
+              variant="secondary"
+              size="lg"
+              className="button-navbar-learn"
             >
               Learn more
-            </Link>
-            <Link
-              to="/"
-              className="ax-button button button-primary button-size-lg button-navbar-pricing"
+            </ButtonReact>
+            <ButtonReact
+              as="link"
+              to="#"
+              variant="primary"
+              size="lg"
+              className="button-navbar-pricing"
             >
               See pricing
-            </Link>
+            </ButtonReact>
           </div>
         </div>
         <button
           aria-label="Open menu"
-          className="ax-button button-sidebar-open"
+          className="button-sidebar-open"
           onClick={() => setIsOpen(true)}
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.5 3.33333H17.5V5H2.5V3.33333ZM2.5 9.16667H17.5V10.8333H2.5V9.16667ZM2.5 15H17.5V16.6667H2.5V15Z"
-              fill="#525252"
-            />
-          </svg>
+          <MenuIcon size={20} />
         </button>
       </nav>
-
+      {isOpen && <div className="sidebar-backdrop" onClick={closeSidebar} />}{" "}
+      {/* overlay */}
       <nav id="sidebar" className={`${isOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <div className="navbar-logo">
@@ -83,52 +87,57 @@ export default function NavbarReact({ navbarLinks, logoTo }) {
           </div>
           <button
             aria-label="Close menu"
-            className="ax-button button-sidebar-close"
+            className="button-sidebar-close"
             onClick={closeSidebar}
           >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.0006 8.82208L14.1253 4.69727L15.3038 5.87577L11.1791 10.0006L15.3038 14.1253L14.1253 15.3038L10.0006 11.1791L5.87577 15.3038L4.69727 14.1253L8.82208 10.0006L4.69727 5.87577L5.87577 4.69727L10.0006 8.82208Z"
-                fill="#525252"
-              />
-            </svg>
+            <CloseMenuIcon size={20} />
           </button>
         </div>
 
         <ul className="navbar-links">
           {navbarLinks.map((link) => (
             <li key={link.id}>
-              <Link
-                to={link.to}
-                className="sidebar-link link"
-                onClick={closeSidebar}
-              >
-                {link.label}
-              </Link>
+              {link.type === "anchor" ? (
+                <a
+                  href={link.to}
+                  className="sidebar-link link"
+                  onClick={closeSidebar}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  to={link.to}
+                  className="sidebar-link link"
+                  onClick={closeSidebar}
+                >
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
         <div className="navbar-actions">
-          <Link
-            to="/"
-            className="ax-button button button-secondary button-size-lg button-navbar-learn"
+          <ButtonReact
+            as="link"
+            to="#"
+            variant="secondary"
+            size="lg"
+            className="button-navbar-learn"
             onClick={closeSidebar}
           >
             Learn more
-          </Link>
-          <Link
-            to="/"
-            className="ax-button button button-primary button-size-lg button-navbar-pricing"
+          </ButtonReact>
+          <ButtonReact
+            as="link"
+            to="#"
+            variant="primary"
+            size="lg"
+            className="button-navbar-pricing"
             onClick={closeSidebar}
           >
             See pricing
-          </Link>
+          </ButtonReact>
         </div>
       </nav>
     </>
