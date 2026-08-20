@@ -59,7 +59,6 @@ export default function ContactSectionAPIPage() {
   return (
     <>
       <div className="fullpage">
-        <title>Contact Section</title>
         <ContactSectionReact
           title="Talk to our team"
           subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
