@@ -1,22 +1,14 @@
+import SectionHeaderReact from "../SectionHeader/SectionHeaderReact";
 import "./featureSectionGrid.css";
 
-export default function FeatureSectionGridReact({
-  supportingText,
-  title,
-  subtitle,
-  features,
-}) {
+export default function FeatureSectionGridReact({ features }) {
   return (
     <section className="feature-section-grid">
-      <div className="feature-section-grid-header">
-        <p className="feature-section-grid-header-supporting-text">
-          {supportingText}
-        </p>
-        <div className="feature-section-grid-header-content">
-          <h3 className="feature-section-grid-header-title">{title}</h3>
-          <p className="feature-section-grid-header-subtitle">{subtitle}</p>
-        </div>
-      </div>
+      <SectionHeaderReact
+        supportingText="Premium abstract images"
+        title="Easy access to top quality images"
+        subtitle="In a world where storytelling constantly evolves, we lead with groundbreaking images designed for your presentation excellence."
+      ></SectionHeaderReact>
 
       <ul className="feature-section-grid-features">
         {features.map((feature) => {

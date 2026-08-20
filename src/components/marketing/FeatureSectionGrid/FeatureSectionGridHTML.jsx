@@ -1,18 +1,19 @@
 import "./featureSectionGrid.css";
+import "../SectionHeader/sectionHeader.css";
 
 export default function FeatureSectionGridHTML() {
   return (
     <div className="container-section">
       <div className="feature-section-grid feature-section-grid-showcase">
-        <div className="feature-section-grid-header">
-          <p className="feature-section-grid-header-supporting-text">
+        <div className="section-header">
+          <p className="section-header-supporting-text">
             Premium abstract images
           </p>
-          <div className="feature-section-grid-header-content">
-            <h3 className="feature-section-grid-header-title">
+          <div className="section-header-content">
+            <h3 className="section-header-title">
               Easy access to top quality images
             </h3>
-            <p className="feature-section-grid-header-subtitle">
+            <p className="section-header-subtitle">
               In a world where storytelling constantly evolves, we lead with
               groundbreaking images designed for your presentation excellence.
             </p>

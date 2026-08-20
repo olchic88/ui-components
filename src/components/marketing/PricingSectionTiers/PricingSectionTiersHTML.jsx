@@ -4,20 +4,17 @@ export default function PricingSectionTiersHTML() {
   return (
     <div className="container-section">
       <div className="pricing-section-tiers pricing-section-tiers-showcase">
-        <div className="pricing-section-tiers-header">
-          <p className="pricing-section-tiers-header-supporting-text">
-            Pricing Tiers
-          </p>
-          <div className="pricing-section-tiers-header-content">
-            <h3 className="pricing-section-tiers-header-title">
-              Fit for all your needs
-            </h3>
-            <p className="pricing-section-tiers-header-subtitle">
+        <div className="section-header">
+          <p className="section-header-supporting-text">Pricing Tiers</p>
+          <div className="section-header-content">
+            <h3 className="section-header-title">Fit for all your needs</h3>
+            <p className="section-header-subtitle">
               Pick the plan that suits you today and step up as your demands
               grow - our flexible options have your journey mapped out.
             </p>
           </div>
         </div>
+
         <div className="pricing-section-tiers-content">
           {/* segmented controls / segmented buttons */}
           <div className="pricing-section-tiers-toggle">

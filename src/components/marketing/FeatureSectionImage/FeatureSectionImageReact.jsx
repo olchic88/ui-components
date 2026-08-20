@@ -1,10 +1,8 @@
+import SectionHeaderReact from "../SectionHeader/SectionHeaderReact";
 import "./featureSectionImage.css";
 
 export default function FeatureSectionImageReact({
   side,
-  supportingText,
-  title,
-  subtitle,
   features,
   image,
   alt,
@@ -13,15 +11,26 @@ export default function FeatureSectionImageReact({
 }) {
   return (
     <section className={`feature-section feature-section-image-${side}`}>
-      <div className="feature-section-header">
-        <p className="feature-section-header-supporting-text">
-          {supportingText}
-        </p>
-        <div className="feature-section-header-content">
-          <h4 className="feature-section-header-title">{title}</h4>
-          <p className="feature-section-header-subtitle">{subtitle}</p>
-        </div>
-      </div>
+      <SectionHeaderReact
+        supportingText={
+          side === "right" ? "High quality images" : "Best-in-class support"
+        }
+        title={
+          side === "right"
+            ? "For designers, by designers"
+            : "Convenience and licensing that empowers"
+        }
+        subtitle={
+          side === "right"
+            ? "Unleash boundless creativity with a large repository of images optimized for designers"
+            : "In a world where storytelling constantly evolves, don't let licensing and poor support hold you down"
+        }
+        titleClassName={side === "left" ? "section-header-title-left" : ""}
+        subtitleClassName={
+          side === "left" ? "section-header-subtitle-left" : ""
+        }
+      ></SectionHeaderReact>
+
       <div className="feature-section-content">
         <ul className="feature-section-features">
           {features.map((feature) => (

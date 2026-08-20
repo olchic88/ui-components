@@ -29,44 +29,6 @@
   box-shadow: none;
 }
 
-.feature-section-grid-header {
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.feature-section-grid-header-supporting-text {
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 600;
-  color: var(--color-brand-primary);
-}
-
-.feature-section-grid-header-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.feature-section-grid-header-title {
-  text-align: center;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-.feature-section-grid-header-subtitle {
-  text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 400;
-  color: var(--color-secondary);
-}
-
 .feature-section-grid-features {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -135,16 +97,6 @@
       0px 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
-  .feature-section-grid-header-title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .feature-section-grid-header-subtitle {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .feature-section-grid-features {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-auto-rows: 1fr;
@@ -170,14 +122,6 @@
 
   .feature-section-grid-content {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
-  .feature-section-grid-header-title {
-    padding: 0 250px;
-  }
-
-  .feature-section-grid-header-subtitle {
-    padding: 0 200px;
   }
 
   .feature-section-grid-features {

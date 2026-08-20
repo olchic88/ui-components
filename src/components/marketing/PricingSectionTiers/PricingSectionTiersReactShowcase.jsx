@@ -9,9 +9,6 @@ export default function PricingSectionTiersReactShowcase() {
         <PricingSectionTiersReact
           pricingSectionTiersData={pricingSectionTiersData}
           plan={plan}
-          supportingText="Pricing Tiers"
-          title="Fit for all your needs"
-          subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
         />
       </div>
     </div>

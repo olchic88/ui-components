@@ -2,11 +2,9 @@ import { useState } from "react";
 import "./pricingSectionTiers.css";
 import ButtonReact from "../../../ui/Button/ButtonReact";
 import { CheckCircleIcon } from "../../../icons";
+import SectionHeaderReact from "../SectionHeader/SectionHeaderReact";
 
 export default function PricingSectionTiersReact({
-  supportingText,
-  title,
-  subtitle,
   pricingSectionTiersData,
   plan,
 }) {
@@ -23,15 +21,12 @@ export default function PricingSectionTiersReact({
 
   return (
     <section className="pricing-section-tiers">
-      <div className="pricing-section-tiers-header">
-        <p className="pricing-section-tiers-header-supporting-text">
-          {supportingText}
-        </p>
-        <div className="pricing-section-tiers-header-content">
-          <h3 className="pricing-section-tiers-header-title">{title}</h3>
-          <p className="pricing-section-tiers-header-subtitle">{subtitle}</p>
-        </div>
-      </div>
+      <SectionHeaderReact
+        supportingText="Pricing Tiers"
+        title="Fit for all your needs"
+        subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
+      ></SectionHeaderReact>
+
       <div className="pricing-section-tiers-content">
         {/* segmented controls / segmented buttons */}
         <div className="pricing-section-tiers-toggle">

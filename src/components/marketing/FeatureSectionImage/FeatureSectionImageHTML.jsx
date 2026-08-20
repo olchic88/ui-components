@@ -10,20 +10,21 @@ export default function FeatureSectionImage({ side }) {
         <section className="feature-section-image-right">
           <div className="container-section">
             <div className="feature-section feature-section-showcase feature-section-showcase-item">
-              <div className="feature-section-header">
-                <p className="feature-section-header-supporting-text">
+              <div className="section-header">
+                <p className="section-header-supporting-text">
                   High quality images
                 </p>
-                <div className="feature-section-header-content">
-                  <h4 className="feature-section-header-title">
+                <div className="section-header-content">
+                  <h4 className="section-header-title">
                     For designers, by designers
                   </h4>
-                  <p className="feature-section-header-subtitle">
+                  <p className="section-header-subtitle">
                     Unleash boundless creativity with a large repository of
                     images optimized for designers
                   </p>
                 </div>
               </div>
+
               <div className="feature-section-content">
                 <ul className="feature-section-features">
                   <li className="feature-section-feature">
@@ -112,20 +113,21 @@ export default function FeatureSectionImage({ side }) {
         <section className="feature-section-image-left">
           <div className="container-section">
             <div className="feature-section feature-section-showcase feature-section-showcase-item">
-              <div className="feature-section-header">
-                <p className="feature-section-header-supporting-text">
+              <div className="section-header">
+                <p className="section-header-supporting-text">
                   Best-in-class support
                 </p>
-                <div className="feature-section-header-content">
-                  <h4 className="feature-section-header-title">
+                <div className="section-header-content">
+                  <h4 className="section-header-title">
                     Convenience and licensing that empowers
                   </h4>
-                  <p className="feature-section-header-subtitle">
+                  <p className="section-header-subtitle">
                     In a world where storytelling constantly evolves, don't let
                     licensing and poor support hold you down
                   </p>
                 </div>
               </div>
+
               <div className="feature-section-content">
                 <ul className="feature-section-features">
                   <li className="feature-section-feature">

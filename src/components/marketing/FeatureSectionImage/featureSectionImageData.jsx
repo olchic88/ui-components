@@ -1,6 +1,9 @@
 import unsplashLeft from "./unsplashLeft.webp";
 import unsplashRight from "./unsplashRight.webp";
 
+
+/* удалить первые три строки, тк они есть в SectionHeader? Используется пока что для Tailwind */
+
 export const featureSectionImageData = {
   right: {
     supportingText: "High quality images",
