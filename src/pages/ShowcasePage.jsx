@@ -95,6 +95,7 @@ import TestimonialsSectionHTML from "../components/marketing/TestimonialsSection
 import { testimonials } from "../components/marketing/TestimonialsSection/testimonialsSectionData.jsx";
 import TestimonialsSectionReact from "../components/marketing/TestimonialsSection/TestimonialsSectionReact.jsx";
 import TestimonialsSectionTailwind from "../components/marketing/TestimonialsSection/TestimonialsSectionTailwind.jsx";
+import TestimonialsSectionReactShowcase from "../components/marketing/TestimonialsSection/TestimonialsSectionReactShowcase.jsx";
 
 import LogoMarqueeSectionHTML from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionHTML.jsx";
 import LogoMarqueeSectionReactShowcase from "../components/marketing/LogoMarqueeSection/LogoMarqueeSectionReactShowcase.jsx";
@@ -722,7 +723,7 @@ export default function Showcase() {
         <h2 className="section-title">
           Testimonials Section - masonry-like layout (React)
         </h2>
-        <TestimonialsSectionReact testimonials={testimonials} />
+        <TestimonialsSectionReactShowcase />
         <h2 className="section-title">
           Testimonials Section - masonry-like layout (React+Tailwind)
         </h2>
@@ -760,7 +761,7 @@ export default function Showcase() {
         <h2 className="section-title">Footer Section (HTML+CSS)</h2>
         <FooterSectionHTML />
         <h2 className="section-title">Footer Section (React)</h2>
-        <FooterSectionReactShowcase/>
+        <FooterSectionReactShowcase />
         <h2 className="section-title">Footer Section (React+Tailwind)</h2>
         <FooterSectionTailwind
           footerLinks={[
@@ -825,11 +826,18 @@ export default function Showcase() {
       </section>
       <section className="showcase">
         <h2 className="section-title">Marketing Landing Page (React)</h2>
+        <Link to="/marketing" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
       </section>
-      <Link to="/marketing" className="view-full-link">
-        View full page
-        <LinkIcon />
-      </Link>
+      <section className="showcase">
+        <h2 className="section-title">Features Page (React)</h2>
+        <Link to="/features" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
+      </section>
     </main>
   );
 }
