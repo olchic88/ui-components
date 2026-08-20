@@ -158,6 +158,7 @@ const socialMediaLinks = [
 export default function MarketingLandingPageReact() {
   return (
     <>
+      <title>Marketing Landing Page</title>
       <div className="marketing-landing-page">
         <header className="marketing-landing-page-header">
           <NavbarReact navbarLinks={navbarLinks} logoTo={"/marketing"} />
