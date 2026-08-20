@@ -27,6 +27,7 @@ import NotFoundSectionReactPage from "./pages/NotFoundSectionReactPage.jsx";
 import NotFoundSectionTailwindPage from "./pages/NotFoundSectionTailwindPage.jsx";
 import CookieConsentReactPage from "./pages/CookieConsentReactPage.jsx";
 import CookieConsentTailwindPage from "./pages/CookieConsentTailwindPage.jsx";
+import MarketingLandingPageReact from "./pages/MarketingLandingPageReact.jsx";
 
 function App() {
   // throw new Error("Boom"); //
@@ -158,7 +159,8 @@ function App() {
             path="cookie-consent-tailwind"
             element={<CookieConsentTailwindPage />}
           />
-          
+          <Route path="marketing" element={<MarketingLandingPageReact />} />
+          <Route path="*" element={<h1>This page was not found.</h1>} /> {/* // or the <NotFound /> component */}
         </Routes>
       </Suspense>
     </BrowserRouter>

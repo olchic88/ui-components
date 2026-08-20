@@ -1,3 +1,5 @@
+import "./marketingLandingPage.css";
+
 import { featureSectionGridData } from "../components/marketing/FeatureSectionGrid/featureSectionGridData";
 import FeatureSectionGridReact from "../components/marketing/FeatureSectionGrid/FeatureSectionGridReact";
 
@@ -22,12 +24,27 @@ import FAQSectionReact from "../components/marketing/FAQSection/FAQSectionReact"
 import NewsletterSectionReact from "../components/marketing/NewsletterSection/NewsletterSectionReact";
 import abstract from "../components/marketing/NewsletterSection/abstract.webp";
 
+import ContactSectionAPIPage from "./ContactSectionAPIPage";
+
+import {
+  AddressIcon,
+  PhoneIcon,
+  EmailIcon,
+  LinkIcon,
+  InstagramIcon,
+  FacebookIcon,
+  YoutubeIcon,
+  GitHubIcon,
+  XIcon,
+} from "../icons";
+import FooterSectionReact from "../components/marketing/FooterSection/FooterSectionReact";
+
 const navbarLinks = [
-  { label: "Home", to: "/marketing" },
-  { label: "Features", to: "/marketing" },
-  { label: "Pricing", to: "/marketing" },
-  { label: "About us", to: "/marketing" },
-  { label: "Contact", to: "/marketing" },
+  { id: 1, label: "Home", to: "#home", type: "anchor" },
+  { id: 2, label: "Features", to: "#features", type: "anchor" },
+  { id: 3, label: "Pricing", to: "#pricing", type: "anchor" },
+  { id: 4, label: "About us", to: "#about", type: "anchor" },
+  { id: 5, label: "Contact", to: "#contact", type: "anchor" },
 ];
 
 const faqs = [
@@ -78,45 +95,134 @@ const newsletterFeatures = [
   { id: 3, text: "Regular doses of artistic inspiration" },
 ];
 
+const contactDetails = [
+  {
+    id: 1,
+    icon: AddressIcon,
+    text: "123 Maple Street, Springfield, IL, USA",
+  },
+  {
+    id: 2,
+    icon: PhoneIcon,
+    text: "+1 (650) 555-0198",
+    href: "tel:+16505550198",
+  },
+  {
+    id: 3,
+    icon: EmailIcon,
+    text: "hello@abstractly.com",
+    href: "mailto:hello@abstractly.com",
+  },
+];
+
+const footerLinks = [
+  { id: 1, label: "Features", to: "/" },
+  { id: 2, label: "Pricing", to: "/" },
+  { id: 3, label: "About us", to: "/" },
+  { id: 4, label: "Contact", to: "/" },
+];
+
+const socialMediaLinks = [
+  {
+    id: 1,
+    label: "Youtube",
+    href: "/",
+    icon: <YoutubeIcon />,
+  },
+  {
+    id: 2,
+    label: "Instagram",
+    href: "/",
+    icon: <InstagramIcon />,
+  },
+  {
+    id: 3,
+    label: "Facebook",
+    href: "/",
+    icon: <FacebookIcon />,
+  },
+  {
+    id: 4,
+    label: "GitHub",
+    href: "/",
+    icon: <GitHubIcon />,
+  },
+  {
+    id: 5,
+    label: "X",
+    href: "/",
+    icon: <XIcon />,
+  },
+];
+
 export default function MarketingLandingPageReact() {
   return (
     <>
-      <header>
-        <NavbarReact navbarLinks={navbarLinks} logoTo={"/marketing"} />
-      </header>
-      <main>
-        <HeroSectionSimpleReact
-          title="Well crafted abstract images"
-          description="High quality abstract images for your projects, wallpaper and
-                    presentations."
-          src={prism}
-          alt="Colorful abstract geometric shapes"
-          width={696}
-          height={526}
-        />
-        <LogoMarqueeSectionReact />
-        <FeatureSectionGridReact {...featureSectionGridData} />
-        <FeatureSectionImageReact
-          side="right"
-          {...featureSectionImageData.right}
-        />
-        <PricingSectionTiersReact
-          pricingSectionTiersData={pricingSectionTiersData}
-          plan={plan}
-          supportingText="Pricing Tiers"
-          title="Fit for all your needs"
-          subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
-        />
-        <FAQSectionReact faqs={faqs} />
-        <NewsletterSectionReact
-          title="Get the finest curated abstracts delivered weekly to your inbox"
-          banner={abstract}
-          width={1176}
-          height={1216}
-          features={newsletterFeatures}
-        />
-      </main>
-      <footer></footer>
+      <div className="marketing-landing-page">
+        <header className="marketing-landing-page-header">
+          <NavbarReact navbarLinks={navbarLinks} logoTo={"/marketing"} />
+        </header>
+        <div className="marketing-landing-page-content">
+          <main>
+            <div id="home">
+              <HeroSectionSimpleReact
+                title="Well crafted abstract images"
+                description="High quality abstract images for your projects, wallpaper and
+                                presentations."
+                src={prism}
+                alt="Colorful abstract geometric shapes"
+                width={696}
+                height={526}
+              />
+            </div>
+            <LogoMarqueeSectionReact />
+            <div id="features">
+              <FeatureSectionGridReact {...featureSectionGridData} />
+            </div>
+            <FeatureSectionImageReact
+              side="right"
+              {...featureSectionImageData.right}
+            />
+            <FeatureSectionImageReact
+              side="left"
+              {...featureSectionImageData.left}
+            />
+
+            <div id="pricing">
+              <PricingSectionTiersReact
+                pricingSectionTiersData={pricingSectionTiersData}
+                plan={plan}
+                supportingText="Pricing Tiers"
+                title="Fit for all your needs"
+                subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
+              />
+            </div>
+            <div id="about">
+              <FAQSectionReact faqs={faqs} />
+            </div>
+            <NewsletterSectionReact
+              title="Get the finest curated abstracts delivered weekly to your inbox"
+              banner={abstract}
+              width={1176}
+              height={1216}
+              features={newsletterFeatures}
+            />
+            <div id="contact">
+              <ContactSectionAPIPage
+                title="Talk to our team"
+                subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
+                contactDetails={contactDetails}
+              />
+            </div>
+          </main>
+          <footer>
+            <FooterSectionReact
+              footerLinks={footerLinks}
+              socialMediaLinks={socialMediaLinks}
+            />
+          </footer>
+        </div>
+      </div>
     </>
   );
 }
