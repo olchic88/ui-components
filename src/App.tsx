@@ -28,11 +28,14 @@ import NotFoundSectionTailwindPage from "./pages/NotFoundSectionTailwindPage.jsx
 import CookieConsentReactPage from "./pages/CookieConsentReactPage.jsx";
 import CookieConsentTailwindPage from "./pages/CookieConsentTailwindPage.jsx";
 import MarketingLandingPageReact from "./pages/MarketingLandingPageReact.jsx";
+import FeaturesPageReact from "./pages/FeaturesPageReact.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 function App() {
   // throw new Error("Boom"); //
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
           <Route
@@ -160,7 +163,9 @@ function App() {
             element={<CookieConsentTailwindPage />}
           />
           <Route path="marketing" element={<MarketingLandingPageReact />} />
-          <Route path="*" element={<h1>This page was not found.</h1>} /> {/* // or the <NotFound /> component */}
+          <Route path="features" element={<FeaturesPageReact />} />
+          <Route path="*" element={<h1>This page was not found.</h1>} />{" "}
+          {/* // or the <NotFound /> component */}
         </Routes>
       </Suspense>
     </BrowserRouter>
