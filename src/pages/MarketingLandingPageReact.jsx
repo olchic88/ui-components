@@ -1,4 +1,4 @@
-import "./marketingLandingPage.css";
+import "./pageLayout.css";
 
 import { featureSectionGridData } from "../components/marketing/FeatureSectionGrid/featureSectionGridData";
 import FeatureSectionGridReact from "../components/marketing/FeatureSectionGrid/FeatureSectionGridReact";
@@ -159,11 +159,11 @@ export default function MarketingLandingPageReact() {
   return (
     <>
       <title>Marketing Landing Page</title>
-      <div className="marketing-landing-page">
-        <header className="marketing-landing-page-header">
+      <div className="page">
+        <header className="page-header">
           <NavbarReact navbarLinks={navbarLinks} logoTo={"/marketing"} />
         </header>
-        <div className="marketing-landing-page-content">
+        <div className="page-content">
           <main>
             <div id="home">
               <HeroSectionSimpleReact
