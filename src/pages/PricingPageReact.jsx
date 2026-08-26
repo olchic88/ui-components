@@ -32,11 +32,11 @@ import {
 } from "../components/marketing/PricingSectionTiers/pricingSectionTiersData";
 
 const navbarLinks = [
-  { id: 1, label: "Home", to: "#home", type: "anchor" },
-  { id: 2, label: "Features", to: "#features", type: "anchor" },
-  { id: 3, label: "Pricing", to: "#pricing", type: "anchor" },
-  { id: 4, label: "About us", to: "#about", type: "anchor" },
-  { id: 5, label: "Contact", to: "#contact", type: "anchor" },
+  { id: 1, label: "Home", to: "", type: "anchor" },
+  { id: 2, label: "Features", to: "", type: "anchor" },
+  { id: 3, label: "Pricing", to: "", type: "anchor" },
+  { id: 4, label: "About us", to: "", type: "anchor" },
+  { id: 5, label: "Contact", to: "", type: "anchor" },
 ];
 
 const faqs = [

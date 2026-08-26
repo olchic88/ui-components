@@ -40,11 +40,11 @@ import {
 import FooterSectionReact from "../components/marketing/FooterSection/FooterSectionReact";
 
 const navbarLinks = [
-  { id: 1, label: "Home", to: "#home", type: "anchor" },
-  { id: 2, label: "Features", to: "#features", type: "anchor" },
-  { id: 3, label: "Pricing", to: "#pricing", type: "anchor" },
-  { id: 4, label: "About us", to: "#about", type: "anchor" },
-  { id: 5, label: "Contact", to: "#contact", type: "anchor" },
+  { id: 1, label: "Home", to: "", type: "anchor" },
+  { id: 2, label: "Features", to: "", type: "anchor" },
+  { id: 3, label: "Pricing", to: "", type: "anchor" },
+  { id: 4, label: "About us", to: "", type: "anchor" },
+  { id: 5, label: "Contact", to: "", type: "anchor" },
 ];
 
 const faqs = [
@@ -165,21 +165,20 @@ export default function MarketingLandingPageReact() {
         </header>
         <div className="page-content">
           <main>
-            <div id="home">
-              <HeroSectionSimpleReact
-                title="Well crafted abstract images"
-                description="High quality abstract images for your projects, wallpaper and
+            <HeroSectionSimpleReact
+              title="Well crafted abstract images"
+              description="High quality abstract images for your projects, wallpaper and
                                 presentations."
-                src={prism}
-                alt="Colorful abstract geometric shapes"
-                width={696}
-                height={526}
-              />
-            </div>
+              src={prism}
+              alt="Colorful abstract geometric shapes"
+              width={696}
+              height={526}
+            />
+
             <LogoMarqueeSectionReact />
-            <div id="features">
-              <FeatureSectionGridReact {...featureSectionGridData} />
-            </div>
+
+            <FeatureSectionGridReact {...featureSectionGridData} />
+
             <FeatureSectionImageReact
               side="right"
               {...featureSectionImageData.right}
@@ -189,18 +188,16 @@ export default function MarketingLandingPageReact() {
               {...featureSectionImageData.left}
             />
 
-            <div id="pricing">
-              <PricingSectionTiersReact
-                pricingSectionTiersData={pricingSectionTiersData}
-                plan={plan}
-                supportingText="Pricing Tiers"
-                title="Fit for all your needs"
-                subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
-              />
-            </div>
-            <div id="about">
-              <FAQSectionReact faqs={faqs} />
-            </div>
+            <PricingSectionTiersReact
+              pricingSectionTiersData={pricingSectionTiersData}
+              plan={plan}
+              supportingText="Pricing Tiers"
+              title="Fit for all your needs"
+              subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
+            />
+
+            <FAQSectionReact faqs={faqs} />
+
             <NewsletterSectionReact
               title="Get the finest curated abstracts delivered weekly to your inbox"
               banner={abstract}
@@ -208,13 +205,12 @@ export default function MarketingLandingPageReact() {
               height={1216}
               features={newsletterFeatures}
             />
-            <div id="contact">
-              <ContactSectionAPIPage
-                title="Talk to our team"
-                subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
-                contactDetails={contactDetails}
-              />
-            </div>
+
+            <ContactSectionAPIPage
+              title="Talk to our team"
+              subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
+              contactDetails={contactDetails}
+            />
           </main>
           <footer>
             <FooterSectionReact

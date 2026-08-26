@@ -32,11 +32,11 @@ import {
 import FooterSectionReact from "../components/marketing/FooterSection/FooterSectionReact";
 
 const navbarLinks = [
-  { id: 1, label: "Home", to: "#home", type: "anchor" },
-  { id: 2, label: "Features", to: "#features", type: "anchor" },
-  { id: 3, label: "Pricing", to: "#pricing", type: "anchor" },
-  { id: 4, label: "About us", to: "#about", type: "anchor" },
-  { id: 5, label: "Contact", to: "#contact", type: "anchor" },
+  { id: 1, label: "Home", to: "", type: "anchor" },
+  { id: 2, label: "Features", to: "", type: "anchor" },
+  { id: 3, label: "Pricing", to: "", type: "anchor" },
+  { id: 4, label: "About us", to: "", type: "anchor" },
+  { id: 5, label: "Contact", to: "", type: "anchor" },
 ];
 
 const faqs = [
@@ -148,20 +148,18 @@ export default function FeaturesPageReact() {
         </header>
         <div className="page-content">
           <main>
-            <div id="home">
-              <HeroSectionSimpleReact
-                title="Well crafted abstract images"
-                description="High quality abstract images for your projects, wallpaper and
+            <HeroSectionSimpleReact
+              title="Well crafted abstract images"
+              description="High quality abstract images for your projects, wallpaper and
                                 presentations."
-                src={prism}
-                alt="Colorful abstract geometric shapes"
-                width={696}
-                height={526}
-              />
-            </div>
-            <div id="features">
-              <FeatureSectionGridReact {...featureSectionGridData} />
-            </div>
+              src={prism}
+              alt="Colorful abstract geometric shapes"
+              width={696}
+              height={526}
+            />
+
+            <FeatureSectionGridReact {...featureSectionGridData} />
+
             <FeatureSectionImageReact
               side="right"
               {...featureSectionImageData.right}
@@ -170,19 +168,16 @@ export default function FeaturesPageReact() {
               side="left"
               {...featureSectionImageData.left}
             />
-            <div>
-              <TestimonialsSectionReact testimonials={testimonials} />
-            </div>
-            <div id="about">
-              <FAQSectionReact faqs={faqs} />
-            </div>
-            <div id="contact">
-              <ContactSectionAPIPage
-                title="Talk to our team"
-                subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
-                contactDetails={contactDetails}
-              />
-            </div>
+
+            <TestimonialsSectionReact testimonials={testimonials} />
+
+            <FAQSectionReact faqs={faqs} />
+
+            <ContactSectionAPIPage
+              title="Talk to our team"
+              subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
+              contactDetails={contactDetails}
+            />
           </main>
           <footer>
             <FooterSectionReact
