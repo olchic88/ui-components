@@ -206,11 +206,7 @@ export default function MarketingLandingPageReact() {
               features={newsletterFeatures}
             />
 
-            <ContactSectionAPIPage
-              title="Talk to our team"
-              subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
-              contactDetails={contactDetails}
-            />
+            <ContactSectionAPIPage />
           </main>
           <footer>
             <FooterSectionReact

@@ -136,11 +136,7 @@ export default function ContactUsPageReact() {
         </header>
         <div className="page-content">
           <main>
-            <ContactSectionAPIPage
-              title="Talk to our team"
-              subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
-              contactDetails={contactDetails}
-            />
+            <ContactSectionAPIPage />
 
             <FAQSectionReact faqs={faqs} />
           </main>
