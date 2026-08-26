@@ -797,6 +797,13 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
       </section>
+       <section className="showcase">
+        <h2 className="section-title">Contact Us Page (React)</h2>
+        <Link to="/contact" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
+      </section>
     </main>
   );
 }
