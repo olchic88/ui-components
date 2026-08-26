@@ -62,8 +62,8 @@ import {
 import PricingSectionTiersTailwind from "../components/marketing/PricingSectionTiers/PricingSectionTiersTailwind.jsx";
 
 import StatisticsSectionHTML from "../components/marketing/StatisticsSection/StatisticsSectionHTML.jsx";
-import StatisticsSectionReact from "../components/marketing/StatisticsSection/StatisticsSectionReact.jsx";
-import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.png";
+import StatisticsSectionReactShowcase from "../components/marketing/StatisticsSection/StatisticsSectionReactShowcase.jsx";
+import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.webp";
 import StatisticsSectionTailwind from "../components/marketing/StatisticsSection/StatisticsSectionTailwind.jsx";
 
 import NewsletterSectionHTML from "../components/marketing/NewsletterSection/NewsletterSectionHTML.jsx";
@@ -422,25 +422,7 @@ export default function Showcase() {
         <h2 className="section-title">Statistics Section (HTML+CSS)</h2>
         <StatisticsSectionHTML />
         <h2 className="section-title">Statistics Section (React)</h2>
-        <StatisticsSectionReact
-          supportingText="Statistics"
-          title="More than premium abstract imagery"
-          subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
-          src={whiteBlocks}
-          alt="White blocks"
-          width={592}
-          height={544}
-          statsTitle="Our mission, in numbers"
-          statistics={[
-            { id: 1, value: "25,664,890", metric: "Downloads" },
-            { id: 2, value: "17,219", metric: "Paid users" },
-            {
-              id: 3,
-              value: "190,654,321",
-              metric: "Images in library",
-            },
-          ]}
-        />
+        <StatisticsSectionReactShowcase />
         <Link to="/statistics-section-api" className="view-full-link">
           View live data version (API)
           <LinkIcon />
@@ -838,9 +820,16 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
       </section>
-       <section className="showcase">
+      <section className="showcase">
         <h2 className="section-title">Pricing Page (React)</h2>
         <Link to="/pricing" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
+      </section>
+      <section className="showcase">
+        <h2 className="section-title">About Us Page (React)</h2>
+        <Link to="/about" className="view-full-link">
           View full page
           <LinkIcon />
         </Link>

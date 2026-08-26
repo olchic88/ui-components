@@ -3,8 +3,8 @@ import "./sectionHeader.css";
 export default function SectionHeaderReact({
   supportingText,
   title,
-  heading = "h2",
   subtitle,
+  heading = "h2",
   titleClassName = "",
   subtitleClassName = "",
 }) {

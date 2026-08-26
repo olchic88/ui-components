@@ -1,7 +1,7 @@
 import StatisticsSectionTailwind from "../components/marketing/StatisticsSection/StatisticsSectionTailwind.jsx";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { get } from "../fetcher.jsx";
-import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.png";
+import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.webp";
 
 export default function StatisticsSectionAPITailwindPage() {
   const { data } = useSuspenseQuery({

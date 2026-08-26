@@ -1,7 +1,7 @@
 import StatisticsSectionReact from "../components/marketing/StatisticsSection/StatisticsSectionReact";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { get } from "../fetcher.jsx";
-import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.png";
+import whiteBlocks from "../components/marketing/StatisticsSection/whiteBlocks.webp";
 
 export default function StatisticsSectionAPIPage() {
   const { data } = useSuspenseQuery({
@@ -28,11 +28,7 @@ export default function StatisticsSectionAPIPage() {
 
   return (
     <div className="fullpage">
-      <title>Statistics Section</title>
       <StatisticsSectionReact
-        supportingText="Statistics"
-        title="More than premium abstract imagery"
-        subtitle="Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium abstract imagery."
         src={whiteBlocks}
         alt="White blocks"
         width={592}

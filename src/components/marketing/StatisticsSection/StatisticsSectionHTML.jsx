@@ -1,19 +1,19 @@
 import "./statisticsSection.css";
-import whiteBlocks from "./whiteBlocks.png";
+import whiteBlocks from "./whiteBlocks.webp";
 
 export default function StatisticsSectionHTML() {
   return (
     <div className="container-section">
-      <div className="statistics-section">
-        <div className="statistics-section-header">
-          <p className="statistics-section-header-supporting-text">
+      <div className="statistics-section statistics-section-showcase">
+        <div className="section-header">
+          <p className="section-header-supporting-text">
             Statistics
           </p>
-          <div className="statistics-section-header-content">
-            <h3 className="statistics-section-header-title">
+          <div className="section-header-content">
+            <h3 className="section-header-title">
               More than premium abstract imagery
             </h3>
-            <p className="statistics-section-header-subtitle">
+            <p className="section-header-subtitle">
               Our platform is more than just as a service to us – it is a
               catalyst for enriching lives through premium abstract imagery.
             </p>
