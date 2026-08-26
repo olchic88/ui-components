@@ -9,12 +9,12 @@ export default function TeamSectionHTML() {
   return (
     <>
       <div className="container-section">
-        <div className="team-section">
-          <div className="team-section-header">
-            <p className="team-section-header-supporting-text">Team</p>
-            <div className="team-section-header-content">
-              <h3 className="team-section-header-title">Meet our team</h3>
-              <p className="team-section-header-subtitle">
+        <div className="team-section team-section-showcase">
+          <div className="section-header">
+            <p className="section-header-supporting-text">Team</p>
+            <div className="section-header-content">
+              <h3 className="section-header-title">Meet our team</h3>
+              <p className="section-header-subtitle">
                 From skilled designers to tech-savvy developers, each member
                 brings a unique perspective and expertise to the table.
               </p>
