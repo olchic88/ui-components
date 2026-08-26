@@ -30,6 +30,7 @@ import CookieConsentTailwindPage from "./pages/CookieConsentTailwindPage.jsx";
 import MarketingLandingPageReact from "./pages/MarketingLandingPageReact.jsx";
 import FeaturesPageReact from "./pages/FeaturesPageReact.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
+import PricingPageReact from "./pages/PricingPageReact.jsx";
 
 function App() {
   // throw new Error("Boom"); //
@@ -164,6 +165,7 @@ function App() {
           />
           <Route path="marketing" element={<MarketingLandingPageReact />} />
           <Route path="features" element={<FeaturesPageReact />} />
+          <Route path="pricing" element={<PricingPageReact/>} />
           <Route path="*" element={<h1>This page was not found.</h1>} />{" "}
           {/* // or the <NotFound /> component */}
         </Routes>

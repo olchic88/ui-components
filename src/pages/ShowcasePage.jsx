@@ -838,6 +838,13 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
       </section>
+       <section className="showcase">
+        <h2 className="section-title">Pricing Page (React)</h2>
+        <Link to="/pricing" className="view-full-link">
+          View full page
+          <LinkIcon />
+        </Link>
+      </section>
     </main>
   );
 }
