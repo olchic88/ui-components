@@ -4,13 +4,26 @@ import "./faqSection.css";
 
 import { useState } from "react";
 
-export default function FAQSectionReact({ faqs }) {
+export default function FAQSectionReact({ faqs, enableContactScroll = true }) {
   const [openItems, setOpenItems] = useState([]);
 
   function handleButtonClick(id) {
     setOpenItems((prev) =>
       prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
     );
+  }
+
+  function scrollToNameField() {
+    if (!enableContactScroll) {
+      return;
+    }
+    const inputName =
+      document.querySelector("#name"); /* in ContactSectionAPIPage */
+    if (!inputName) {
+      return;
+    }
+    inputName.focus({ preventScroll: true });
+    inputName.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
   return (
@@ -56,7 +69,14 @@ export default function FAQSectionReact({ faqs }) {
             </h5>
             <p>
               Reach out to our
-              <a href="#" className="link faq-section-support-card-link">
+              <a
+                href="#"
+                className="link faq-section-support-card-link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToNameField();
+                }}
+              >
                 {" "}
                 customer support{" "}
               </a>
@@ -64,10 +84,10 @@ export default function FAQSectionReact({ faqs }) {
             </p>
           </div>
           <ButtonReact
-            as="link"
             variant="primary"
             size="xl"
             className="faq-section-button"
+            onClick={scrollToNameField}
           >
             Get in touch
           </ButtonReact>

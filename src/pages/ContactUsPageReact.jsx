@@ -138,7 +138,7 @@ export default function ContactUsPageReact() {
           <main>
             <ContactSectionAPIPage />
 
-            <FAQSectionReact faqs={faqs} />
+            <FAQSectionReact faqs={faqs} enableContactScroll={true} />
           </main>
           <footer>
             <FooterSectionReact

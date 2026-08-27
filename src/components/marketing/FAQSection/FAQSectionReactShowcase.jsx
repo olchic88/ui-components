@@ -44,7 +44,7 @@ export default function FAQSectionReactShowcase() {
   return (
     <div className="container-section">
       <div className="faq-section-showcase">
-        <FAQSectionReact faqs={faqs} />
+        <FAQSectionReact faqs={faqs} enableContactScroll={false} />
       </div>
     </div>
   );
