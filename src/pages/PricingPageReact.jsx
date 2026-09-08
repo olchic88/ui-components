@@ -42,39 +42,40 @@ const navbarLinks = [
 const faqs = [
   {
     id: 0,
-    question: "What types of images are available on your platform?",
+    question: "Are there any discounts available for long-term subscriptions?",
     answer:
-      "Our platform offers a diverse range of abstract images to suit various preferences and needs. From vibrant geometric patterns to soothing landscapes, we strive to provide a wide selection to cater to different tastes.",
+      "Yes! We offer a discount on annual subscriptions. If you choose an annual payment plan, you will receive a discount compared to monthly payments. This is a great way to enjoy all the features of our platform at a reduced cost.",
   },
   {
     id: 1,
-    question: "How can I access and download images from your platform?",
+    question: "Can I change my subscription plan at any time?",
     answer:
-      "Accessing and downloading images from our platform is simple. Upon signing up and logging in, users can browse through our curated collection and download their chosen images directly to their devices with just a few clicks.",
+      "Absolutely! You can upgrade or downgrade your subscription at any time. Changes to your plan will take effect at the start of your next billing cycle.",
   },
   {
     id: 3,
-    question: "Do you offer free images, or is there a subscription required?",
+    question: "What forms of payment do you accept?",
     answer:
-      "We provide both free and premium images on our platform. Users can explore a selection of free images without any subscription. For access to our entire library and additional features, we offer subscription plans tailored to different user needs.",
+      "We accept all major credit cards, including Visa, MasterCard, and American Express. We also accept payments through PayPal for added convenience.",
   },
   {
     id: 4,
-    question: "What payment methods do you accept for subscriptions?",
+    question:
+      "Do you offer any special pricing for educational institutions or non-profits?",
     answer:
-      "We accept a variety of payment methods, including credit/debit cards and online payment gateways, to make the subscription process convenient for our users.",
+      "Yes, we support educational institutions and non-profit organizations by offering special discounted pricing. Please contact us for more details and to see if you qualify.",
   },
   {
     id: 5,
-    question: "Can I cancel or modify my subscription at any time?",
+    question: "What is your refund policy?",
     answer:
-      "Yes, absolutely. You have the flexibility to cancel or modify your subscription at any time through your account settings. Changes will take effect immediately, ensuring you have full control over your subscription preferences.",
+      "We offer a 30-day money-back guarantee. If you're not satisfied with our service within the first 30 days of your subscription, you can cancel your plan and receive a full refund.",
   },
   {
     id: 6,
-    question: "How frequently do you update your image collection?",
+    question: "Are there any additional fees apart from the subscription cost?",
     answer:
-      "We regularly update our image collection with fresh and captivating content to keep our users inspired and engaged. New images are added consistently to ensure there's always something new to discover on our platform.",
+      "No, there are no hidden fees. The subscription price is all-inclusive, covering full access to our library and all features listed in your chosen plan.",
   },
 ];
 
