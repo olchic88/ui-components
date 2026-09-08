@@ -35,7 +35,7 @@ import prism from "../components/marketing/HeroSectionSimple/prism.webp";
 import HeroSectionFeatureBulletsHTML from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsHTML.jsx";
 import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReact.jsx";
 import HeroSectionFeatureBulletsTailwind from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsTailwind.jsx";
-import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.png";
+import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
 import FeatureSectionImageHTML from "../components/marketing/FeatureSectionImage/FeatureSectionImageHTML.jsx";
 import FeatureSectionImageReactShowcase from "../components/marketing/FeatureSectionImage/FeatureSectionImageReactShowcase.jsx";

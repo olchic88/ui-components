@@ -1,5 +1,5 @@
 import "./heroSectionFeatureBullets.css";
-import prismFeatureBullets from "./prismFeatureBullets.png";
+import prismFeatureBullets from "./prismFeatureBullets.webp";
 
 export default function HeroSectionFeatureBulletsHTML() {
   return (
