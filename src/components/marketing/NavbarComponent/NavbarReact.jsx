@@ -1,4 +1,4 @@
-import "./navBar.css";
+import "./navbar.css";
 import logo from "./abstractly.svg";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";

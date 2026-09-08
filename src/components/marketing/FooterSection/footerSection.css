@@ -54,12 +54,13 @@
   line-height: 1.25rem;
   font-weight: 500;
 
-  text-decoration: none;
-  padding: 0;
+  list-style: none;
 }
 
 .footer-section-nav a {
   outline: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer-section-nav a:hover {
@@ -84,6 +85,7 @@
   color: var(--color-disabled);
   outline: none;
   padding: 0 2px;
+  text-decoration: none;
 }
 
 .footer-section-icons a:focus {

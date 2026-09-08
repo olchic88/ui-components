@@ -29,4 +29,4 @@ function AppSetup() {
   );
 }
 
-createRoot(document.getElementById("root")!).render(<AppSetup />);
+createRoot(document.querySelector("#root")!).render(<AppSetup />);
