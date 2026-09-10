@@ -1,6 +1,6 @@
 import CookieConsentReact from "../components/marketing/CookieConsent/CookieConsentReact";
 import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReact";
-import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.png";
+import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
 export default function CookieConsentReactPage() {
   return (
@@ -20,7 +20,7 @@ export default function CookieConsentReactPage() {
           height={526}
         />
       </main>
-   <CookieConsentReact/>
+      <CookieConsentReact />
     </div>
   );
 }

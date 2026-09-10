@@ -33,7 +33,7 @@ import HeroSectionSimpleTailwind from "../components/marketing/HeroSectionSimple
 import prism from "../components/marketing/HeroSectionSimple/prism.webp";
 
 import HeroSectionFeatureBulletsHTML from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsHTML.jsx";
-import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReact.jsx";
+import HeroSectionFeatureBulletsReactShowcase from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReactShowcase.jsx";
 import HeroSectionFeatureBulletsTailwind from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsTailwind.jsx";
 import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
@@ -230,18 +230,7 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
         <h2 className="section-title">Hero Section Feature Bullets (React)</h2>
-        <HeroSectionFeatureBulletsReact
-          title="Premium abstract images"
-          bullets={[
-            { id: 1, text: "Minimum 5K image resolution" },
-            { id: 2, text: "Various format variants available" },
-            { id: 3, text: "Retina display support" },
-          ]}
-          src={prismFeatureBullets}
-          alt="Colorful abstract geometric shapes"
-          width={696}
-          height={526}
-        />
+        <HeroSectionFeatureBulletsReactShowcase />
         <Link to="/hero-feature-bullets-react" className="view-full-link">
           View full page
           <LinkIcon />
@@ -797,7 +786,7 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
       </section>
-       <section className="showcase">
+      <section className="showcase">
         <h2 className="section-title">Contact Us Page (React)</h2>
         <Link to="/contact" className="view-full-link">
           View full page

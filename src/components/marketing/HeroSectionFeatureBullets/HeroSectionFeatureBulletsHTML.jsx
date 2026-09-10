@@ -4,7 +4,7 @@ import prismFeatureBullets from "./prismFeatureBullets.webp";
 export default function HeroSectionFeatureBulletsHTML() {
   return (
     <div className="container-section">
-      <div className="hero-section-feature-bullets">
+      <div className="hero-section-feature-bullets hero-section-feature-bullets-showcase">
         <div className="hero-feature-bullets-content">
           <h3 className="hero-feature-bullets-title">
             Premium abstract images

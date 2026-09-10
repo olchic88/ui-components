@@ -1,5 +1,5 @@
 import HeroSectionFeatureBulletsTailwind from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsTailwind";
-import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.png";
+import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
 export default function HeroSectionFeatureBulletsTailwindPage() {
   return (

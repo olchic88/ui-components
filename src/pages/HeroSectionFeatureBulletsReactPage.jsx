@@ -1,5 +1,5 @@
 import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReact";
-import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.png";
+import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
 export default function HeroSectionFeatureBulletsReactPage() {
   return (
