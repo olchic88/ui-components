@@ -6,8 +6,8 @@ import FeatureSectionGridReact from "../components/marketing/FeatureSectionGrid/
 import FeatureSectionImageReact from "../components/marketing/FeatureSectionImage/FeatureSectionImageReact";
 import { featureSectionImageData } from "../components/marketing/FeatureSectionImage/featureSectionImageData";
 
-import HeroSectionSimpleReact from "../components/marketing/HeroSectionSimple/HeroSectionSimpleReact";
-import prism from "../components/marketing/HeroSectionSimple/prism.webp";
+import HeroSectionFeatureBulletsReact from "../components/marketing/HeroSectionFeatureBullets/HeroSectionFeatureBulletsReact";
+import prismFeatureBullets from "../components/marketing/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
 import NavbarReact from "../components/marketing/NavbarComponent/NavbarReact";
 
@@ -148,11 +148,14 @@ export default function FeaturesPageReact() {
         </header>
         <div className="page-content">
           <main>
-            <HeroSectionSimpleReact
-              title="Well crafted abstract images"
-              description="High quality abstract images for your projects, wallpaper and
-                                presentations."
-              src={prism}
+            <HeroSectionFeatureBulletsReact
+              title="Premium abstract images"
+              bullets={[
+                { id: 1, text: "Minimum 5K image resolution" },
+                { id: 2, text: "Various format variants available" },
+                { id: 3, text: "Retina display support" },
+              ]}
+              src={prismFeatureBullets}
               alt="Colorful abstract geometric shapes"
               width={696}
               height={526}
