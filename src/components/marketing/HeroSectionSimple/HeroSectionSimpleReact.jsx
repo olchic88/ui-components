@@ -9,6 +9,10 @@ export default function HeroSectionSimpleReact({
   alt,
   width,
   height,
+  primaryButtonText,
+  primaryButtonTo,
+  secondaryButtonText,
+  secondaryButtonTo,
 }) {
   return (
     <section className="hero-section">
@@ -19,13 +23,23 @@ export default function HeroSectionSimpleReact({
         </div>
         <div className="hero-actions">
           <div className="hero-actions-btn">
-            <ButtonReact as="link" to="#" variant="secondary" size="xl">
-              Learn more
+            <ButtonReact
+              as="link"
+              to={secondaryButtonTo}
+              variant="secondary"
+              size="xl"
+            >
+              {secondaryButtonText}
             </ButtonReact>
           </div>
           <div className="hero-actions-btn">
-            <ButtonReact as="link" to="#" variant="primary" size="xl">
-              See pricing
+            <ButtonReact
+              as="link"
+              to={primaryButtonTo}
+              variant="primary"
+              size="xl"
+            >
+              {primaryButtonText}
             </ButtonReact>
           </div>
         </div>
