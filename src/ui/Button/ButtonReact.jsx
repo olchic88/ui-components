@@ -3,8 +3,8 @@ import { Link } from "react-router";
 
 export default function ButtonReact({
   children,
-  variant,
-  size,
+  variant = "",
+  size = "",
   as = "button",
   className = "",
   ...props
