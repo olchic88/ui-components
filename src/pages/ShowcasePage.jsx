@@ -85,7 +85,7 @@ import sarah from "../components/marketing/TeamSection/sarah.webp";
 import TeamSectionTailwind from "../components/marketing/TeamSection/TeamSectionTailwind.jsx";
 
 import NotFoundSectionHTML from "../components/marketing/NotFoundSection/NotFoundSectionHTML.jsx";
-import NotFoundSectionReact from "../components/marketing/NotFoundSection/NotFoundSectionReact.jsx";
+import NotFoundSectionReactShowcase from "../components/marketing/NotFoundSection/NotFoundSectionReactShowcase.jsx";
 import NotFoundSectionTailwind from "../components/marketing/NotFoundSection/NotFoundSectionTailwind.jsx";
 
 import FAQSectionHTML from "../components/marketing/FAQSection/FAQSectionHTML.jsx";
@@ -576,11 +576,7 @@ export default function Showcase() {
           <LinkIcon />
         </Link>
         <h2 className="section-title">404 Section (React)</h2>
-        <NotFoundSectionReact
-          supportingText="Not found"
-          title="We can’t find the page"
-          description="Sorry, the page you are looking for doesn't exist or has been moved."
-        />
+        <NotFoundSectionReactShowcase />
         <Link to="/not-found-react" className="view-full-link">
           View full page
           <LinkIcon />
