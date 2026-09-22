@@ -6,6 +6,7 @@ CookieBannerReact, CookieModalReact не знают ничего
 
 import "./cookieModal.css";
 import { useEffect, useRef, useState } from "react";
+import ButtonReact from "../../../ui/Button/ButtonReact";
 
 export default function CookieModalReact({
   onDeclineAll,
@@ -90,36 +91,35 @@ export default function CookieModalReact({
         </div>
       </div>
       <div className="cookie-consent-modal-actions">
-        <button
-          type="button"
-          className="ax-button button button-danger button-size-md button-decline-cookie"
+        <ButtonReact
+          variant="danger"
+          size="md"
+          className="button-decline-cookie"
           onClick={onDeclineAll}
         >
           Decline all
-        </button>
+        </ButtonReact>
+
         <div className="cookie-consent-modal-actions-allow">
           <div className="cookie-consent-modal-btn-wrapper">
-            <button
-              type="button"
-              className="ax-button button button-primary button-size-lg button-allow-cookie"
+            <ButtonReact
+              variant="primary"
+              size="lg"
+              className="button-allow-cookie"
               onClick={onAcceptAll}
             >
               Accept all
-            </button>
+            </ButtonReact>
           </div>
           <div className="cookie-consent-modal-btn-wrapper">
-            <button
-              type="button"
-              className="ax-button button button-secondary button-size-lg button-allow-cookie"
-              onClick={() =>
-                onSavePreferences({
-                  analytics: settings.analytics,
-                  marketing: settings.marketing,
-                })
-              }
+            <ButtonReact
+              variant="secondary"
+              size="lg"
+              className="button-allow-cookie"
+              onClick={() => onSavePreferences(settings)}
             >
               Save
-            </button>
+            </ButtonReact>
           </div>
         </div>
       </div>

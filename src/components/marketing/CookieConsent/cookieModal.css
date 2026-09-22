@@ -32,6 +32,7 @@
   flex-direction: column;
   gap: 24px;
   padding: 24px;
+  border: none;
 
   width: 340px;
   background-color: var(--bg-primary);
@@ -46,8 +47,8 @@
 }
 
 .cookie-consent-modal-react {
-    margin: auto;
-} 
+  margin: auto;
+}
 
 .cookie-consent-modal-react::backdrop {
   background: rgb(0 0 0 / 0.4);

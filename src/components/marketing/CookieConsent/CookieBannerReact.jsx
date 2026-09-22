@@ -7,6 +7,7 @@ CookieBannerReact, CookieModalReact не знают ничего
 import { useEffect, useRef } from "react";
 import { Link } from "react-router";
 import "./cookieBanner.css";
+import ButtonReact from "../../../ui/Button/ButtonReact";
 
 export default function CookieBannerReact({
   onDeclineAll,
@@ -43,28 +44,32 @@ export default function CookieBannerReact({
         </p>
       </div>
       <div className="cookie-consent-banner-actions">
-        <button
-          type="button"
-          className="ax-button button button-danger button-size-md button-decline-cookie"
+        <ButtonReact
+          variant="danger"
+          size="md"
+          className="button-decline-cookie"
           onClick={onDeclineAll}
         >
           Decline all
-        </button>
+        </ButtonReact>
+
         <div className="cookie-consent-banner-actions-allow">
-          <button
-            type="button"
-            className="ax-button button button-primary button-size-lg button-allow-cookie"
+          <ButtonReact
+            variant="primary"
+            size="lg"
+            className="button-allow-cookie"
             onClick={onAcceptAll}
           >
             Allow cookies
-          </button>
-          <button
-            type="button"
-            className="ax-button button button-secondary button-size-lg button-allow-cookie"
+          </ButtonReact>
+          <ButtonReact
+            variant="secondary"
+            size="lg"
+            className="button-allow-cookie"
             onClick={onManageCookies}
           >
             Manage cookies
-          </button>
+          </ButtonReact>
         </div>
       </div>
     </dialog>
