@@ -130,7 +130,6 @@
   align-items: center;
   justify-content: center;
   gap: 64px;
-  height: 398px;
   padding: 16px;
   background-color: var(--bg-primary);
   border-radius: 8px;
