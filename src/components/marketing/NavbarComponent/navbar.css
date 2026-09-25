@@ -26,17 +26,39 @@
   gap: 80px;
 }
 
-.button-sidebar-open {
-  cursor: pointer;
+.navbar-logo {
+  width: 163px;
+  height: 32px;
+}
+
+.navbar-logo a {
+  display: inline-block;
   outline: none;
+  cursor: pointer;
+}
+
+.navbar-logo a:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
   border-radius: 4px;
 }
 
-.button-sidebar-open svg {
+.button-sidebar-open,
+.button-sidebar-close {
+  color: var(--color-secondary);
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-sidebar-open svg,
+.button-sidebar-close svg {
   display: block;
 }
 
-.button-sidebar-open:focus {
+.button-sidebar-open:focus,
+.button-sidebar-close:focus {
   box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
 }
 
@@ -79,35 +101,6 @@
   align-items: center;
 }
 
-.navbar-logo {
-  width: 163px;
-  height: 32px;
-}
-
-.navbar-logo a {
-  display: inline-block;
-  outline: none;
-}
-
-.navbar-logo a:focus {
-  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
-  border-radius: 4px;
-}
-
-.button-sidebar-close {
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-}
-
-.button-sidebar-close svg {
-  display: block;
-}
-
-.button-sidebar-close:focus {
-  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
-}
-
 .navbar-content {
   display: none;
 }
@@ -120,7 +113,6 @@
   list-style: none;
 }
 
-/* + index.css */
 .navbar-link {
   padding: 0 2px;
   font-size: 1rem;
