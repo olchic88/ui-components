@@ -82,7 +82,6 @@ export default function ContactSectionAPIPage() {
             },
           ]}
           onSubmit={(data) => mutation.mutate(data)} //  You call mutation.mutate() to execute the fetch request. The mutation.mutate() function accepts an object that will be forwarded to the mutationFn.
-          isSubmitting={mutation.isPending}
           isSuccess={isSuccess} // for success confirmation
           onReset={() => setIsSuccess(false)} // for "Send another message button" to delete confirmation overlay
           isSubmitting={mutation.isPending} // to disable the button
